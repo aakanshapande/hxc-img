@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* Apply other styles using variables */
+  }
+
+  :root {
+    --bg-color: white;
+    --text-color: black;
+    /* Add more variables as needed */
+  }
+  
+  .dark-mode {
+    --bg-color: #333;
+    --text-color: white;
+    /* Adjust values for dark mode */
+  }
+
+  nav {
+    background-color: rgb(210, 210, 210)
+  }
