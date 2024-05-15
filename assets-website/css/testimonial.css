@@ -1,0 +1,7 @@
+.carousel-inner .carousel-item {
+    transition: transform 1.5s ease; /* Adjust transition duration as needed */
+  }
+
+.carousel-item:hover{
+    cursor: pointer;
+}

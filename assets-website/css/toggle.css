@@ -1,0 +1,60 @@
+#theme-checkbox{
+    visibility: hidden;
+    
+  }
+  .theme-btn{
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+  }
+
+  #theme_change{
+    cursor: pointer;
+  }
+  
+  
+  /* light mode css */
+
+  .body-light{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+  }
+
+  .menu-light{
+    background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
+  }
+
+
+  .svg-path-color-light{
+    fill: var(--bs-body-bg);
+  }
+
+
+  .get-started-light{
+    background-color: #e9ecef; 
+  }
+
+  /* Dark Mode CSS */ 
+
+  .body-dark{
+    background-color: #212121;
+    color: white;
+  }
+
+  .menu-dark{
+    background-color: #202020;
+  }
+
+
+  .svg-path-color-dark{
+    fill: #212121;
+  }
+
+
+  .get-started-dark{
+    background-color: #212121;
+    color: white;
+  }
