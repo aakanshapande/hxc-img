@@ -86,7 +86,7 @@ $(document).ready(function(){
         <AttackSection />
         <FooterSection />
         {children}
-      </body>
-    </html>
+       </body>
+     </html>
   );
 }

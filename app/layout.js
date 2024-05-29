@@ -86,7 +86,7 @@ $(document).ready(function(){
   return (
     <html lang="en">
     <head>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     </head>
       <body className={inter.className}>
         <Navbar />
@@ -100,7 +100,7 @@ $(document).ready(function(){
         <FooterSection />
         <BackToTopSection />
         {children}
-        <script src="../assets/js/testimonial.js"></script>
+        {/* <script src="../assets/js/testimonial.js"></script> */}
       </body>
     </html>
   );
