@@ -1,13 +1,10 @@
 "use client";
-import { Inter } from "next/font/google";
 import "../../globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from "react";
 import Navbar from "@/components-careers/Navbar";
 import "../../../assets-careers/css/careers.css";
 import "../../../assets-careers/css/careers-toggle-theme.css";
-// import "../../assets-careers/css/custom_style.css";
-// import "../assets/js/careers-toggle-theme.js";
 import IntroSection from "@/components-careers/intro";
 import InternshipProgram from "@/components-careers/internship";
 import InternshipButtonSection from "@/components-careers/internshipButton";
@@ -15,11 +12,8 @@ import InternshipDomain from "@/components-careers/internshipDomain";
 import AttackSection from "@/components-careers/attacks";
 import FooterSection from "@/components-careers/footer";
 
-// import $ from 'jquery';
-// import "jquery-ui-dist/jquery-ui";
-import useJQuery from "./useJQuery";
 
-const inter = Inter({ subsets: ["latin"] });
+import useJQuery from "./useJQuery";
 
 
 export default function RootLayout({ children }) {
@@ -30,11 +24,9 @@ export default function RootLayout({ children }) {
 
 
   useJQuery(($) => {
-    // window.$ = window.jQuery = require('jquery')
 
     $(document).ready(function () {
 
-      // Check localStorage for theme preference and apply it
       var darkMode = localStorage.getItem('darkMode');
       if (darkMode === 'true') {
         applyDarkMode();

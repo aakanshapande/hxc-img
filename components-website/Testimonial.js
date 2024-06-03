@@ -156,14 +156,6 @@ const TestimonialSection = () => {
               </div>
             </div>
           </div>
-           {/* <div className="text-center">
-            <button className="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
-              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            </button>
-            <button className="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
-              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            </button>
-          </div>  */}
 
         </div>
       </div>
