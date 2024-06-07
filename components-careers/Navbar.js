@@ -52,10 +52,10 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div class="theme-btn">
-              <input type="checkbox" name="theme-checkbox" id="theme-checkbox" class="theme-checkbox" />
-              <label for="theme-checkbox" class="theme-label">
-                  <i class="ri-moon-line" id="theme_change"></i>
+          <div className="theme-btn">
+              <input type="checkbox" name="theme-checkbox" id="theme-checkbox" className="theme-checkbox" />
+              <label htmlFor="theme-checkbox" className="theme-label">
+                  <i className="ri-moon-line" id="theme_change"></i>
               </label>
           </div>
         </div>

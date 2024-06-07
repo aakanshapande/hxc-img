@@ -24,13 +24,6 @@ const IntroSection = () => {
           <div className="col-md-6 intros text-end">
             <div className="video-box">
               <img src="images/art/intro-section-illustration.png" alt="video illustration" className="img-fluid" />
-              {/* <Link href="#" className="glightbox position-absolute top-50 start-50 translate-middle">
-                <span>
-                  <i className="fas fa-play-circle"></i>
-                </span>
-                <span className="border-animation border-animation--border-1"></span>
-                <span className="border-animation border-animation--border-2"></span>
-              </Link> */}
             </div>
           </div>
         </div>
