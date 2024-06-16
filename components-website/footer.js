@@ -73,12 +73,14 @@ const FooterSection = () => {
         <div className="container">
           <div className="row py-4 text-center text-white">
             <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
-              connect with us on social media
+              Connect with us on social media
             </div>
             <div className="col-lg-7 col-md-6">
               <Link href="https://www.twitter.com/hakxcore"><i className="fa-brands fa-x-twitter"></i></Link>
               <Link href="https://github.com/hakxcore"><i className="fab fa-github"></i></Link>
               <Link href="https://instagram.com/hakxcore"><i className="fab fa-instagram"></i></Link>
+              <Link href="https://wa.me/+916006511429"><i className="fab fa-whatsapp"></i></Link>
+              <Link href="https://t.me/hakxcore_bot"><i className="fab fa-telegram"></i></Link>
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@ const FooterSection = () => {
               <li><Link href="#">Become an Affiliate</Link></li>
               <li><Link href="#">Create an account</Link></li>
               <li><Link href="/careers">Careers</Link></li>
-              <li><Link href="#">Help</Link></li>
+              <li><Link href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
