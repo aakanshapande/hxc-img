@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
 .internship-program-section{
     background: var(--blue-color);
     background-image: url("../assets-careers/images/intern-background-left.png");
