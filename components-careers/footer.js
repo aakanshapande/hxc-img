@@ -135,7 +135,7 @@ const FooterSection = () => {
           <div className="row text-center text-white">
             <div className="col-12">
               <div className="footer-bottom__copyright">
-                &copy; Copyright {currentYear} <a href="https://hakxcore.com">hakxcore</a>. All rights reserved, Built with ❤️ in India<br />
+                &copy; Copyright {currentYear} <a href="https://hakxcore.com">hakxcore</a> <br />
               </div>
             </div>
           </div>

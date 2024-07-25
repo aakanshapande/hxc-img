@@ -6,23 +6,30 @@
 // const ServiceSection = () => {
 //   const sectionRef = useRef(null);
 //   const triggerRef = useRef(null);
+//   const progressBarRef = useRef(null);
 
 //   gsap.registerPlugin(ScrollTrigger);
 
 //   useEffect(() => {
 //     const sections = gsap.utils.toArray(".scroll-section");
-
-//     let totalScrollWidth = sections.length * 100; // Total scroll width based on the number of sections
+//     const colors = ["#ff6347", "#ffa500", "#32cd32", "#1e90ff", "#ba55d3"];
 
 //     gsap.to(sectionRef.current, {
-//       xPercent: -100 * (sections.length - 1),
+//       xPercent: -100 * (sections.length+2),
 //       ease: "none",
 //       scrollTrigger: {
 //         trigger: triggerRef.current,
 //         pin: true,
 //         scrub: 0.6,
-//         start: "top 200px", // Adjust start value to avoid being hidden by navbar
-//         end: () => `+=${sectionRef.current.scrollWidth - triggerRef.current.clientWidth}`, // Ensure the end value covers the total scroll width
+//         start: "top 150px",
+//         end: () => `+=${sectionRef.current.scrollWidth - triggerRef.current.clientWidth}`,
+//         onUpdate: (self) => {
+//           const progress = self.progress;
+//           const sectionIndex = Math.floor(progress * sections.length);
+//           const color = colors[sectionIndex % colors.length];
+//           progressBarRef.current.style.width = `${progress * 100}%`;
+//           progressBarRef.current.style.backgroundColor = color;
+//         },
 //       },
 //     });
 
@@ -39,7 +46,6 @@
 //           <div className="heading-line mb-1"></div>
 //         </div>
 
-//         {/* START THE DESCRIPTION CONTENT  */}
 //         <div className="row pb-2 my-3">
 //           <div className="col-md-6 border-right">
 //             <div className="service-section-card-light p-4">
@@ -58,11 +64,10 @@
 //         </div>
 //       </div>
 
-//       {/* START THE CONTENT FOR THE SERVICES  */}
 //       <div className="scroll-section-outer">
 //         <div ref={triggerRef}>
 //           <div ref={sectionRef} className="container px-5 scroll-section-inner">
-//             {/* START THE MARKETING CONTENT  */}
+//             {/* Start the Marketing Content */}
 //             <div className="row px-0 px-lg-5 scroll-section">
 //               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
 //                 <div className="services__content order-sm-0">
@@ -86,7 +91,31 @@
 //               </div>
 //             </div>
 
-//             {/* START THE WEB DEVELOPMENT CONTENT  */}
+//             {/* VAPT Component */}
+//             <div className="row px-0 px-lg-5 scroll-section">
+//               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
+//                 <div className="services__content order-sm-0">
+//                   <div className="icon d-block fas fa-shield-alt"></div>
+//                   <h3 className="display-3--title mt-1">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+//                   <p className="lh-lg">
+//                     Protect Your Digital Assets with Comprehensive Security Testing!
+//                     Our VAPT services identify vulnerabilities and provide actionable insights to strengthen your security posture. Ensure your systems are secure with our expert testing and analysis.
+//                   </p>
+//                   <Link href="#contact">
+//                     <button type="button" className="rounded-pill btn-rounded border-primary">
+//                       Learn more<span><i className="fas fa-arrow-right"></i></span>
+//                     </button>
+//                   </Link>
+//                 </div>
+//               </div>
+//               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto text-end">
+//                 <div className="services__pic mx-5">
+//                   <img src="/images/services/vapt.svg" alt="VAPT illustration" className="img-fluid" />
+//                 </div>
+//               </div>
+//             </div>
+
+//             {/* DevOps/DevSecOps Component */}
 //             <div className="row px-0 px-lg-5 scroll-section">
 //               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto">
 //                 <div className="services__content">
@@ -105,20 +134,44 @@
 //               </div>
 //               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto text-start">
 //                 <div className="services__pic mx-5">
-//                   <img src="/images/services/devsecops.svg" alt="web development illustration" className="img-fluid" />
+//                   <img src="/images/services/devsecops.svg" alt="DevOps/DevSecOps illustration" className="img-fluid" />
 //                 </div>
 //               </div>
 //             </div>
 
-//             {/* START THE CLOUD HOSTING CONTENT  */}
+//             {/* Blockchain Development Component */}
+//             <div className="row px-0 px-lg-5 scroll-section">
+//               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
+//                 <div className="services__content order-sm-0">
+//                   <div className="icon d-block fas fa-link"></div>
+//                   <h3 className="display-3--title mt-1">Blockchain Development</h3>
+//                   <p className="lh-lg">
+//                     Innovate and Transform with Custom Blockchain Solutions!
+//                     Harness the power of blockchain technology to enhance security, transparency, and efficiency. Our expert team delivers tailored blockchain development services to meet your unique needs.
+//                   </p>
+//                   <Link href="#contact">
+//                     <button type="button" className="rounded-pill btn-rounded border-primary">
+//                       Learn more<span><i className="fas fa-arrow-right"></i></span>
+//                     </button>
+//                   </Link>
+//                 </div>
+//               </div>
+//               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto text-end">
+//                 <div className="services__pic mx-5">
+//                   <img src="/images/services/blockchain.svg" alt="Blockchain development illustration" className="img-fluid" />
+//                 </div>
+//               </div>
+//             </div>
+
+//             {/* Customer Relations/AI Business Integration Component */}
 //             <div className="row px-0 px-lg-5 scroll-section">
 //               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
 //                 <div className="services__content">
 //                   <div className="icon d-block fas fa-users"></div>
-//                   <h3 className="display-3--title mt-1">Customer Relations</h3>
+//                   <h3 className="display-3--title mt-1">Customer Relations/AI Business Integration</h3>
 //                   <p className="lh-lg">
 //                     Optimize Relationships with Tailored CRM Solutions!
-//                     At hakxcore, we specialize in enhancing your customer interactions through customized CRM solutions, We have partnered with MACRM a repeated CRM and Business Marketing agency. Streamline operations, gain valuable insights, and elevate satisfaction. Discover the future of efficient customer relationship management with us.
+//                     At hakxcore, we specialize in enhancing your customer interactions through customized CRM solutions. We have partnered with MACRM, a reputed CRM and Business Marketing agency. Streamline operations, gain valuable insights, and elevate satisfaction. Discover the future of efficient customer relationship management with us.
 //                   </p>
 //                   <Link href="#contact">
 //                     <button type="button" className="rounded-pill btn-rounded border-primary">
@@ -129,16 +182,19 @@
 //               </div>
 //               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services text-end my-auto">
 //                 <div className="services__pic mx-5">
-//                   <img src="/images/services/crm.svg" alt="cloud hosting illustration" className="img-fluid" />
+//                   <img src="/images/services/crm.svg" alt="CRM illustration" className="img-fluid" />
 //                 </div>
 //               </div>
 //             </div>
 //           </div>
+//           <div ref={progressBarRef} className="progress-bar"></div>
 //         </div>
 //       </div>
+
 //       <style jsx>{`
 //         .scroll-section-outer {
 //           overflow: hidden;
+//           position: relative;
 //         }
 //         .scroll-section-inner {
 //           display: flex;
@@ -167,13 +223,21 @@
 //             margin: 20px 0;
 //           }
 //         }
+//         .progress-bar {
+//           position: absolute;
+//           bottom: 0;
+//           left: 0;
+//           height: 5px;
+//           background-color: red; // Initial color
+//           width: 0%;
+//           transition: background-color 0.2s, width 0.2s;
+//         }
 //       `}</style>
 //     </section>
 //   );
 // };
 
 // export default ServiceSection;
-
 
 
 
@@ -193,25 +257,40 @@ import Link from "next/link";
 const ServiceSection = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
+  const progressBarRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const sections = gsap.utils.toArray(".scroll-section");
+    const colors = ["#ff6347", "#ffa500", "#32cd32", "#1e90ff", "#ba55d3"];
 
-    let totalScrollWidth = 1500 * 100; // Total scroll width based on the number of sections
+    const setupGSAP = () => {
+      gsap.to(sectionRef.current, {
+        xPercent: -100 * (sections.length + 2),
+        ease: "none",
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          pin: true,
+          scrub: 0.6,
+          start: "top 150px",
+          end: () => `+=${sectionRef.current.scrollWidth - triggerRef.current.clientWidth}`,
+          onUpdate: (self) => {
+            const progress = self.progress;
+            const sectionIndex = Math.floor(progress * sections.length);
+            const color = colors[sectionIndex % colors.length];
+            progressBarRef.current.style.width = `${progress * 100}%`;
+            progressBarRef.current.style.backgroundColor = color;
+          },
+        },
+      });
+    };
 
-    gsap.to(sectionRef.current, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: triggerRef.current,
-        pin: true,
-        scrub: 0.6,
-        start: "top 200px", // Adjust start value to avoid being hidden by navbar
-        end: () => `+=${sectionRef.current.scrollWidth - triggerRef.current.clientWidth}`, // Ensure the end value covers the total scroll width
-      },
-    });
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobile) {
+      setupGSAP();
+    }
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -226,7 +305,6 @@ const ServiceSection = () => {
           <div className="heading-line mb-1"></div>
         </div>
 
-        {/* START THE DESCRIPTION CONTENT  */}
         <div className="row pb-2 my-3">
           <div className="col-md-6 border-right">
             <div className="service-section-card-light p-4">
@@ -245,11 +323,10 @@ const ServiceSection = () => {
         </div>
       </div>
 
-      {/* START THE CONTENT FOR THE SERVICES  */}
       <div className="scroll-section-outer">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="container px-5 scroll-section-inner">
-            {/* START THE MARKETING CONTENT  */}
+            {/* Start the Marketing Content */}
             <div className="row px-0 px-lg-5 scroll-section">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content order-sm-0">
@@ -272,7 +349,6 @@ const ServiceSection = () => {
                 </div>
               </div>
             </div>
-
 
             {/* VAPT Component */}
             <div className="row px-0 px-lg-5 scroll-section">
@@ -298,8 +374,7 @@ const ServiceSection = () => {
               </div>
             </div>
 
-
-            {/* START THE WEB DEVELOPMENT CONTENT  */}
+            {/* DevOps/DevSecOps Component */}
             <div className="row px-0 px-lg-5 scroll-section">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto">
                 <div className="services__content">
@@ -318,11 +393,10 @@ const ServiceSection = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto text-start">
                 <div className="services__pic mx-5">
-                  <img src="/images/services/devsecops.svg" alt="web development illustration" className="img-fluid" />
+                  <img src="/images/services/devsecops.svg" alt="DevOps/DevSecOps illustration" className="img-fluid" />
                 </div>
               </div>
             </div>
-
 
             {/* Blockchain Development Component */}
             <div className="row px-0 px-lg-5 scroll-section">
@@ -348,16 +422,15 @@ const ServiceSection = () => {
               </div>
             </div>
 
-
-            {/* START THE CLOUD HOSTING CONTENT  */}
+            {/* Customer Relations/AI Business Integration Component */}
             <div className="row px-0 px-lg-5 scroll-section">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content">
                   <div className="icon d-block fas fa-users"></div>
-                  <h3 className="display-3--title mt-1">Customer Relations/AI Business integration</h3>
+                  <h3 className="display-3--title mt-1">Customer Relations/AI Business Integration</h3>
                   <p className="lh-lg">
                     Optimize Relationships with Tailored CRM Solutions!
-                    At hakxcore, we specialize in enhancing your customer interactions through customized CRM solutions, We have partnered with MACRM a repeated CRM and Business Marketing agency. Streamline operations, gain valuable insights, and elevate satisfaction. Discover the future of efficient customer relationship management with us.
+                    At hakxcore, we specialize in enhancing your customer interactions through customized CRM solutions. We have partnered with MACRM, a reputed CRM and Business Marketing agency. Streamline operations, gain valuable insights, and elevate satisfaction. Discover the future of efficient customer relationship management with us.
                   </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
@@ -368,16 +441,19 @@ const ServiceSection = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services text-end my-auto">
                 <div className="services__pic mx-5">
-                  <img src="/images/services/crm.svg" alt="cloud hosting illustration" className="img-fluid" />
+                  <img src="/images/services/crm.svg" alt="CRM illustration" className="img-fluid" />
                 </div>
               </div>
             </div>
           </div>
+          <div ref={progressBarRef} className="progress-bar"></div>
         </div>
       </div>
+
       <style jsx>{`
         .scroll-section-outer {
           overflow: hidden;
+          position: relative;
         }
         .scroll-section-inner {
           display: flex;
@@ -399,12 +475,31 @@ const ServiceSection = () => {
           height: auto;
         }
         @media (max-width: 768px) {
+          .scroll-section-inner {
+            flex-direction: column;
+            width: 100%;
+          }
+          .scroll-section {
+            flex: 1 0 auto;
+          }
           .services__content {
             text-align: center;
           }
           .services__pic {
             margin: 20px 0;
           }
+          .progress-bar {
+            display: none;
+          }
+        }
+        .progress-bar {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 5px;
+          background-color: red; // Initial color
+          width: 0%;
+          transition: background-color 0.2s, width 0.2s;
         }
       `}</style>
     </section>

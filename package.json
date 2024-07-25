@@ -16,6 +16,7 @@
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "jquery-ui-dist": "^1.13.2",
+    "lodash": "^4.17.21",
     "next": "14.2.3",
     "nodemailer": "^6.9.13",
     "react": "^18",

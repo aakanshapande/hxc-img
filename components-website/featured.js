@@ -9,6 +9,7 @@ const FeaturedSection = () => {
           <div className="col-md-4 mb-4">
             <div className="card shadow-sm">
               <div className="card-body">
+                <i className="card-title fa-solid fa-business-time"></i>
                 <h5 className="card-title">Book a Consultation</h5>
               </div>
             </div>
@@ -16,6 +17,7 @@ const FeaturedSection = () => {
           <div className="col-md-4 mb-4">
             <div className="card shadow-sm">
               <div className="card-body">
+                <i className="card-title fa-sharp-duotone fa-solid fa-users"></i>
                 <h5 className="card-title">Train Your Employees</h5>
               </div>
             </div>
@@ -23,6 +25,7 @@ const FeaturedSection = () => {
           <div className="col-md-4 mb-4">
             <div className="card shadow-sm">
               <div className="card-body">
+                <i className="card-title fa-solid fa-building"></i>
                 <h5 className="card-title">Hire Us as an Agency</h5>
               </div>
             </div>
@@ -30,7 +33,7 @@ const FeaturedSection = () => {
           {/* END THE NEW CARDS SECTION */}
 
           <div className="col-12">
-            <h4 className="fw-bold lead mb-3">Trusted by companies like</h4>
+            <h4 className="fw-bold lead mb-3" style={{'marginTop': '8rem'}}>Trusted by companies like</h4>
             <div className="heading-line mb-5"></div>
           </div>
         </div>
@@ -149,7 +152,8 @@ const FeaturedSection = () => {
 
             .card-body {
               padding: 20px;
-              background: linear-gradient(135deg, #4a90e2, #9013fe);
+              {/* background: linear-gradient(135deg, #4a90e2, #9013fe); */}
+              background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
               color: white;
               text-align: center;
               border-radius: 10px;
