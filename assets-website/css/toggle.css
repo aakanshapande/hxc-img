@@ -40,21 +40,21 @@
   /* Dark Mode CSS */ 
 
   .body-dark{
-    background-color: #212121;
+    background-color: rgb(42, 42, 42);
     color: white;
   }
 
   .menu-dark{
-    background-color: #202020;
+    background-color: rgb(42, 42, 42);
   }
 
 
   .svg-path-color-dark{
-    fill: #212121;
+    fill: rgb(42, 42, 42);
   }
 
 
   .get-started-dark{
-    background-color: #212121;
+    background-color: rgb(42, 42, 42);
     color: white;
   }
