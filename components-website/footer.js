@@ -91,7 +91,7 @@ const FooterSection = () => {
       <div className="container mt-5 company-info px-3">
         <div className="row text-white justify-content-center mt-3 pb-3">
           <div className="col-12 col-sm-6 col-lg-6 mb-4 mb-sm-4 mb-md-0">
-            <h5 className="text-capitalize fw-bold">Cybersecurity Agency</h5>
+            <h5 className="text-capitalize fw-bold">Information Technology</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <p className="lh-lg pe-md-5">
               We always seeking new ways to create value for our clients.
@@ -111,9 +111,9 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Useful Links</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link href="#">Your Account</Link></li>
-              <li><Link href="#">Become an Affiliate</Link></li>
-              <li><Link href="#">Create an account</Link></li>
+              // <li><Link href="#">Your Account</Link></li>
+              // <li><Link href="#">Become an Affiliate</Link></li>
+              // <li><Link href="#">Create an account</Link></li>
               <li><Link href="/careers">Careers</Link></li>
               <li><Link href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
             </ul>
