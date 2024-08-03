@@ -11231,7 +11231,7 @@ textarea.form-control-lg {
 
 .footer {
   padding-top: 1rem;
-  background-color: #151414;
+  background-color: rgb(42, 42, 42);
 }
 @media (max-width: 575.98px) {
   .footer .contact-box-wrapper {

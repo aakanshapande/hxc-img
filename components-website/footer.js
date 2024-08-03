@@ -98,7 +98,7 @@ const FooterSection = () => {
             </p>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 className="text-capitalize fw-bold">Products & Services</h5>
+            <h5 className="text-capitalize fw-bold">Products/Services</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
               <li><Link href="https://www.fiverr.com/s/q4vPa2" target="_blank">Single Sign-On</Link></li>
@@ -111,9 +111,9 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Useful Links</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              // <li><Link href="#">Your Account</Link></li>
-              // <li><Link href="#">Become an Affiliate</Link></li>
-              // <li><Link href="#">Create an account</Link></li>
+            {/* <li><Link href="#">Your Account</Link></li>
+            <li><Link href="#">Become an Affiliate</Link></li>
+            <li><Link href="#">Create an account</Link></li> */}
               <li><Link href="/careers">Careers</Link></li>
               <li><Link href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
             </ul>
