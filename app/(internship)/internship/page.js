@@ -18,6 +18,7 @@ export default function Home({searchParams}) {
 
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
