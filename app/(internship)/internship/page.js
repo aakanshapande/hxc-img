@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from 'next/router';
 import { useState } from 'react';
 import axios from 'axios';
 import React from 'react';
@@ -18,14 +17,13 @@ export default function Home({searchParams}) {
 
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
-    const router = useRouter();
     e.preventDefault();
     if (!formData.name) {
       setErrMsg("Name is required!");
@@ -59,7 +57,6 @@ export default function Home({searchParams}) {
         setErrMsg('There was an error submitting the application.');
       }
     }
-    router.push('/');
   };
 
 
