@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 
 export async function POST(req){
     try{
-        const {name,email,phone,position,domain} = await req.json();
+        const {name,email,phone,highesteducation,collegename,linkedin,resume,domain} = await req.json();
         let sheetID = "";
         if(domain=="VAPT"){
             sheetID = process.env.GOOGLE_SHEET_ID_VAPT;
