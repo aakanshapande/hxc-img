@@ -18,14 +18,14 @@ export default function Home({searchParams}) {
 
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-  const router = useRouter();
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
+    const router = useRouter();
     e.preventDefault();
     if (!formData.name) {
       setErrMsg("Name is required!");
