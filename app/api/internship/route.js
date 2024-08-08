@@ -36,7 +36,7 @@ export async function POST(req){
 
         const response = await sheets.spreadsheets.values.append( {
             spreadsheetId: sheetID,
-            range: 'A1:D1',
+            range: 'A1:G1',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
