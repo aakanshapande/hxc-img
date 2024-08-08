@@ -121,7 +121,7 @@ export default function Home({searchParams}) {
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="position"
               type="text"
-              placeholder="Enter the position you're applying for"
+              placeholder="Enter your highest education"
               name="position"
               value={formData.highesteducation}
               onChange={handleChange}
@@ -130,13 +130,13 @@ export default function Home({searchParams}) {
           </div>
           <div>
             <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="position">
-              College Name(NA if not)
+              College Name
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="position"
               type="text"
-              placeholder="Enter the position you're applying for"
+              placeholder="Enter your college name NA if not"
               name="position"
               value={formData.collegename}
               onChange={handleChange}
@@ -151,7 +151,7 @@ export default function Home({searchParams}) {
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="position"
               type="text"
-              placeholder="Enter the position you're applying for"
+              placeholder="Enter your linkedin"
               name="position"
               value={formData.linkedin}
               onChange={handleChange}
@@ -166,7 +166,7 @@ export default function Home({searchParams}) {
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="position"
               type="text"
-              placeholder="Enter the position you're applying for"
+              placeholder="Enter the link to your resume or portfolio"
               name="position"
               value={formData.resume}
               onChange={handleChange}
