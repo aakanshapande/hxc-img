@@ -119,10 +119,10 @@ export default function Home({searchParams}) {
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
-              id="position"
+              id="highesteducation"
               type="text"
               placeholder="Enter your highest education"
-              name="position"
+              name="highesteducation"
               value={formData.highesteducation}
               onChange={handleChange}
               required
@@ -134,10 +134,10 @@ export default function Home({searchParams}) {
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
-              id="position"
+              id="collegename"
               type="text"
               placeholder="Enter your college name NA if not"
-              name="position"
+              name="collegename"
               value={formData.collegename}
               onChange={handleChange}
               required
@@ -149,10 +149,10 @@ export default function Home({searchParams}) {
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
-              id="position"
+              id="linkedin"
               type="text"
               placeholder="Enter your linkedin"
-              name="position"
+              name="linkedin"
               value={formData.linkedin}
               onChange={handleChange}
               required
@@ -164,10 +164,10 @@ export default function Home({searchParams}) {
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
-              id="position"
+              id="resume"
               type="text"
               placeholder="Enter the link to your resume or portfolio"
-              name="position"
+              name="resume"
               value={formData.resume}
               onChange={handleChange}
               required
