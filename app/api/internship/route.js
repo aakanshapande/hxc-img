@@ -40,7 +40,7 @@ export async function POST(req){
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [name,email,phone,position]
+                    [name,email,phone,highesteducation,collegename,linkedin,resume]
                 ]
             }
         });

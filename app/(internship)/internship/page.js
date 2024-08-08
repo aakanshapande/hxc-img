@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import axios from 'axios';
 import React from 'react';
@@ -8,7 +9,10 @@ export default function Home({searchParams}) {
     name: '',
     email: '',
     phone: '',
-    position: '',
+    highesteducation: '',
+    collegename: '',
+    linkedin: '',
+    resume: '',
     domain: searchParams.domain,
   });
 
@@ -28,9 +32,14 @@ export default function Home({searchParams}) {
       setErrMsg("Email is required!");
     } else if (!formData.phone) {
       setErrMsg("Phone is required!");
-    } else if (!formData.position) {
-      setErrMsg("Position applied for is required!");
-    } else {
+    } else if (!formData.highesteducation) {
+      setErrMsg("Highest Education is required!");
+    } else if (!formData.collegename) {
+      setErrMsg("College Name is required NA if not!");
+    } else if (!formData.resume) {
+      setErrMsg("Resume/Portfolio link is required!");
+    }
+     else {
       try {
         await axios.post('/api/internship', formData);
         setSuccessMsg('Application submitted successfully!');
@@ -39,13 +48,17 @@ export default function Home({searchParams}) {
           name: '',
           email: '',
           phone: '',
-          position: '',
+          highesteducation: '',
+          collegename: '',
+          linkedin: '',
+          resume: '',
         });
       } catch (error) {
         console.error('Error submitting the application:', error);
         setErrMsg('There was an error submitting the application.');
       }
     }
+    router.push('/');
   };
 
 
@@ -102,7 +115,7 @@ export default function Home({searchParams}) {
           </div>
           <div>
             <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="position">
-              Desired Position
+              Highest Education
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
@@ -110,21 +123,66 @@ export default function Home({searchParams}) {
               type="text"
               placeholder="Enter the position you're applying for"
               name="position"
-              value={formData.position}
+              value={formData.highesteducation}
               onChange={handleChange}
               required
             />
           </div>
           <div>
+            <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="position">
+              College Name(NA if not)
+            </label>
+            <input
+              className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
+              id="position"
+              type="text"
+              placeholder="Enter the position you're applying for"
+              name="position"
+              value={formData.collegename}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="position">
+              linkedin
+            </label>
+            <input
+              className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
+              id="position"
+              type="text"
+              placeholder="Enter the position you're applying for"
+              name="position"
+              value={formData.linkedin}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="position">
+              Resume/Portfolio Link
+            </label>
+            <input
+              className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
+              id="position"
+              type="text"
+              placeholder="Enter the position you're applying for"
+              name="position"
+              value={formData.resume}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          {/* <div>
             <label className="block text-gray-800 font-semibold mb-2 text-center" htmlFor="resume">
-              Upload Resume
+              Resume/Portfolio Link
             </label>
             <input
               className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="resume"
-              type="file"
+              type=""
             />
-          </div>
+          </div> */}
           {errMsg && <p className="mb-6 text-red-500 text-center">{errMsg}</p>}
           {successMsg && <p className="mb-6 text-green-500 text-center">{successMsg}</p>}
           <div className="flex items-center justify-center">
