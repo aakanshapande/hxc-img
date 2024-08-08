@@ -12,6 +12,7 @@ import InternshipDomain from "@/components-careers/internshipDomain";
 import AttackSection from "@/components-careers/attacks";
 import FooterSection from "@/components-careers/footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 import useJQuery from "./useJQuery";
@@ -85,6 +86,7 @@ export default function RootLayout({ children }) {
         <FooterSection />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
