@@ -11,6 +11,7 @@ import InternshipButtonSection from "@/components-careers/internshipButton";
 import InternshipDomain from "@/components-careers/internshipDomain";
 import AttackSection from "@/components-careers/attacks";
 import FooterSection from "@/components-careers/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 
 import useJQuery from "./useJQuery";
@@ -83,6 +84,7 @@ export default function RootLayout({ children }) {
         <AttackSection />
         <FooterSection />
         {children}
+        <Analytics />
       </body>
     </html>
   );

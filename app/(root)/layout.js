@@ -18,6 +18,7 @@ import ContactSection from "@/components-website/contact";
 import FooterSection from "@/components-website/footer";
 import BackToTopSection from "@/components-website/backToTop";
 import useJQuery from "./useJQuery";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -107,6 +108,7 @@ export default function RootLayout({ children }) {
         <FooterSection />
         <BackToTopSection />
         {children}
+        <Analytics />
       </body>
     </html>
   );

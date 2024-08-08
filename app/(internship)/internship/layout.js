@@ -1,4 +1,5 @@
 import "../../globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
 
@@ -8,6 +9,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="light vsc-intialized">
         {children}
+        <Analytics />
       </body>
     </html>
   );
