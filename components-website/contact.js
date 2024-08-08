@@ -68,7 +68,7 @@ const ContactSection = () => {
             <div className="cta-info w-100">
               <h4 className="display-4 fw-bold">100% Exceed in Expectations</h4>
               <p className="lh-lg">
-                Our real joy comes from securing technology to create products that delight and inspire. From intuitive Single sign-on solutions to immersive experiences to innovative features, we are always seeking new ways to create value for our users.
+                Our real joy comes from securing technology to create products that delight and inspire. From intuitive Single sign-on solutions to immersive experiences to innovative features, we are always seeking new ways to create value for our clients.
               </p>
               <h3 className="display-3--brief">What will be the next step?</h3>
               <ul className="cta-info__list">

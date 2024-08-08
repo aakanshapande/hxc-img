@@ -89,6 +89,10 @@ const FeaturedSection = () => {
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
 
+          <div className=" slide_featured_company">
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.png" alt="Tech Courses SL"
+              title="Tech Courses SL" className="img-fluid company-logo" /></div>
+          </div>
           {/* same logo duplicate  */}
 
           <div className=" slide_featured_company">
@@ -133,6 +137,11 @@ const FeaturedSection = () => {
 
           <div className=" slide_featured_company">
             <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-9.png" alt="Tech Courses SL"
+              title="Tech Courses SL" className="img-fluid company-logo" /></div>
+          </div>
+
+          <div className=" slide_featured_company">
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.png" alt="Tech Courses SL"
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
         </div>

@@ -9,15 +9,15 @@ const PortfolioSection = () => {
     };
 
     const portfolioItems = [
-        { id: 1, title: "SSO project one", category: "sso", imgSrc: "images/portfolio/portfolio-1.jpg", description: "website" },
-        { id: 2, title: "Design project one", category: "design", imgSrc: "images/portfolio/portfolio-2.jpg", description: "design" },
+        { id: 1, title: "SSO project one", category: "sso", imgSrc: "images/portfolio/portfolio-1.jpg", description: "Auth0" },
+        { id: 2, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-2.jpg", description: "course" },
         { id: 3, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-3.jpg", description: "OKTA" },
         { id: 4, title: "Course project two", category: "courses", imgSrc: "images/portfolio/portfolio-4.jpg", description: "commvault" },
         { id: 5, title: "SSO project two", category: "sso", imgSrc: "images/portfolio/portfolio-5.jpg", description: "website" },
-        { id: 6, title: "Development project two", category: "devsecops", imgSrc: "images/portfolio/portfolio-6.jpg", description: "website" },
-        { id: 7, title: "CRM project three", category: "crm", imgSrc: "images/portfolio/portfolio-7.jpg", description: "opensource crm" },
-        { id: 8, title: "CRM setup project three", category: "crm", imgSrc: "images/portfolio/portfolio-8.jpg", description: "salesforce" },
-        { id: 9, title: "CRM project three", category: "crm", imgSrc: "images/portfolio/portfolio-9.jpg", description: "zoho crm" },
+        { id: 6, title: "Development project two", category: "devsecops", imgSrc: "images/portfolio/portfolio-6.jpg", description: "opensource digital-library crm" },
+        { id: 7, title: "SSO PHP Laraval Project", category: "sso", imgSrc: "images/portfolio/portfolio-7.jpg", description: "php laraval sso" },
+        { id: 8, title: "Keycloak SSO Theme Customization", category: "sso", imgSrc: "images/portfolio/portfolio-8.jpg", description: "keycloak" },
+        { id: 9, title: "Blue Team Course Development", category: "sso", imgSrc: "images/portfolio/portfolio-9.jpg", description: "course" },
     ];
 
     return (
