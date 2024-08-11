@@ -101,9 +101,9 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Products/Services</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link href="https://www.fiverr.com/s/q4vPa2" target="_blank">Single Sign-On</Link></li>
-              <li><Link href="https://www.fiverr.com/s/bljqEP" target="_blank">Blockchain Development</Link></li>
-              <li><Link href="https://www.fiverr.com/s/z54Ppd" target="_blank">Red Team/Blue Team</Link></li>
+              <li><Link href="#contact" target="_blank">Single Sign-On</Link></li>
+              <li><Link href="#contact" target="_blank">Blockchain Development</Link></li>
+              <li><Link href="#contact" target="_blank">Red Team/Blue Team</Link></li>
               <li><Link href="https://t.me/hakxcore_bot" target="_blank">more...</Link></li>
             </ul>
           </div>
