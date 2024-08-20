@@ -98,7 +98,7 @@ const FooterSection = () => {
             </p>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 className="text-capitalize fw-bold">Products/Services</h5>
+            <h5 className="text-capitalize fw-bold">Services</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
               <li><Link href="#contact" target="_blank">Single Sign-On</Link></li>
