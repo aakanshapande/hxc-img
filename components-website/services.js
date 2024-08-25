@@ -423,7 +423,7 @@ const ServiceSection = () => {
             </div>
 
             {/* Customer Relations/AI Business Integration Component */}
-            <div className="row px-0 px-lg-5 scroll-section">
+            {/* <div className="row px-0 px-lg-5 scroll-section">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content">
                   <div className="icon d-block fas fa-users"></div>
@@ -444,7 +444,7 @@ const ServiceSection = () => {
                   <img src="/images/services/crm.svg" alt="CRM illustration" className="img-fluid" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div ref={progressBarRef} className="progress-bar"></div>
         </div>
