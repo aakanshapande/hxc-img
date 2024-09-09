@@ -60,7 +60,7 @@ const FooterSection = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <Link target="_blank" href="https://maps.app.goo.gl/Q2ZPghfiKaZKjQ1M9" className="contact-box__info--title">Balewadi High Street</Link>
+              <Link target="_blank" href="https://maps.app.goo.gl/L3n3WV8t6dLMTT1c8" className="contact-box__info--title">Balewadi High Street</Link>
               <p className="contact-box__info--subtitle">Pune Maharashtra 411045</p>
             </div>
           </div>
