@@ -44,7 +44,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/liel.jpeg"
+                        src="/images/testimonials/liel.webp"
                         alt="client-1 picture"
                         className="img-fluid rounded-circle"
                       />
@@ -85,7 +85,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/i-gonzalez.png"
+                        src="/images/testimonials/i-gonzalez.webp"
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
                       />
@@ -125,7 +125,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/client-5.jpg"
+                        src="/images/testimonials/client-5.webp"
                         alt="client-3 picture"
                         className="img-fluid rounded-circle"
                       />
@@ -163,7 +163,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/kevin.jpg"
+                        src="/images/testimonials/kevin.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                       />

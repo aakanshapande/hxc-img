@@ -44,7 +44,7 @@ const FeaturedSection = () => {
       <div className="container slider " >
         <div className="slide-track">
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-1.png" alt="MACRM Agency"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-1.avif" alt="MACRM Agency"
               title="MACRM Agency" className="img-fluid company-logo" /></div>
           </div>
 
@@ -54,7 +54,7 @@ const FeaturedSection = () => {
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-3.png" alt="Tech Bloc Org"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-3.avif" alt="Tech Bloc Org"
               title="Tech Bloc Org" className="img-fluid company-logo" /></div>
           </div>
 
@@ -64,39 +64,39 @@ const FeaturedSection = () => {
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-5.png" alt="108Ideaspace Org"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-5.avif" alt="108Ideaspace Org"
               title="108Ideaspace Org" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-6.png" alt="Mammoth Interactive"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-6.avif" alt="Mammoth Interactive"
               title="Mammoth Interactive" className="img-fluid company-logo" /></div>
           </div>
 
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-7.png" alt="acte"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-7.avif" alt="acte"
               title="acte" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-8.png" alt="practiss.ai"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-8.avif" alt="practiss.ai"
               title="practiss.ai" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-9.png" alt="Tech Courses SL"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-9.avif" alt="Tech Courses SL"
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.png" alt="Tech Courses SL"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.avif" alt="Tech Courses SL"
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
           {/* same logo duplicate  */}
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-1.png" alt="MACRM Agency"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-1.avif" alt="MACRM Agency"
               title="MACRM Agency" className="img-fluid company-logo" /></div>
           </div>
 
@@ -106,7 +106,7 @@ const FeaturedSection = () => {
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-3.png" alt="Tech Bloc Org"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-3.avif" alt="Tech Bloc Org"
               title="Tech Bloc Org" className="img-fluid company-logo" /></div>
           </div>
 
@@ -116,32 +116,32 @@ const FeaturedSection = () => {
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-5.png" alt="108Ideaspace Org"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-5.avif" alt="108Ideaspace Org"
               title="108Ideaspace Org" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-6.png" alt="Mammoth Interactive"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-6.avif" alt="Mammoth Interactive"
               title="Mammoth Interactive" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-7.png" alt="acte"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-7.avif" alt="acte"
               title="acte" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-8.png" alt="practiss.ai"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-8.avif" alt="practiss.ai"
               title="practiss.ai" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-9.png" alt="Tech Courses SL"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-9.avif" alt="Tech Courses SL"
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
 
           <div className=" slide_featured_company">
-            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.png" alt="Tech Courses SL"
+            <div className="featured-in__logo-box shadow-sm"><img src="/images/companies/company-10.avif" alt="Tech Courses SL"
               title="Tech Courses SL" className="img-fluid company-logo" /></div>
           </div>
         </div>

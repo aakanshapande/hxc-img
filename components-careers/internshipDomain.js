@@ -8,7 +8,7 @@ const InternshipDomain = () => {
 
         <div className="row domain-card p-2 mb-3 justify-content-between">
           <div className="col-lg-auto">
-            <img src="images-careers/vapt-logo.png" alt="vapt logo" className="img-fluid" />
+            <img src="images-careers/vapt-logo.avif" alt="vapt logo" className="img-fluid" />
           </div>
           <div className="col-md-9">
             <div className="row domain-title">
@@ -22,7 +22,7 @@ const InternshipDomain = () => {
                 Remote | 6 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 6000
               </div>
               <div className="col mx-2">
@@ -50,7 +50,7 @@ const InternshipDomain = () => {
 
         <div className="row domain-card p-2 mb-3 justify-content-between">
           <div className="col-lg-auto">
-            <img src="images-careers/red teaming.png" alt="red teaming" className="img-fluid" />
+            <img src="images-careers/red teaming.avif" alt="red teaming" className="img-fluid" />
           </div>
           <div className="col-lg-9">
             <div className="row domain-title">
@@ -64,7 +64,7 @@ const InternshipDomain = () => {
                 Remote | 4 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 3000
               </div>
               <div className="col mx-2">
@@ -92,7 +92,7 @@ const InternshipDomain = () => {
 
         <div className="row domain-card p-2 mb-3 justify-content-between">
           <div className="col-lg-auto">
-            <img src="images-careers/cloud security.png" alt="cloud security logo" className="img-fluid" />
+            <img src="images-careers/cloud security.avif" alt="cloud security logo" className="img-fluid" />
           </div>
           <div className="col-lg-9">
             <div className="row domain-title">
@@ -106,7 +106,7 @@ const InternshipDomain = () => {
                 Remote | 3 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 4000
               </div>
               <div className="col mx-2">
@@ -130,7 +130,7 @@ const InternshipDomain = () => {
 
         <div className="row domain-card p-2 mb-3 justify-content-between">
           <div className="col-lg-auto">
-            <img src="images-careers/iam security.png" alt="iam security logo" className="img-fluid" />
+            <img src="images-careers/iam security.avif" alt="iam security logo" className="img-fluid" />
           </div>
           <div className="col-lg-9">
             <div className="row domain-title">
@@ -144,7 +144,7 @@ const InternshipDomain = () => {
                 Remote | 2 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 4000
               </div>
               <div className="col mx-2">
@@ -173,7 +173,7 @@ const InternshipDomain = () => {
 
         <div className="row domain-card p-2 mb-3 justify-content-between">
           <div className="col-lg-auto">
-            <img src="images-careers/cyber security.png" alt="cyber-security logo" className="img-fluid" />
+            <img src="images-careers/cyber security.avif" alt="cyber-security logo" className="img-fluid" />
           </div>
           <div className="col-lg-9">
             <div className="row domain-title">
@@ -187,7 +187,7 @@ const InternshipDomain = () => {
                 Remote | 2 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 FREE
               </div>
               <div className="col mx-2">
@@ -220,7 +220,7 @@ const InternshipDomain = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-auto">
-                <img src="images-careers/vapt-logo.png" alt="vapt logo" className="img-fluid" />
+                <img src="images-careers/vapt-logo.avif" alt="vapt logo" className="img-fluid" />
               </div>
               <div className="col-8">
                 <span className="domain-title">VAPT</span>
@@ -233,7 +233,7 @@ const InternshipDomain = () => {
                 Remote | 6 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 6000
               </div>
             </div>
@@ -272,7 +272,7 @@ const InternshipDomain = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-auto">
-                <img src="images-careers/red teaming.png" alt="red teaming" className="img-fluid" />
+                <img src="images-careers/red teaming.avif" alt="red teaming" className="img-fluid" />
               </div>
               <div className="col-8">
                 <span className="domain-title">Red Teaming</span>
@@ -285,7 +285,7 @@ const InternshipDomain = () => {
                 Remote | 4 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 3000
               </div>
             </div>
@@ -322,7 +322,7 @@ const InternshipDomain = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-auto">
-                <img src="images-careers/cloud security.png" alt="cloud security" className="img-fluid" />
+                <img src="images-careers/cloud security.avif" alt="cloud security" className="img-fluid" />
               </div>
               <div className="col-8">
                 <span className="domain-title">Cloud Security</span>
@@ -335,7 +335,7 @@ const InternshipDomain = () => {
                 Remote | 3 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 4000
               </div>
             </div>
@@ -367,7 +367,7 @@ const InternshipDomain = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-auto">
-                <img src="images-careers/iam security.png" alt="iam security" className="img-fluid" />
+                <img src="images-careers/iam security.avif" alt="iam security" className="img-fluid" />
               </div>
               <div className="col-8">
                 <span className="domain-title">Cloud Security</span>
@@ -380,7 +380,7 @@ const InternshipDomain = () => {
                 Remote | 3 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Rs 4000
               </div>
             </div>
@@ -416,7 +416,7 @@ const InternshipDomain = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-auto">
-                <img src="images-careers/cyber security.png" alt="cyber security" className="img-fluid" />
+                <img src="images-careers/cyber security.avif" alt="cyber security" className="img-fluid" />
               </div>
               <div className="col-8">
                 <span className="domain-title">cybersecurity</span>
@@ -429,7 +429,7 @@ const InternshipDomain = () => {
                 Remote | 3 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="images-careers/money beg.png" alt="money bag png" className="img-fluid" />
+                <img src="images-careers/money beg.avif" alt="money bag png" className="img-fluid" />
                 Free
               </div>
             </div>

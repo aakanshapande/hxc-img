@@ -9,15 +9,15 @@ const PortfolioSection = () => {
     };
 
     const portfolioItems = [
-        { id: 1, title: "SSO project one", category: "sso", imgSrc: "images/portfolio/portfolio-1.jpg", description: "Auth0" },
-        { id: 2, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-2.jpg", description: "course" },
-        { id: 3, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-3.jpg", description: "OKTA" },
-        { id: 4, title: "Course project two", category: "courses", imgSrc: "images/portfolio/portfolio-4.jpg", description: "commvault" },
-        { id: 5, title: "SSO project two", category: "sso", imgSrc: "images/portfolio/portfolio-5.jpg", description: "website" },
-        { id: 6, title: "Development project two", category: "devsecops", imgSrc: "images/portfolio/portfolio-6.jpg", description: "opensource digital-library crm" },
-        { id: 7, title: "SSO PHP Laraval Project", category: "sso", imgSrc: "images/portfolio/portfolio-7.jpg", description: "php laraval sso" },
-        { id: 8, title: "Keycloak SSO Theme Customization", category: "sso", imgSrc: "images/portfolio/portfolio-8.jpg", description: "keycloak" },
-        { id: 9, title: "Blue Team Course Development", category: "sso", imgSrc: "images/portfolio/portfolio-9.jpg", description: "course" },
+        { id: 1, title: "SSO project one", category: "sso", imgSrc: "images/portfolio/portfolio-1.webp", description: "Auth0" },
+        { id: 2, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-2.webp", description: "course" },
+        { id: 3, title: "Course project one", category: "courses", imgSrc: "images/portfolio/portfolio-3.webp", description: "OKTA" },
+        { id: 4, title: "Course project two", category: "courses", imgSrc: "images/portfolio/portfolio-4.webp", description: "commvault" },
+        { id: 5, title: "SSO project two", category: "sso", imgSrc: "images/portfolio/portfolio-5.webp", description: "website" },
+        { id: 6, title: "Development project two", category: "devsecops", imgSrc: "images/portfolio/portfolio-6.webp", description: "opensource digital-library crm" },
+        { id: 7, title: "SSO PHP Laraval Project", category: "sso", imgSrc: "images/portfolio/portfolio-7.webp", description: "php laraval sso" },
+        { id: 8, title: "Keycloak SSO Theme Customization", category: "sso", imgSrc: "images/portfolio/portfolio-8.webp", description: "keycloak" },
+        { id: 9, title: "Blue Team Course Development", category: "sso", imgSrc: "images/portfolio/portfolio-9.webp", description: "course" },
     ];
 
     return (

@@ -11,24 +11,24 @@ const IntroSection = () => {
 
               <div className="row">
                 <div className="col-auto">
-                  <img src="images-careers/circle-bottom-right.png" alt=".." id="circle-top-left" className="img-fluid" />
+                  <img src="images-careers/circle-bottom-right.avif" alt=".." id="circle-top-left" className="img-fluid" />
                 </div>
                 <div className="col-auto">
-                  <img src="images-careers/frame-top-right.png" alt=".." id="frame-top-right" className="img-fluid" />
+                  <img src="images-careers/frame-top-right.avif" alt=".." id="frame-top-right" className="img-fluid" />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
                 <div className="col-auto">
-                  <img src="images-careers/circle-center.png" alt=".." id="circle-center" className="img-fluid" />
+                  <img src="images-careers/circle-center.avif" alt=".." id="circle-center" className="img-fluid" />
                 </div>
               </div>
 
               <div className="row">
                 <div className="col-auto">
-                  <img src="images-careers/frame-left-bottom.png" alt=".." id="frame-left-bottom" className="img-fluid" />
+                  <img src="images-careers/frame-left-bottom.avif" alt=".." id="frame-left-bottom" className="img-fluid" />
                 </div>
                 <div className="col-auto">
-                  <img src="images-careers/circle-bottom-right.png" alt=".." id="circle-bottom-right" className="img-fluid" />
+                  <img src="images-careers/circle-bottom-right.avif" alt=".." id="circle-bottom-right" className="img-fluid" />
                 </div>
               </div>
 
@@ -51,7 +51,7 @@ const IntroSection = () => {
             </h1>
           </div>
           <div className="col-lg-6 d-flex justify-content-center">
-            <img src="images-careers/intro-section-img.png" alt="intro-section img" className="img-fluid intor-section-img " />
+            <img src="images-careers/intro-section-img.avif" alt="intro-section img" className="img-fluid intor-section-img " />
           </div>
         </div>
 

@@ -8,8 +8,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="keywords" content="cybersecurity, vapt internship, GRC internship, Red Team internship, Cloud security internship, internship, remote internship"/>
-        <meta name="description" content="Virtual Internships and training at hakxcore"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Virtual Internships and trainings at hakxcore"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Internships at hakxcore</title>
       </head>
