@@ -60,7 +60,7 @@ const FooterSection = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <Link target="_blank" href="https://maps.app.goo.gl/L3n3WV8t6dLMTT1c8" className="contact-box__info--title">Balewadi High Street</Link>
+              <Link target="_blank" aria-label="Maps Link" href="https://maps.app.goo.gl/L3n3WV8t6dLMTT1c8" className="contact-box__info--title">Balewadi High Street</Link>
               <p className="contact-box__info--subtitle">Pune Maharashtra 411045</p>
             </div>
           </div>
@@ -76,11 +76,11 @@ const FooterSection = () => {
               Connect with us on social media
             </div>
             <div className="col-lg-7 col-md-6">
-              <Link href="https://www.twitter.com/hakxcore"><i className="fa-brands fa-x-twitter"></i></Link>
-              <Link href="https://github.com/hakxcore"><i className="fab fa-github"></i></Link>
-              <Link href="https://instagram.com/hakxcore"><i className="fab fa-instagram"></i></Link>
-              <Link href="https://wa.me/+916006511429"><i className="fab fa-whatsapp"></i></Link>
-              <Link href="https://t.me/hakxcore_bot"><i className="fab fa-telegram"></i></Link>
+              <Link aria-label="Twitter" href="https://www.twitter.com/hakxcore"><i className="fa-brands fa-x-twitter"></i></Link>
+              <Link aria-label="Github" href="https://github.com/hakxcore"><i className="fab fa-github"></i></Link>
+              <Link aria-label="Instagram" href="https://instagram.com/hakxcore"><i className="fab fa-instagram"></i></Link>
+              <Link aria-label="Whatsapp" href="https://wa.me/+916006511429"><i className="fab fa-whatsapp"></i></Link>
+              <Link aria-label="Telegram" href="https://t.me/hakxcore_bot"><i className="fab fa-telegram"></i></Link>
             </div>
           </div>
         </div>
@@ -101,10 +101,10 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Services</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link href="#contact" target="_blank">Single Sign-On</Link></li>
-              <li><Link href="#contact" target="_blank">Blockchain Development</Link></li>
-              <li><Link href="#contact" target="_blank">Red Team/Blue Team</Link></li>
-              <li><Link href="https://t.me/hakxcore_bot" target="_blank">more...</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Single Sign-On</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Blockchain Development</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Red Team/Blue Team</Link></li>
+              <li><Link aria-label="Telegram bot" href="https://t.me/hakxcore_bot" target="_blank">more...</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
@@ -114,18 +114,18 @@ const FooterSection = () => {
             {/* <li><Link href="#">Your Account</Link></li>
             <li><Link href="#">Become an Affiliate</Link></li>
             <li><Link href="#">Create an account</Link></li> */}
-              <li><Link href="/careers">Careers</Link></li>
-              <li><Link href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
+              <li><Link aria-label="Careers Link" href="/careers">Careers</Link></li>
+              <li><Link aria-label="Contact" href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
             <h5 className="text-capitalize fw-bold">Contact</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link href="mailto: tech@hakxcore.com">Send Email</Link></li>
-              <li><Link href="https://wa.me/+916006511429" target="_blank">Whatsapp</Link></li>
-              <li><Link href="https://t.me/hakxcore_bot" target="_blank">Telegram</Link></li>
-              <li><Link href="https://instagram.com/hakxcore" target="_blank">Instagram</Link></li>
+              <li><Link aria-label="Email" href="mailto: tech@hakxcore.com">Send Email</Link></li>
+              <li><Link aria-label="Whatsapp" href="https://wa.me/+916006511429" target="_blank">Whatsapp</Link></li>
+              <li><Link aria-label="Telegram" href="https://t.me/hakxcore_bot" target="_blank">Telegram</Link></li>
+              <li><Link aria-label="Instagram" href="https://instagram.com/hakxcore" target="_blank">Instagram</Link></li>
             </ul>
           </div>
         </div>
@@ -138,7 +138,7 @@ const FooterSection = () => {
           <div className="row text-center text-white">
             <div className="col-12">
               <div className="footer-bottom__copyright">
-                &copy; 2023-{currentYear} <Link href="https://hakxcore.com">hakxcore.</Link> All rights reserved, Built with ❤️ in India<br />
+                &copy; 2023-{currentYear} <Link aria-label="Hakxcore" href="https://hakxcore.com">hakxcore.</Link> All rights reserved, Built with ❤️ in India<br />
               </div>
             </div>
           </div>

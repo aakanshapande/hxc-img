@@ -10,7 +10,7 @@ const FeaturedSection = () => {
             <div className="card shadow-sm">
               <div className="card-body">
                 <i className="card-title fa-solid fa-business-time"></i>
-                <h5 className="card-title">Book a Consultation</h5>
+                <h4 className="card-title">Book a Consultation</h4>
               </div>
             </div>
           </div>
@@ -18,7 +18,7 @@ const FeaturedSection = () => {
             <div className="card shadow-sm">
               <div className="card-body">
                 <i className="card-title fa-sharp-duotone fa-solid fa-users"></i>
-                <h5 className="card-title">Train Your Employees</h5>
+                <h4 className="card-title">Train Your Employees</h4>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ const FeaturedSection = () => {
             <div className="card shadow-sm">
               <div className="card-body">
                 <i className="card-title fa-solid fa-building"></i>
-                <h5 className="card-title">Hire Us as an Agency</h5>
+                <h4 className="card-title">Hire Us as an Agency</h4>
               </div>
             </div>
           </div>

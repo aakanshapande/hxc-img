@@ -47,6 +47,8 @@ const TestimonialSection = () => {
                         src="/images/testimonials/liel.webp"
                         alt="client-1 picture"
                         className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
                       />
                     </div>
                     {/* client name and role */}
@@ -54,7 +56,7 @@ const TestimonialSection = () => {
                       <h3>Liel Ran</h3>
                       <p className="fw-light">
                         Cofounder -{" "}
-                        <Link target="_blank" href="https://docontrol.io">
+                        <Link aria-label="DoControl.io" target="_blank" href="https://docontrol.io">
                           DoControl.io
                         </Link>
                       </p>
@@ -88,6 +90,8 @@ const TestimonialSection = () => {
                         src="/images/testimonials/i-gonzalez.webp"
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
                       />
                     </div>
                     {/* client name and role */}
@@ -95,7 +99,7 @@ const TestimonialSection = () => {
                       <h3>Ileana Gonzalez</h3>
                       <p className="fw-light">
                         CEO -{" "}
-                        <Link target="_blank" href="https://satechbloc.com">
+                        <Link aria-label="SATechBloc" target="_blank" href="https://satechbloc.com">
                           satechbloc.com
                         </Link>
                       </p>
@@ -128,6 +132,8 @@ const TestimonialSection = () => {
                         src="/images/testimonials/client-5.webp"
                         alt="client-3 picture"
                         className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
                       />
                     </div>
                     {/* client name and role */}
@@ -166,6 +172,8 @@ const TestimonialSection = () => {
                         src="/images/testimonials/kevin.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
                       />
                     </div>
                     {/* client name and role */}
@@ -174,6 +182,7 @@ const TestimonialSection = () => {
                       <p className="fw-light">
                         Founder -{" "}
                         <Link
+                          aria-label="Lenfest Institute Organisation"
                           target="_blank"
                           href="https://www.lenfestinstitute.org/"
                         >
