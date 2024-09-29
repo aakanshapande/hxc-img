@@ -74,6 +74,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="keywords" content="vapt internship, GRC internship, Red Team internship, Cloud security internship, internship, remote internship, IAM security internship, cybersecurity internships, Hakxcore careers, Hakxcore internships, Hakxcore SSO, Security Assertion Markup Language, Single Sign-On"/>
+        <meta name="description" content="Careers and internships at Hakxcore"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hakxcore Careers</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />

@@ -95,6 +95,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="keywords" content="SSO, SAML, OIDC, SAML 2.0, OAuth, OAuth2.0, openid, OpenID Connect, Hakxcore, Hakxcore SSO, Security Assertion Markup Language, Single Sign-On"/>
+        <meta name="description" content="Hakxcore SSO and IAM security services, powered by commercial and open-source tech"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hakxcore home page</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
