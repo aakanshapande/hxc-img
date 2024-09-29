@@ -10,6 +10,10 @@ export default function ThanksLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thanks for contacting hakxcore</title>
+      </head>
       <body className={inter.className}>
         {children}
         <Analytics />
