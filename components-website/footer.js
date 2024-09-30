@@ -116,6 +116,7 @@ const FooterSection = () => {
             <li><Link href="#">Create an account</Link></li> */}
               <li><Link aria-label="Careers Link" href="/careers">Careers</Link></li>
               <li><Link aria-label="Contact" href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
+              <li><Link aria-label="Feedback" href="https://qualtricsxmnz38x9dvx.qualtrics.com/jfe/form/SV_cUrYdmwREBFhst8">Feedback</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
