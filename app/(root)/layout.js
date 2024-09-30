@@ -100,6 +100,14 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hakxcore home page</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E9P8HQE43"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'G-0E9P8HQE43');
+        </script>
       </head>
       <body className={inter.className}>
         <Navbar />
