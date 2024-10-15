@@ -44,7 +44,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/liel.webp"
+                        src="/images/testimonials/Liel-Ran-CEO-DOControl.io.webp"
                         alt="client-1 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -64,9 +64,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Hakxcore revolutionized our digital operations. Their
-                    expertise in cybersecurity and SSO integration aligned
-                    perfectly with our needs. Highly recommended!" - Liel Ran
+                    Hakxcore revolutionized our digital operations. Their expertise in cybersecurity and SSO integration aligned perfectly with our needs. Highly recommended!" - Liel Ran
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -87,7 +85,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/i-gonzalez.webp"
+                        src="/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -107,8 +105,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Great experience working with hakxcore, keep the same work
-                    going...!
+                    Great experience working with hakxcore, keep the same work going...!
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -129,7 +126,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/client-5.webp"
+                        src="/images/testimonials/Flencio-Falez.webp"
                         alt="client-3 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -144,11 +141,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    At hakxcore people are very hard working, and super
-                    committed to the job and he also wants to deliver a good
-                    quality job. They made extra efforts, always listening to my
-                    requirements and feedback, and trying to improve. They are
-                    cybersecurity expert, I will work with them for a long time.
+                    At hakxcore people are very hard working, and super committed to the job and he also wants to deliver a good quality job. They made extra efforts, always listening to my requirements and feedback, and trying to improve. They are cybersecurity expert, I will work with them for a long time.
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -169,7 +162,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div>
                       <img
-                        src="/images/testimonials/kevin.webp"
+                        src="/images/testimonials/Kevin-Blackwood-Lenfestinstitute.org.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -193,12 +186,146 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Really good experienced Peoples at hakxcore, Liked working
-                    with him..
+                    Really good experienced Peoples at hakxcore, Liked working with him..
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
               </div>
+
+              {/* CAROUSEL ITEM 5 */}
+              <div className="carousel-item">
+                {/* testimonial card */}
+                <div className="testimonials__card mx-auto d-flex justify-content-between align-items-center">
+                  <div className="left-content">
+                    <div className="ratings p-1">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                    </div>
+                    {/* client picture */}
+                    <div>
+                      <img
+                        src="/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
+                        alt="client-4 picture"
+                        className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
+                      />
+                    </div>
+                    {/* client name and role */}
+                    <div className="testimonials__name">
+                      <h3>Pradeep Naangal</h3>
+                      <p className="fw-light">
+                        Founder -{""}
+                        <Link
+                          aria-label="Kayzworks IT Services Firm"
+                          target="_blank"
+                          href="https://kayzworks.com/"
+                        >
+                          Kayzworks IT Services Firm
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lh-lg right-content">
+                    <i className="fas fa-quote-left"></i>
+                    The HAKXCORE team is good. They know what they are doing. Mukesh is humble and easy to work with. Technically they are quite sound.
+                    <i className="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              {/* CAROUSEL ITEM 6 */}
+              <div className="carousel-item">
+                {/* testimonial card */}
+                <div className="testimonials__card mx-auto d-flex justify-content-between align-items-center">
+                  <div className="left-content">
+                    <div className="ratings p-1">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                    </div>
+                    {/* client picture */}
+                    <div>
+                      <img
+                        src="/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
+                        alt="client-4 picture"
+                        className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
+                      />
+                    </div>
+                    {/* client name and role */}
+                    <div className="testimonials__name">
+                      <h3>Martin G Fisher</h3>
+                      <p className="fw-light">
+                        Founder -{""}
+                        <Link
+                          aria-label="Results you can measure"
+                          target="_blank"
+                          href="https://resultsyoucanmeasure.co.uk/"
+                        >
+                          Results you can measure
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lh-lg right-content">
+                    <i className="fas fa-quote-left"></i>
+                    Very knowledgeable execution of an Auth0 integration to replace the standard Wordpress login system with a more robust and fully featured interface. I highly recommend this vendor for their skills and commitment.
+                    <i className="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              {/* CAROUSEL ITEM 7 */}
+              <div className="carousel-item">
+                {/* testimonial card */}
+                <div className="testimonials__card mx-auto d-flex justify-content-between align-items-center">
+                  <div className="left-content">
+                    <div className="ratings p-1">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                    </div>
+                    {/* client picture */}
+                    <div>
+                      <img
+                        src="/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
+                        alt="client-4 picture"
+                        className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
+                      />
+                    </div>
+                    {/* client name and role */}
+                    <div className="testimonials__name">
+                      <h3>Jiten-Patoliya</h3>
+                      <p className="fw-light">
+                        Developer @ -{""}
+                        <Link
+                          aria-label="108 Ideaspace"
+                          target="_blank"
+                          href="https://108ideaspace.com/"
+                        >
+                          108Ideaspace
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lh-lg right-content">
+                    <i className="fas fa-quote-left"></i>
+                    Good knowledge and tries to provide various solutions that can help in project. Works very well with internal team.
+                    <i className="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
