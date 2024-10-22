@@ -98,10 +98,10 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Products</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><a href="https://www.fiverr.com/s/q4vPa2" target="_blank">Keycloak</a></li>
-              <li><a href="https://www.fiverr.com/s/bljqEP" target="_blank">ForgeRock</a></li>
-              <li><a href="https://www.fiverr.com/s/z54Ppd" target="_blank">OKTA</a></li>
-              <li><a href="https://t.me/hakxcore_bot" target="_blank">more...</a></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Single Sign-On</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Blockchain Development</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank">Red Team/Blue Team</Link></li>
+              <li><Link aria-label="Telegram bot" href="https://t.me/hakxcore_bot" target="_blank">more...</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
