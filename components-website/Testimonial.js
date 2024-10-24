@@ -42,7 +42,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Liel-Ran-CEO-DOControl.io.webp"
                         alt="client-1 picture"
@@ -50,12 +50,16 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/lielran" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
+
                     {/* client name and role */}
                     <div className="testimonials__name">
                       <h3>Liel Ran</h3>
                       <p className="fw-light">
-                        Cofounder -{" "}
+                        Co-Founder & CTO -{" "}
                         <Link aria-label="DoControl.io" target="_blank" href="https://docontrol.io">
                           DoControl.io
                         </Link>
@@ -83,7 +87,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
                         alt="client-2 picture"
@@ -91,12 +95,15 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/ileanagonzxlez/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
                       <h3>Ileana Gonzalez</h3>
                       <p className="fw-light">
-                        CEO -{" "}
+                      Tech Bloc CEO -{" "}
                         <Link aria-label="SATechBloc" target="_blank" href="https://satechbloc.com">
                           satechbloc.com
                         </Link>
@@ -124,7 +131,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Flencio-Falez.webp"
                         alt="client-3 picture"
@@ -132,6 +139,9 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
@@ -160,7 +170,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Kevin-Blackwood-Lenfestinstitute.org.webp"
                         alt="client-4 picture"
@@ -168,6 +178,9 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/kevin-blackwood-4a18291/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
@@ -205,7 +218,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
                         alt="client-4 picture"
@@ -213,6 +226,9 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/pradeep-naangal" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
@@ -250,7 +266,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
                         alt="client-4 picture"
@@ -258,6 +274,9 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/martingfisher/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
@@ -294,7 +313,7 @@ const TestimonialSection = () => {
                       <i className="fas fa-star"></i>
                     </div>
                     {/* client picture */}
-                    <div>
+                    <div className="image-container">
                       <img
                         src="/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
                         alt="client-4 picture"
@@ -302,18 +321,21 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
+                      <a href="https://www.linkedin.com/in/jiten-patoliya/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                     {/* client name and role */}
                     <div className="testimonials__name">
                       <h3>Jiten-Patoliya</h3>
                       <p className="fw-light">
-                        Developer @ -{""}
+                      Technical Project Manager @ -{""}
                         <Link
                           aria-label="108 Ideaspace"
                           target="_blank"
                           href="https://108ideaspace.com/"
                         >
-                          108Ideaspace
+                          108 ideaspace inc
                         </Link>
                       </p>
                     </div>
@@ -344,34 +366,60 @@ const TestimonialSection = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #f8f9fa; /* Add a background color for better visibility */
-            border-radius: 10px; /* Add some rounding to the corners */
-            padding: 20px; /* Add some padding */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
 
           .left-content {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center align the items */
-            text-align: center; /* Center align the text */
+            align-items: center;
+            text-align: center;
           }
 
           .right-content {
-            padding-left: 20px; /* Adjust as needed for spacing */
+            padding-left: 20px;
+          }
+
+          .image-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
           }
 
           .testimonials__card img {
-            width: 100px; /* Adjust size as needed */
+            width: 100px;
             height: 100px;
             border: 0.325rem solid rgba(72, 100, 186, 0.7);
           }
 
+          .linkedin-icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            border-radius: 50%;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #0077b5;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+          }
+
+          .linkedin-icon:hover {
+            transform: scale(1.1);
+          }
+
           .testimonials__card .ratings {
             display: flex;
-            justify-content: center; /* Center align the ratings */
-            margin-bottom: 10px; /* Add some space below the ratings */
-            margin-top: 20px; /* Add some space below the ratings */
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
           }
 
           .testimonials__name {
@@ -379,15 +427,15 @@ const TestimonialSection = () => {
           }
 
           .testimonials__name h3 {
-            font-size: 1.2rem; /* Adjust size as needed */
-            color: #333; /* Change color to a darker shade */
-            margin: 0; /* Remove default margin */
+            font-size: 1.2rem;
+            color: #333;
+            margin: 0;
           }
 
           .testimonials__name p {
-            font-size: 1rem; /* Adjust size as needed */
-            color: #666; /* Change color to a slightly darker shade */
-            margin: 0; /* Remove default margin */
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
           }
         `}
       </style>
