@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 import "../../../assets-website/css/thanks.css"
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Intercom from '@intercom/messenger-js-sdk';
+
+Intercom({
+  app_id: 'asbm4t30',
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
