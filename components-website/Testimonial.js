@@ -348,6 +348,54 @@ const TestimonialSection = () => {
                 </div>
               </div>
 
+              {/* CAROUSEL ITEM 8 */}
+              <div className="carousel-item">
+                {/* testimonial card */}
+                <div className="testimonials__card mx-auto d-flex justify-content-between align-items-center">
+                  <div className="left-content">
+                    <div className="ratings p-1">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                    </div>
+                    {/* client picture */}
+                    <div className="image-container">
+                      <img
+                        src="/images/testimonials/ralphjones.webp"
+                        alt="client-4 picture"
+                        className="img-fluid rounded-circle"
+                        height={400}
+                        width={400}
+                      />
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    {/* client name and role */}
+                    <div className="testimonials__name">
+                      <h3>Ralph Jones</h3>
+                      <p className="fw-light">
+                        Operations Manager @ -{""}
+                        <Link
+                          aria-label="108 Ideaspace"
+                          target="_blank"
+                          href="https://lodgex.ca/"
+                        >
+                          LodgeX Services
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lh-lg right-content">
+                    <i className="fas fa-quote-left"></i>
+                    We used Hakxcore to provide advanced cyber security through Auth0 and are very pleased with the end results.  Their service was timely and professional with great customer service.  They were able to provide the services we needed in order to comply with our clients needs.  Thank you, Hakxcore!
+                    <i className="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
