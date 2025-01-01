@@ -10,9 +10,9 @@ const IntroSection = () => {
             {/* START THE CONTENT FOR THE INTRO */}
             <div className="col-md-6 intros text-start">
               <h1 className="display-2">
-                <span className="display-2--intro">Hi!, Welcome to hakxcore</span>
+                <span className="display-2--intro">Hi!, Welcome to hakxcore.io</span>
                 <p className="display-2--description lh-base">
-                  We're a cybersecurity digital agency with expertise in a diverse range of digital services and solutions
+                  We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM.
                 </p>
               </h1>
               <Link href="#contact">
