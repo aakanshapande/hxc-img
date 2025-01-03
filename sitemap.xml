@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://hakxcore.com/</loc>
+      <loc>https://hakxcore.io/</loc>
       <lastmod>2024-09-29</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://hakxcore.com/careers</loc>
+      <loc>https://hakxcore.io/careers</loc>
       <lastmod>2024-09-25</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://hakxcore.com/internship</loc>
+      <loc>https://hakxcore.io/internship</loc>
       <lastmod>2024-09-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
    </url>
    <url>
-      <loc>https://www.hakxcore.com/#contact<https://hakxcore.com/#contact<>/loc>
+      <loc>https://www.hakxcore.io/#contact<https://www.hakxcore.io/#contact<>/loc>
       <lastmod>2024-09-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://blog.hakxcore.io<https://blog.hakxcore.io<>/loc>
+      <lastmod>2025-01-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.4</priority>
    </url>
 </urlset>
