@@ -369,7 +369,7 @@ const TestimonialSection = () => {
                         height={400}
                         width={400}
                       />
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                      <a href="mailto:rjones@campinspectors.ca" target="_blank" rel="noopener noreferrer" className="email-icon">
                         <i className="fab fa-linkedin-in"></i>
                       </a>
                     </div>
