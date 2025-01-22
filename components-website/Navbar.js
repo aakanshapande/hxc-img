@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark menu fixed-top menu-light">
       <div className="container">
         <Link href="/" className="navbar-brand">
-          <img src="/images/logo.webp" alt="logo image" className="navbar-brand-img"  />
+          <img src="https://blob.hakxcore.io/images/logo.webp" alt="logo image" className="navbar-brand-img"  />
         </Link>
         <button
           className="navbar-toggler"

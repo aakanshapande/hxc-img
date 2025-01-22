@@ -2,16 +2,15 @@ import React from 'react';
 
 const FeaturedSection = () => {
   const companies = [
-    { name: 'MACRM Agency', logo: '/images/companies/macrm.avif' },
-    { name: 'Do Control Org', logo: '/images/companies/DOControl.io.svg' },
-    { name: 'Tech Bloc Org', logo: '/images/companies/Satechbloc.com.avif' },
-    { name: 'The Lenfest Institute', logo: '/images/companies/Lenfestinstitute.org.svg' },
-    { name: '108Ideaspace Org', logo: '/images/companies/108Ideaspace.com.avif' },
-    { name: 'Mammoth Interactive', logo: '/images/companies/MammothInteractive.avif' },
-    { name: 'acte', logo: '/images/companies/Acte.com.avif' },
-    { name: 'practiss.ai', logo: '/images/companies/practiss.ai.avif' },
-    { name: 'Tech Courses SL', logo: '/images/companies/Flencio-Falez-LLC.avif' },
-    { name: 'Results You Can Measure', logo: '/images/companies/Resultsyoucanmeasure.co.uk.webp' },
+    { name: 'Do Control Org', logo: 'https://blob.hakxcore.io/images/companies/DOControl.io.svg' },
+    { name: 'Tech Bloc Org', logo: 'https://blob.hakxcore.io/images/companies/Satechbloc.com.avif' },
+    { name: 'The Lenfest Institute', logo: 'https://blob.hakxcore.io/images/companies/Lenfestinstitute.org.svg' },
+    { name: '108Ideaspace Org', logo: 'https://blob.hakxcore.io/images/companies/108Ideaspace.com.avif' },
+    { name: 'Mammoth Interactive', logo: 'https://blob.hakxcore.io/images/companies/MammothInteractive.avif' },
+    { name: 'acte', logo: 'https://blob.hakxcore.io/images/companies/Acte.com.avif' },
+    { name: 'practiss.ai', logo: 'https://blob.hakxcore.io/images/companies/practiss.ai.avif' },
+    { name: 'Tech Courses SL', logo: 'https://blob.hakxcore.io/images/companies/Flencio-Falez-LLC.avif' },
+    { name: 'Results You Can Measure', logo: 'https://blob.hakxcore.io/images/companies/Resultsyoucanmeasure.co.uk.webp' },
   ];
 
   return (

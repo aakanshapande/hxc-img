@@ -89,7 +89,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -133,7 +133,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Flencio-Falez.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Flencio-Falez.webp"
                         alt="client-3 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -172,7 +172,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Kevin-Blackwood-Lenfestinstitute.org.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Kevin-Blackwood-Lenfestinstitute.org.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -220,7 +220,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -268,7 +268,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -315,7 +315,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -363,7 +363,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <img
-                        src="/images/testimonials/ralphjones.webp"
+                        src="https://blob.hakxcore.io/images/testimonials/ralphjones.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}

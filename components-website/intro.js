@@ -24,7 +24,7 @@ const IntroSection = () => {
             {/* START THE CONTENT FOR THE VIDEO */}
             <div className="col-md-6 intros text-end">
               <div className="video-box">
-                <img src="images/art/intro-section-illustration.webp" alt="video illustration" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images/art/intro-section-illustration.webp" alt="video illustration" className="img-fluid" />
               </div>
             </div>
           </div>

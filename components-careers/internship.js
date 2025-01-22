@@ -5,7 +5,7 @@ const InternshipProgram = () => {
         <div className="container-fluid internship-program-section p-5 mb-5">
       <div className="row justify-content-center intern-container">
         <div className="col-auto bg-primary internship-program-title py-1 px-5">
-          <h3>Internship Programs hakxcore.com</h3>
+          <h3>Internship Programs hakxcore.io</h3>
         </div>
 
         <div className="row intern-section-content">
@@ -33,13 +33,13 @@ const InternshipProgram = () => {
           <div className="col-lg-5 internship-tech-icon img-fluid">
             <div className="row ">
               <div className="col-5 align-self-center">
-                <img src="images-careers/intern-section-icon1.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon1.avif" alt="" className="img-fluid" />
               </div>
               <div className="col-2 align-self-center">
   
               </div>
               <div className="col-5 align-self-center">
-                <img src="images-careers/intern-section-icon2.avif" alt=""  className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon2.avif" alt=""  className="img-fluid" />
               </div>
             </div>
             <div className="row">
@@ -47,21 +47,21 @@ const InternshipProgram = () => {
   
               </div>
               <div className="col-5 align-self-center">
-                <img src="images-careers/intern-section-icon3.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon3.avif" alt="" className="img-fluid" />
               </div>
               <div className="col-5  align-self-center">
-                <img src="images-careers/intern-section-icon4.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon4.avif" alt="" className="img-fluid" />
               </div>
             </div>
             <div className="row">
               <div className="col-4 align-self-center">
-                <img src="images-careers/intern-section-icon5.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon5.avif" alt="" className="img-fluid" />
               </div>
               <div className="col-4 align-self-center">
-                <img src="images-careers/intern-section-icon6.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon6.avif" alt="" className="img-fluid" />
               </div>
               <div className="col-4 align-self-center">
-                <img src="images-careers/intern-section-icon7.avif" alt="" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/intern-section-icon7.avif" alt="" className="img-fluid" />
               </div>
             </div>
           </div>

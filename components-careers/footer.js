@@ -40,7 +40,7 @@ const FooterSection = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <Link href="mailto: support@hakxcore.com" className="contact-box__info--title">support@hakxcore.com</Link>
+              <Link href="mailto: support@hakxcore.io" className="contact-box__info--title">support@hakxcore.io</Link>
               <p className="contact-box__info--subtitle">Online Support</p>
             </div>
           </div>
@@ -124,7 +124,7 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Contact</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link aria-label="Email" href="mailto: tech@hakxcore.com">Send Email</Link></li>
+              <li><Link aria-label="Email" href="mailto: tech@hakxcore.io">Send Email</Link></li>
               <li><Link aria-label="Whatsapp" href="https://wa.me/+916006511429" target="_blank">Whatsapp</Link></li>
               <li><Link aria-label="Telegram" href="https://t.me/hakxcore_bot" target="_blank">Telegram</Link></li>
               <li><Link aria-label="Instagram" href="https://instagram.com/hakxcore" target="_blank">Instagram</Link></li>
@@ -140,7 +140,7 @@ const FooterSection = () => {
           <div className="row text-center text-white">
             <div className="col-12">
               <div className="footer-bottom__copyright">
-                &copy; 2023-{currentYear} <Link aria-label="Hakxcore" href="https://hakxcore.com">hakxcore.</Link> All rights reserved, Built with ❤️ in India<br />
+                &copy; 2023-{currentYear} <Link aria-label="Hakxcore" href="https://hakxcore.io">hakxcore.</Link> All rights reserved, Built with ❤️ in India<br />
               </div>
             </div>
           </div>

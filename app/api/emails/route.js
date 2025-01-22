@@ -10,10 +10,10 @@ export async function POST(req){
 
         const sender = {
             name: 'Mukesh Kumar',
-            address: 'tech@hakxcore.com'
+            address: 'tech@hakxcore.io'
         }
 
-        const recipients = ['support@hakxcore.com','help@hakxcore.com','mukeshkumarcharak@gmail.com','hakxcore@gmail.com']
+        const recipients = ['support@hakxcore.io','help@hakxcore.io','mukeshkumarcharak@gmail.com','hakxcore@gmail.com']
 
         const transport = nodemailer.createTransport({
             host: process.env.MAIL_HOST,
