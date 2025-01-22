@@ -106,7 +106,7 @@ const InternshipDomain = () => {
                 Remote | 3 months
               </div>
               <div className="col-auto apply-now-btn align-self-center" id="card-btn">
-                <img src="https://blob.hakxcore.ioimages-careers/money-bag.avif" alt="money bag png" className="img-fluid" />
+                <img src="https://blob.hakxcore.io/images-careers/money-bag.avif" alt="money bag png" className="img-fluid" />
                 Rs 4000
               </div>
               <div className="col mx-2">
