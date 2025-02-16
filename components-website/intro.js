@@ -7,7 +7,7 @@ const IntroSection = () => {
     <>
       <Head>
         <link rel="canonical" href="https://www.hakxcore.io/" />
-        <meta property="og:title" content="Cybersecurity & Identity Solutions – Securing Your Digital Future" />
+        <meta property="og:title" content="Securing Your Digital Future" />
         <meta property="og:description" content="We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM." />
         <meta property="og:image" content="https://www.hakxcore.io/images/og-image.jpg" />
         <meta property="og:url" content="https://www.hakxcore.io/" />

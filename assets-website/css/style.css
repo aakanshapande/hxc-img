@@ -10824,7 +10824,7 @@ textarea.form-control-lg {
 }
 .display-2--intro {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 575.98px) {
@@ -10839,7 +10839,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .display-2--intro {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .display-2--description {
