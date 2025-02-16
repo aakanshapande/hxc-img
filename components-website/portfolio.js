@@ -24,7 +24,7 @@ const PortfolioSection = () => {
         <section id="portfolio" className={styles.portfolio}>
             <div className="container">
                 <div className="row text-center mt-5">
-                    <h1 className="display-3 fw-bold text-capitalize">Latest work</h1>
+                    <h1 className="display-3 fw-bold text-capitalize">Our Recent Cybersecurity & Development Projects</h1>
                     <div className="heading-line"></div>
                     <p className="lead">
                         Everyday pushing the boundaries of what's possible, Here are our recent projects.

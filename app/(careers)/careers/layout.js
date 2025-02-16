@@ -83,7 +83,11 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Careers and internships at Hakxcore"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hakxcore Careers</title>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+        <noscript>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+        </noscript>
       </head>
       <body className="light vsc-intialized">
         <Navbar />
