@@ -5,7 +5,7 @@ const FaqSection = () => {
         <section id="faq" className="faq">
         <div className="container">
           <div className="row text-center">
-            <h1 className="display-3 fw-bold text-uppercase">Faq</h1>
+            <h2 className="display-3 fw-bold text-uppercase">Faq</h2>
             <div className="heading-line"></div>
             <p className="lead">Frequently asked questions, get knowledge before hand</p>
           </div>

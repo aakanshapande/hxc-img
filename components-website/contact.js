@@ -55,7 +55,7 @@ const ContactSection = () => {
     <section id="contact" className="get-started">
       <div className="container">
         <div className="row text-center">
-          <h1 className="display-3 fw-bold text-capitalize">Get started</h1>
+          <h2 className="display-3 fw-bold text-capitalize">Get started</h2>
           <div className="heading-line"></div>
           <p className="lh-lg pb-3 pb-md-5">
             We believe in a world where IT service organizations are trusted to deliver on their promises.
