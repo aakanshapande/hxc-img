@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Disallow: /admin/
 
-Sitemap: https://www.hakxcore.io/sitemap
+Sitemap: https://www.hakxcore.io/sitemap.xml

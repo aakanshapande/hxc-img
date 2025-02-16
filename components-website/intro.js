@@ -26,6 +26,7 @@ const IntroSection = () => {
         <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon-167x167.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png" />
         
+        {/* Structured Data - JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -36,7 +37,7 @@ const IntroSection = () => {
             "description": "We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM.",
             "contactPoint": [{
               "@type": "ContactPoint",
-              "telephone": "+91-6006511429",
+              "telephone": "https://www.hakxcore.io/#contact",
               "contactType": "customer service"
             }],
             "sameAs": [
@@ -44,7 +45,15 @@ const IntroSection = () => {
               "https://github.com/hakxcore",
               "https://instagram.com/hakxcore",
               "https://www.linkedin.com/company/hakxcore"
-            ]
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Balewadi High Street",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "postalCode": "411045",
+              "addressCountry": "IN"
+            }
           })}
         </script>
         

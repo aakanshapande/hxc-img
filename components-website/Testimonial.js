@@ -60,7 +60,7 @@ const TestimonialSection = () => {
                       <h3>Liel Ran</h3>
                       <p className="fw-light">
                         Co-Founder & CTO -{" "}
-                        <Link aria-label="DoControl.io" target="_blank" href="https://docontrol.io">
+                        <Link aria-label="DoControl.io" target="_blank" href="https://docontrol.io" rel="noopener noreferrer">
                           DoControl.io
                         </Link>
                       </p>
@@ -104,7 +104,7 @@ const TestimonialSection = () => {
                       <h3>Ileana Gonzalez</h3>
                       <p className="fw-light">
                       Tech Bloc CEO -{" "}
-                        <Link aria-label="SATechBloc" target="_blank" href="https://satechbloc.com">
+                        <Link aria-label="SATechBloc" target="_blank" href="https://satechbloc.com" rel="noopener noreferrer">
                           satechbloc.com
                         </Link>
                       </p>
@@ -191,6 +191,7 @@ const TestimonialSection = () => {
                           aria-label="Lenfest Institute Organisation"
                           target="_blank"
                           href="https://www.lenfestinstitute.org/"
+                          rel="noopener noreferrer"
                         >
                           Lenfestinstitute Organisation
                         </Link>
@@ -239,6 +240,7 @@ const TestimonialSection = () => {
                           aria-label="Kayzworks IT Services Firm"
                           target="_blank"
                           href="https://kayzworks.com/"
+                          rel="noopener noreferrer"
                         >
                           Kayzworks IT Services Firm
                         </Link>
@@ -287,6 +289,7 @@ const TestimonialSection = () => {
                           aria-label="Results you can measure"
                           target="_blank"
                           href="https://resultsyoucanmeasure.co.uk/"
+                          rel="noopener noreferrer"
                         >
                           Results you can measure
                         </Link>
@@ -334,6 +337,7 @@ const TestimonialSection = () => {
                           aria-label="108 Ideaspace"
                           target="_blank"
                           href="https://108ideaspace.com/"
+                          rel="noopener noreferrer"
                         >
                           108 ideaspace inc
                         </Link>
@@ -382,6 +386,7 @@ const TestimonialSection = () => {
                           aria-label="108 Ideaspace"
                           target="_blank"
                           href="https://lodgex.ca/"
+                          rel="noopener noreferrer"
                         >
                           LodgeX Services
                         </Link>
