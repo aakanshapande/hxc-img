@@ -33,36 +33,40 @@ const ContactSection = () => {
   };
 
   const sendEmail = async () => {
-    const data = {username,email,message};
-    const response = await axios.post('/api/emails', data)
-    .then(
-      (response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setSuccessMsg(`Thank you ${username}, Your message has been sent successfully!`);
-        setErrMsg("");
-        setUsername("");
-        setEmail("");
-        setMessage("");
-        router.push('/thanks'); // Redirect to the thank you page
-      },)
-    .catch( (error) => {
-      console.log('FAILED...', error.text);
+    const data = { username, email, message };
+    try {
+      const response = await axios.post('/api/emails', data, {
+        headers: {
+          "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+          "Pragma": "no-cache",
+          "Expires": "0"
+        }
+      });
+      
+      console.log('SUCCESS!', response.status, response.statusText);
+      setSuccessMsg(`Thank you ${username}, Your message has been sent successfully!`);
+      setErrMsg("");
+      setUsername("");
+      setEmail("");
+      setMessage("");
+      router.push('/thanks'); // Redirect to the thank you page
+    } catch (error) {
+      console.log('FAILED...', error);
       setErrMsg('Something went wrong. Please try again later.');
-    }); 
+    }
   };
 
   return (
     <section id="contact" className="get-started">
       <div className="container">
         <div className="row text-center">
-          <h2 className="display-3 fw-bold text-capitalize">Get started</h2>
+          <h1 className="display-3 fw-bold text-capitalize">Get started</h1>
           <div className="heading-line"></div>
           <p className="lh-lg pb-3 pb-md-5">
             We believe in a world where IT service organizations are trusted to deliver on their promises.
           </p>
         </div>
 
-        {/* START THE CTA CONTENT */}
         <div className="row text-white get-started__box">
           <div className="col-12 col-lg-6 get-started__box--left gradient shadow p-3">
             <div className="cta-info w-100">
@@ -87,7 +91,7 @@ const ContactSection = () => {
                     type="text"
                     name="user_name"
                     placeholder="Your Name"
-                    className={`shadow form-control-lg form-control ${errMsg === "Username is required!" ? "outline-designColor" : ""}`}
+                    className="shadow form-control-lg form-control"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
@@ -98,7 +102,7 @@ const ContactSection = () => {
                     type="email"
                     name="user_email"
                     placeholder="Email"
-                    className={`shadow form-control-lg form-control ${errMsg === "Please give your Email!" ? "outline-designColor" : ""}`}
+                    className="shadow form-control-lg form-control"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -109,7 +113,7 @@ const ContactSection = () => {
                     name="user_message"
                     placeholder="Message"
                     rows="8"
-                    className={`shadow form-control-lg form-control ${errMsg === "Message is required!" ? "outline-designColor" : ""}`}
+                    className="shadow form-control-lg form-control"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
