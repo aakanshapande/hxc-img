@@ -67,7 +67,7 @@ const FeaturedSection = () => {
           {/* Companies Section */}
           <div className="col-12">
             <h4 className="fw-bold lead mb-3" style={{ marginTop: '8rem' }}>
-              Trusted by companies like
+              Our Clients
             </h4>
             <div className="heading-line mb-5"></div>
           </div>
