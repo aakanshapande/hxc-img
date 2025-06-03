@@ -2,7 +2,7 @@
 import "../../globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from "react";
-import Navbar from "@/components-careers/Navbar";
+import Navbar from "@/components-website/Navbar";
 import "../../../assets-careers/css/careers.css";
 import "../../../assets-careers/css/careers-toggle-theme.css";
 import IntroSection from "@/components-careers/intro";
@@ -10,7 +10,7 @@ import InternshipProgram from "@/components-careers/internship";
 import InternshipButtonSection from "@/components-careers/internshipButton";
 import InternshipDomain from "@/components-careers/internshipDomain";
 import AttackSection from "@/components-careers/attacks";
-import FooterSection from "@/components-careers/footer";
+import FooterSection from "@/components-website/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Intercom from '@intercom/messenger-js-sdk';
@@ -85,6 +85,7 @@ export default function RootLayout({ children }) {
         <title>Hakxcore Careers</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.min.css" rel="stylesheet" />
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerPolicy="no-referrer" />
         <noscript>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
         </noscript>

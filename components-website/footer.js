@@ -81,6 +81,7 @@ const FooterSection = () => {
               <Link aria-label="Instagram" href="https://instagram.com/hakxcore"><i className="fab fa-instagram"></i></Link>
               <Link aria-label="Whatsapp" href="https://wa.me/+916006511429"><i className="fab fa-whatsapp"></i></Link>
               <Link aria-label="Telegram" href="https://t.me/hakxcore_bot"><i className="fab fa-telegram"></i></Link>
+              <Link aria-label="Linkedin" href="https://www.linkedin.com/company/hakxcore"><i className="fab fa-linkedin"></i></Link>
             </div>
           </div>
         </div>
@@ -128,6 +129,7 @@ const FooterSection = () => {
               <li><Link aria-label="Whatsapp" href="https://wa.me/+916006511429" target="_blank" rel="noopener noreferrer">Whatsapp</Link></li>
               <li><Link aria-label="Telegram" href="https://t.me/hakxcore_bot" target="_blank" rel="noopener noreferrer">Telegram</Link></li>
               <li><Link aria-label="Instagram" href="https://instagram.com/hakxcore" target="_blank" rel="noopener noreferrer">Instagram</Link></li>
+              <li><Link aria-label="Linkedin" href="https://www.linkedin.com/company/hakxcore" target="_blank" rel="noopener noreferrer">Linkedin</Link></li>
             </ul>
           </div>
         </div>

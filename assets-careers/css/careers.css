@@ -28,20 +28,23 @@ body{
 }
 
 /* nav-bar(menu) start here */
-.menu{
-    background-color: var(--bg-primary);
+.menu {
+  background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
+  padding: 1rem 0;
+}
+
+.menu .navbar-brand-img {
+  width: 150px;
 }
 
 .menu li {
-    padding: 0.5rem 0.7rem;
+  padding: 0.5rem 0.7rem;
 }
 
-
-
-
-
-.navbar-brand-img{
-    width:100px
+.menu li a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 /* theme-toggle btn */
@@ -56,7 +59,8 @@ body{
     display: flex;
     align-items: center;
     height: 100%;
-    color: white;
+    color: white !important;
+    margin-left: 1rem;
 }
 
 #theme_change{
@@ -66,11 +70,66 @@ body{
 .nav-link{
   font-family: 'Poppins';
   font-weight: bold;
+  color: #fff !important;
 }
 
-@media (max-width: 991.98px){
+/* Navbar toggler styles */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hide navbar toggler in desktop view */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+  
+  .navbar-collapse {
+    display: flex !important;
+  }
+  
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu .navbar-collapse {
+    background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .menu .navbar-collapse.show {
+    display: block;
+    box-shadow: 0 0.5rem 1rem -0.8rem rgba(0, 0, 0, 0.25);
+  }
+
   .menu li {
-      border-bottom: 1px solid var(--text-white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .theme-btn {
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -631,4 +690,38 @@ body{
           background-clip: text;
   -webkit-text-fill-color: transparent;
   }
+ 
+
+/* Remove the previous navbar fix since we're using the proper styles now */
+/* --- Fix for navbar not displaying on careers page --- */
+.navbar-nav, .navbar-collapse, .nav-link {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff !important;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  
+  .navbar-collapse {
+    display: none !important;
+  }
+  
+  .navbar-collapse.show {
+    display: block !important;
+  }
+}
  

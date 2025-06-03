@@ -40,7 +40,7 @@ const FooterSection = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <Link href="mailto: support@hakxcore.io" className="contact-box__info--title">support@hakxcore.io</Link>
+              <Link href="mailto: support@hakxcore.io" className="contact-box__info--title">support[at]hakxcore[dot]io</Link>
               <p className="contact-box__info--subtitle">Online Support</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const FooterSection = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <Link target="_blank" aria-label="Maps Link" href="https://maps.app.goo.gl/L3n3WV8t6dLMTT1c8" className="contact-box__info--title">Balewadi High Street</Link>
+              <Link target="_blank" aria-label="Maps Link" href="https://maps.app.goo.gl/L3n3WV8t6dLMTT1c8" className="contact-box__info--title" rel="noopener noreferrer">Balewadi High Street</Link>
               <p className="contact-box__info--subtitle">Pune Maharashtra 411045</p>
             </div>
           </div>
@@ -81,6 +81,7 @@ const FooterSection = () => {
               <Link aria-label="Instagram" href="https://instagram.com/hakxcore"><i className="fab fa-instagram"></i></Link>
               <Link aria-label="Whatsapp" href="https://wa.me/+916006511429"><i className="fab fa-whatsapp"></i></Link>
               <Link aria-label="Telegram" href="https://t.me/hakxcore_bot"><i className="fab fa-telegram"></i></Link>
+              <Link aria-label="Linkedin" href="https://www.linkedin.com/company/hakxcore"><i className="fab fa-linkedin"></i></Link>
             </div>
           </div>
         </div>
@@ -101,10 +102,10 @@ const FooterSection = () => {
             <h5 className="text-capitalize fw-bold">Services</h5>
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
-              <li><Link aria-label="Contact" href="#contact" target="_blank">Single Sign-On</Link></li>
-              <li><Link aria-label="Contact" href="#contact" target="_blank">Blockchain Development</Link></li>
-              <li><Link aria-label="Contact" href="#contact" target="_blank">Red Team/Blue Team</Link></li>
-              <li><Link aria-label="Telegram bot" href="https://t.me/hakxcore_bot" target="_blank">more...</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank" rel="noopener noreferrer">Single Sign-On</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank" rel="noopener noreferrer">Blockchain Development</Link></li>
+              <li><Link aria-label="Contact" href="#contact" target="_blank" rel="noopener noreferrer">Red Team/Blue Team</Link></li>
+              <li><Link aria-label="Telegram bot" href="https://t.me/hakxcore_bot" target="_blank" rel="noopener noreferrer">more...</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
@@ -114,10 +115,10 @@ const FooterSection = () => {
             {/* <li><Link href="#">Your Account</Link></li>
             <li><Link href="#">Become an Affiliate</Link></li>
             <li><Link href="#">Create an account</Link></li> */}
-              <li><Link aria-label="Careers Link" target="_blank" href="/careers">Careers</Link></li>
-              <li><Link aria-label="Contact" target="_blank" href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help">Instant Help</Link></li>
-              <li><Link aria-label="Feedback" target="_small" href="https://qualtricsxmnz38x9dvx.qualtrics.com/jfe/form/SV_cUrYdmwREBFhst8">Feedback</Link></li>
-              <li><Link aria-label="Hakxcore status" target="_blank" href="https://hakxcore.instatus.com/">Status</Link></li>
+              <li><Link aria-label="Careers Link" target="_blank" href="/careers" rel="noopener noreferrer">Careers</Link></li>
+              <li><Link aria-label="Contact" target="_blank" href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help" rel="noopener noreferrer">Instant Help</Link></li>
+              <li><Link aria-label="Feedback" target="_small" href="https://qualtricsxmnz38x9dvx.qualtrics.com/jfe/form/SV_cUrYdmwREBFhst8" rel="noopener noreferrer">Feedback</Link></li>
+              <li><Link aria-label="Hakxcore status" target="_blank" href="https://hakxcore.instatus.com/" rel="noopener noreferrer">Status</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
@@ -125,9 +126,10 @@ const FooterSection = () => {
             <hr className="bg-white d-inline-block mb-4" />
             <ul className="list-inline company-list">
               <li><Link aria-label="Email" href="mailto: tech@hakxcore.io">Send Email</Link></li>
-              <li><Link aria-label="Whatsapp" href="https://wa.me/+916006511429" target="_blank">Whatsapp</Link></li>
-              <li><Link aria-label="Telegram" href="https://t.me/hakxcore_bot" target="_blank">Telegram</Link></li>
-              <li><Link aria-label="Instagram" href="https://instagram.com/hakxcore" target="_blank">Instagram</Link></li>
+              <li><Link aria-label="Whatsapp" href="https://wa.me/+916006511429" target="_blank" rel="noopener noreferrer">Whatsapp</Link></li>
+              <li><Link aria-label="Telegram" href="https://t.me/hakxcore_bot" target="_blank" rel="noopener noreferrer">Telegram</Link></li>
+              <li><Link aria-label="Instagram" href="https://instagram.com/hakxcore" target="_blank" rel="noopener noreferrer">Instagram</Link></li>
+              <li><Link aria-label="Linkedin" href="https://www.linkedin.com/company/hakxcore" target="_blank" rel="noopener noreferrer">Linkedin</Link></li>
             </ul>
           </div>
         </div>

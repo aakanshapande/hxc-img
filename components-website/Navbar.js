@@ -2,12 +2,17 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState("light");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    const initialTheme = savedTheme || systemTheme;
+    
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
