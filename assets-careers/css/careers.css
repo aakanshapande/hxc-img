@@ -556,7 +556,7 @@ body{
   
   .footer {
     padding-top: 1rem;
-    background-color: #151414;
+    background-color: rgb(42, 42, 42);
   }
   @media (max-width: 575.98px) {
     .footer .contact-box-wrapper {
@@ -599,7 +599,7 @@ body{
   }
   .contact-box__info--subtitle {
     font-size: 0.8rem;
-    color: #6c757d;
+    color: #adb5bd;
     text-decoration: none;
   }
   @media (min-width: 576px) {
@@ -691,9 +691,6 @@ body{
   -webkit-text-fill-color: transparent;
   }
  
-
-/* Remove the previous navbar fix since we're using the proper styles now */
-/* --- Fix for navbar not displaying on careers page --- */
 .navbar-nav, .navbar-collapse, .nav-link {
   display: flex !important;
   opacity: 1 !important;
