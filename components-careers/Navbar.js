@@ -9,10 +9,60 @@ const Navbar = () => {
     return "light";
   });
 
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    
+    // Update body classes
+    if (newTheme === 'dark') {
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+      document.querySelector('.menu')?.classList.remove('menu-light');
+      document.querySelectorAll('.highlighted-text').forEach(el => {
+        el.classList.add('blue-text');
+        el.classList.remove('white-text');
+      });
+      document.querySelector('.alert-container')?.classList.remove('alert-container-light');
+    } else {
+      document.body.classList.add('light');
+      document.body.classList.remove('dark');
+      document.querySelector('.menu')?.classList.add('menu-light');
+      document.querySelectorAll('.highlighted-text').forEach(el => {
+        el.classList.add('white-text');
+        el.classList.remove('blue-text');
+      });
+      document.querySelector('.alert-container')?.classList.add('alert-container-light');
+    }
+  };
+
   useEffect(() => {
+    // Initial theme setup
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-  }, [theme]);
+    
+    // Set initial classes
+    if (theme === 'dark') {
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+      document.querySelector('.menu')?.classList.remove('menu-light');
+      document.querySelectorAll('.highlighted-text').forEach(el => {
+        el.classList.add('blue-text');
+        el.classList.remove('white-text');
+      });
+      document.querySelector('.alert-container')?.classList.remove('alert-container-light');
+    } else {
+      document.body.classList.add('light');
+      document.body.classList.remove('dark');
+      document.querySelector('.menu')?.classList.add('menu-light');
+      document.querySelectorAll('.highlighted-text').forEach(el => {
+        el.classList.add('white-text');
+        el.classList.remove('blue-text');
+      });
+      document.querySelector('.alert-container')?.classList.add('alert-container-light');
+    }
+  }, []);
 
   return (
     <nav className={`navbar navbar-expand-lg menu fixed-top menu-${theme}`}>
@@ -25,19 +75,19 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link href="#home" className="nav-link">Home</Link></li>
-            <li className="nav-item"><Link href="#services" className="nav-link">Services</Link></li>
-            <li className="nav-item"><Link href="#testimonials" className="nav-link">Testimonials</Link></li>
-            <li className="nav-item"><Link href="#faq" className="nav-link">FAQ</Link></li>
-            <li className="nav-item"><Link href="#portfolio" className="nav-link">Portfolio</Link></li>
-            <li className="nav-item"><Link href="#contact" className="nav-link">Contact</Link></li>
+            <li className="nav-item"><Link href="/#home" className="nav-link">Home</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">Services</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">Testimonials</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">FAQ</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">Portfolio</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">Contact</Link></li>
           </ul>
           <div className="theme-btn">
             <input
               type="checkbox"
               id="theme-checkbox"
               checked={theme === "dark"}
-              onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onChange={toggleTheme}
             />
             <label htmlFor="theme-checkbox">
               {theme === "dark" ? <i className="ri-sun-line"></i> : <i className="ri-moon-line"></i>}
