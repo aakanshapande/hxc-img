@@ -119,6 +119,8 @@ const FooterSection = () => {
               <li><Link aria-label="Contact" target="_blank" href="https://wa.me/+916006511429?text=Hi!%20I%20need%20instant%20help" rel="noopener noreferrer">Instant Help</Link></li>
               <li><Link aria-label="Feedback" target="_small" href="https://qualtricsxmnz38x9dvx.qualtrics.com/jfe/form/SV_cUrYdmwREBFhst8" rel="noopener noreferrer">Feedback</Link></li>
               <li><Link aria-label="Hakxcore status" target="_blank" href="https://hakxcore.instatus.com/" rel="noopener noreferrer">Status</Link></li>
+              <li><Link aria-label="Hakxcore status" target="_blank" href="/privacy-policy" rel="noopener noreferrer">Privacy Policy</Link></li>
+              <li><Link aria-label="Hakxcore status" target="_blank" href="/terms-and-conditions" rel="noopener noreferrer">Terms & Conditions</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto pt-md-4 pt-lg-0">
