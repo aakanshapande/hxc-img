@@ -271,6 +271,7 @@ export default function Page() {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <div className={`mt-4 p-4 rounded ${theme === 'dark' ? 'bg-gray-700' : 'bg-blue-50'}`}>
+                <p className={`mb-1 font-bold text-gray-600 font-bold`}>Hakxcore Nextcyber Techsolutions Provate Limited</p>
                 <p className={`mb-1 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}><span className="font-bold">Email:</span> help@hakxcore.io</p>
               </div>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
