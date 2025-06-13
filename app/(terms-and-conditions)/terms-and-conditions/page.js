@@ -2,6 +2,7 @@
 import Navbar from '../../../components-careers/Navbar';
 import Footer from '../../../components-website/footer';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Page() {
   const [theme, setTheme] = useState('light');
@@ -40,7 +41,7 @@ export default function Page() {
             {/* Introduction */}
             <section className={`mb-12 p-6 rounded-lg ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} shadow-md`}>
               <p className={`mb-4 text-lg ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                Welcome to Hakxcore Nextcyber Techsolutions Private Limited ("we," "our," or "us"). By accessing and using our website, hakxcore.io, and our services, you agree to comply with and be bound by the following Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use our website or services.
+                Welcome to <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Hakxcore Nextcyber Techsolutions Private Limited</span> ("we," "our," or "us"). By accessing and using our website, <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href='/'>hakxcore.io</Link></span>, and our services, you agree to comply with and be bound by the following Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use our website or services.
               </p>
               <div className={`p-4 rounded ${theme === 'dark' ? 'bg-gray-700 border-gray-600' : 'bg-blue-50 border-blue-200'} border-l-4`}>
                 <p className={`mb-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -55,7 +56,7 @@ export default function Page() {
                 1. Acceptance of Terms
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                By accessing or using our services, you agree to be bound by these Terms, along with any applicable policies, including our Privacy Policy. These Terms apply to all users, including visitors, clients, and registered users.
+                By accessing or using our services, you agree to be bound by these Terms, along with any applicable policies, including our <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href="/privacy-policy">Privacy Policy</Link></span>. These Terms apply to all users, including visitors, clients, and registered users.
               </p>
             </section>
 
@@ -67,12 +68,12 @@ export default function Page() {
                 Hakxcore provides a range of cybersecurity services, including:
               </p>
               <ul className={`list-disc pl-6 mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                <li className="mb-2">Single Sign-On (SSO) Solutions</li>
-                <li className="mb-2">Identity Access Management (IAM)</li>
-                <li className="mb-2">Cybersecurity Services</li>
-                <li className="mb-2">DevSecOps Integrations</li>
-                <li className="mb-2">Open-Source CRM Solutions</li>
-                <li className="mb-2">Custom Tools and Utilities</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Single Sign-On (SSO) Solutions</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Identity Access Management (IAM)</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Cybersecurity Services</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>DevSecOps Integrations</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Open-Source CRM Solutions</li>
+                <li className={`mb-2 font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Custom Tools and Utilities</li>
               </ul>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 These services are intended to enhance security, streamline access management, and provide tailored cybersecurity solutions to businesses around the globe.
@@ -151,10 +152,10 @@ export default function Page() {
                 7. Data Protection and Privacy
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                Your privacy is important to us. Our collection, use, and disclosure of personal information is governed by our Privacy Policy. By using our services, you consent to the collection and use of your information in accordance with this policy.
+                Your privacy is important to us. Our collection, use, and disclosure of personal information is governed by our <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href='/privacy-policy'>Privacy Policy</Link></span>. By using our services, you consent to the collection and use of your information in accordance with this policy.
               </p>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same. Since we do not have the ability to, control or actively monitor content we don't guarantee its accuracy, integrity or quality. Because community standards vary and individuals sometimes choose not to comply with our policies and practices in the process of using our Website, you may be exposed to content that you find offensive or objectionable. You can contact tech@hakxcore.io to let us know of content that you find objectionable. We may investigate the complaints violations of our policies that come to our attention and may take any action that we believe is in compliance with prevalent law, appropriate, including without limitation to issuing warnings, removing the content or terminating accounts and/or memberships. However, because situations and interpretations vary, we also reserve the right not to take action. Under no circumstances will we be liable in any way for any content, including but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of, access to, or denial of access to any content on the Website.
+                HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same. Since we do not have the ability to, control or actively monitor content we don't guarantee its accuracy, integrity or quality. Because community standards vary and individuals sometimes choose not to comply with our policies and practices in the process of using our Website, you may be exposed to content that you find offensive or objectionable. You can contact <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvkXlnBvTWNGgtTpfzNDPRMSBHwWmVPflcwRRXpjBzwrhFxLMWgLZwhCZZRjWGqxggdRzL" className="text-blue-500 hover:underline">tech@hakxcore.io</Link> to let us know of content that you find objectionable. We may investigate the complaints violations of our policies that come to our attention and may take any action that we believe is in compliance with prevalent law, appropriate, including without limitation to issuing warnings, removing the content or terminating accounts and/or memberships. However, because situations and interpretations vary, we also reserve the right not to take action. Under no circumstances will we be liable in any way for any content, including but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of, access to, or denial of access to any content on the Website.
               </p>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 Any information submitted by you must be personal and relate specifically to you. You hereby warrant that the information, which you submit and/or distribute, will not infringe the intellectual property, privacy or any other rights of any third party, and will not contain anything which is libelous, defamatory, obscene, seditious, indecent, harassing or threatening. If relevant, HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same.
@@ -166,7 +167,7 @@ export default function Page() {
                 8. Third-Party Services
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                Our services may contain links to third-party websites or services, such as Okta, Auth0, AWS, Azure, GCP, or any other identity/service providers for SSO integrations. These third-party services are not controlled by us, and we are not responsible for their content, privacy policies, or practices. You acknowledge and agree that Hakxcore is not liable for any loss or damage incurred as a result of using any third-party services.
+                Our services may contain links to third-party websites or services, such as <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Okta, Auth0, AWS, Azure, GCP,</span> or any other identity/service providers for SSO integrations. These third-party services are not controlled by us, and we are not responsible for their content, privacy policies, or practices. You acknowledge and agree that Hakxcore is not liable for any loss or damage incurred as a result of using any third-party services.
               </p>
             </section>
 
@@ -271,7 +272,7 @@ export default function Page() {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <div className={`mt-4 p-4 rounded ${theme === 'dark' ? 'bg-gray-700' : 'bg-blue-50'}`}>
-                <p className={`mb-1 font-bold text-gray-600 font-bold`}>Hakxcore Nextcyber Techsolutions Provate Limited</p>
+                <p className={`mb-1 font-bold ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>Hakxcore Nextcyber Techsolutions Private Limited</p>
                 <p className={`mb-1 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}><span className="font-bold">Email:</span> help@hakxcore.io</p>
               </div>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
