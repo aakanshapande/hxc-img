@@ -56,7 +56,7 @@ const FaqSection = () => {
                   <h2 className="accordion-header" id="headingThree">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      How can I get started with hakxcore's services?
+                      How can I get started with hakxcore&apos;s services?
                     </button>
                   </h2>
                   <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -79,7 +79,7 @@ const FaqSection = () => {
                   <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      Absolutely! At hakxcore, we value your satisfaction. If you're not completely satisfied with our services, we have a transparent refund policy in place. You are eligible for a full refund within a specified period, as outlined in our refund policy. Your satisfaction is our priority, and we strive to ensure you are content with the solutions we provide. Feel free to reach out to our support team for further assistance regarding our refund process.
+                      Absolutely! At hakxcore, we value your satisfaction. If you&apos;re not completely satisfied with our services, we have a transparent refund policy in place. You are eligible for a full refund within a specified period, as outlined in our refund policy. Your satisfaction is our priority, and we strive to ensure you are content with the solutions we provide. Feel free to reach out to our support team for further assistance regarding our refund process.
                     </div>
                   </div>
                 </div>
