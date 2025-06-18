@@ -41,7 +41,7 @@ export default function Page() {
             {/* Introduction */}
             <section className={`mb-12 p-6 rounded-lg ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} shadow-md`}>
               <p className={`mb-4 text-lg ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                Welcome to <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Hakxcore Nextcyber Techsolutions Private Limited</span> ("we," "our," or "us"). By accessing and using our website, <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href='/'>hakxcore.io</Link></span>, and our services, you agree to comply with and be bound by the following Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use our website or services.
+                Welcome to <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>Hakxcore Nextcyber Techsolutions Private Limited</span> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). By accessing and using our website, <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href='/'>hakxcore.io</Link></span>, and our services, you agree to comply with and be bound by the following Terms and Conditions (&quot;Terms&quot;). If you do not agree to these Terms, please do not use our website or services.
               </p>
               <div className={`p-4 rounded ${theme === 'dark' ? 'bg-gray-700 border-gray-600' : 'bg-blue-50 border-blue-200'} border-l-4`}>
                 <p className={`mb-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -137,13 +137,13 @@ export default function Page() {
                 HAKXCORE makes no warranty that:
               </p>
               <ul className={`list-disc pl-6 mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                <li className="mb-2">This Website or its contents or quality will meet user's/member's requirements</li>
+                <li className="mb-2">This Website or its contents or quality will meet user&apos;s/member&apos;s requirements</li>
                 <li className="mb-2">The access to this Website will be uninterrupted, timely, secure or effort-free</li>
                 <li className="mb-2">The results that may be obtained from the use of this online forum will be accurate or reliable</li>
                 <li className="mb-2">Any material downloaded or otherwise obtained through the use of this online forum is done at your own discretion and risk that you will be solely responsible for any damage to your computer system or loss of data that results from the download of any such material</li>
               </ul>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                Any use in any manner of manual or automated software, devices, techniques or other processes/procedures to "crawl" or "spider" any web pages contained in this Website is strictly prohibited. You understand and agree not to supervise, monitor or copy or allow other to supervise, monitor or copy web pages or the content of this Website. You understand and agree not to frame or edit or otherwise replicate the appearance or features or functions of this Website. You understand and agree not to take any action or allow any one to do so that hinders or obstructs or interferes with the working of or places an inappropriate load on our infrastructure to host this Website.
+                Any use in any manner of manual or automated software, devices, techniques or other processes/procedures to &quot;crawl&quot; or &quot;spider&quot; any web pages contained in this Website is strictly prohibited. You understand and agree not to supervise, monitor or copy or allow other to supervise, monitor or copy web pages or the content of this Website. You understand and agree not to frame or edit or otherwise replicate the appearance or features or functions of this Website. You understand and agree not to take any action or allow any one to do so that hinders or obstructs or interferes with the working of or places an inappropriate load on our infrastructure to host this Website.
               </p>
             </section>
 
@@ -155,7 +155,7 @@ export default function Page() {
                 Your privacy is important to us. Our collection, use, and disclosure of personal information is governed by our <span className={`font-bold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}><Link href='/privacy-policy'>Privacy Policy</Link></span>. By using our services, you consent to the collection and use of your information in accordance with this policy.
               </p>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same. Since we do not have the ability to, control or actively monitor content we don't guarantee its accuracy, integrity or quality. Because community standards vary and individuals sometimes choose not to comply with our policies and practices in the process of using our Website, you may be exposed to content that you find offensive or objectionable. You can contact <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvkXlnBvTWNGgtTpfzNDPRMSBHwWmVPflcwRRXpjBzwrhFxLMWgLZwhCZZRjWGqxggdRzL" className="text-blue-500 hover:underline">tech@hakxcore.io</Link> to let us know of content that you find objectionable. We may investigate the complaints violations of our policies that come to our attention and may take any action that we believe is in compliance with prevalent law, appropriate, including without limitation to issuing warnings, removing the content or terminating accounts and/or memberships. However, because situations and interpretations vary, we also reserve the right not to take action. Under no circumstances will we be liable in any way for any content, including but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of, access to, or denial of access to any content on the Website.
+                HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same. Since we do not have the ability to, control or actively monitor content we don&apos;t guarantee its accuracy, integrity or quality. Because community standards vary and individuals sometimes choose not to comply with our policies and practices in the process of using our Website, you may be exposed to content that you find offensive or objectionable. You can contact <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvkXlnBvTWNGgtTpfzNDPRMSBHwWmVPflcwRRXpjBzwrhFxLMWgLZwhCZZRjWGqxggdRzLMWgLZwhCZZRjWGqxggdRzL" className="text-blue-500 hover:underline">tech@hakxcore.io</Link> to let us know of content that you find objectionable. We may investigate the complaints violations of our policies that come to our attention and may take any action that we believe is in compliance with prevalent law, appropriate, including without limitation to issuing warnings, removing the content or terminating accounts and/or memberships. However, because situations and interpretations vary, we also reserve the right not to take action. Under no circumstances will we be liable in any way for any content, including but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of, access to, or denial of access to any content on the Website.
               </p>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 Any information submitted by you must be personal and relate specifically to you. You hereby warrant that the information, which you submit and/or distribute, will not infringe the intellectual property, privacy or any other rights of any third party, and will not contain anything which is libelous, defamatory, obscene, seditious, indecent, harassing or threatening. If relevant, HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same.
@@ -207,7 +207,7 @@ export default function Page() {
                 11. Indemnification
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                You agree to indemnify, defend, and hold harmless Hakxcore, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, or expenses, including reasonable attorneys' fees, arising out of or in connection with:
+                You agree to indemnify, defend, and hold harmless Hakxcore, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, or expenses, including reasonable attorneys&apos; fees, arising out of or in connection with:
               </p>
               <ul className={`list-disc pl-6 mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 <li className="mb-2">Your use of the services</li>
@@ -239,10 +239,10 @@ export default function Page() {
                 <p className={`${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>Upon termination, your right to use the services will cease, and we may delete any data associated with your account, except as required by law.</p>
               </div>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                You understand and agree that HAKXCORE reserves all rights to immediately terminate/remove your membership and access to this Website without prior notice and showing any reason, if it suspects breaches or violations of these Terms of Use or other incorporated agreements/guidelines or requests by law enforcement or other government agencies or unexpected technical issues or problems or any other reason that HAKXCORE reasonably believes good for such termination/removal. You further understand and agree that all terminations shall be made in HAKXCORE's sole discretion and that HAKXCORE shall not be liable to you nor any third party for any termination of your account or access to this Website.
+                You understand and agree that HAKXCORE reserves all rights to immediately terminate/remove your membership and access to this Website without prior notice and showing any reason, if it suspects breaches or violations of these Terms of Use or other incorporated agreements/guidelines or requests by law enforcement or other government agencies or unexpected technical issues or problems or any other reason that HAKXCORE reasonably believes good for such termination/removal. You further understand and agree that all terminations shall be made in HAKXCORE&apos;s sole discretion and that HAKXCORE shall not be liable to you nor any third party for any termination of your account or access to this Website.
               </p>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                We may conduct surveys, polls, contests on this Website from time to time. The feedback, opinion / Responses from Members will kept confidential.
+                We may conduct surveys, polls, contests on this Website from time to time. The feedback, opinion / Responses from Members will be kept confidential.
               </p>
             </section>
 
@@ -260,7 +260,7 @@ export default function Page() {
                 14. Changes to Terms and Conditions
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-                We may update these Terms periodically. When we do, we will revise the "Effective Date" at the top of this page. Your continued use of our services after any changes to these Terms constitutes your acceptance of the updated Terms.
+                We may update these Terms periodically. When we do, we will revise the &quot;Effective Date&quot; at the top of this page. Your continued use of our services after any changes to these Terms constitutes your acceptance of the updated Terms.
               </p>
             </section>
 

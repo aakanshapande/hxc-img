@@ -150,7 +150,7 @@ export default function Page() {
 
             <section className={`mb-10 p-6 rounded-lg ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} shadow-sm hover:shadow-md transition-shadow duration-300`}>
               <h2 className={`text-2xl font-semibold mb-4 pb-2 border-b ${theme === 'dark' ? 'border-gray-700 text-blue-400' : 'border-gray-200 text-blue-500'}`}>
-                7. Children's Privacy
+                7. Children&apos;s Privacy
               </h2>
               <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 Our services are not intended for use by individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe that a minor has provided us with personal information, please contact us so we can take steps to delete that information.
