@@ -73,7 +73,7 @@ const IntroSection = () => {
                     We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM.
                   </p>
                 </h1>
-                <Link href="#contact">
+                <Link href="/contact-page">
                   <button type="button" className="rounded-pill btn-rounded">
                     Get in Touch<span><i className="fas fa-arrow-right"></i></span>
                   </button>

@@ -114,7 +114,6 @@ export default function RootLayout({ children }) {
         <TestimonialSection />
         <FaqSection />
         <PortfolioSection />
-        <ContactSection />
         <FooterSection />
         <BackToTopSection />
         {children}
