@@ -80,7 +80,7 @@ const Navbar = () => {
             <li className="nav-item"><Link href="/" className="nav-link">Testimonials</Link></li>
             <li className="nav-item"><Link href="/" className="nav-link">FAQ</Link></li>
             <li className="nav-item"><Link href="/" className="nav-link">Portfolio</Link></li>
-            <li className="nav-item"><Link href="/" className="nav-link">Contact</Link></li>
+            <li className="nav-item"><Link href="/contact-page" className="nav-link">Contact</Link></li>
           </ul>
           <div className="theme-btn">
             <input

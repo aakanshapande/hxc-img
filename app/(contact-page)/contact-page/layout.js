@@ -7,13 +7,13 @@ import '../../../assets-website/css/toggle.css';
 import '../../../app/globals.css';
 import Script from 'next/script';
 
-export default function TermsLayout({ children }) {
+export default function ContactLayout({ children }) {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Privacy Policy - Hakxcore</title>
+        <title>Contact Page - Hakxcore</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
       </head>
       <body>
@@ -25,4 +25,4 @@ export default function TermsLayout({ children }) {
       </body>
     </html>
   );
-} 
+}
