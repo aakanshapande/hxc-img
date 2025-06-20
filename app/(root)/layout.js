@@ -13,7 +13,6 @@ import ServiceSection from "@/components-website/services";
 import TestimonialSection from "@/components-website/Testimonial";
 import FaqSection from "@/components-website/faq";
 import PortfolioSection from "@/components-website/portfolio";
-import ContactSection from "@/components-website/contact";
 import FooterSection from "@/components-website/footer";
 import BackToTopSection from "@/components-website/backToTop";
 import useJQuery from "./useJQuery";
