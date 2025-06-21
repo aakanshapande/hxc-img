@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../../assets-careers/css/bootstrap.min.css';
-import '../../../assets-careers/css/careers.css';
-import '../../../assets-website/css/style.css';
-import '../../../assets-website/css/fontawesome.css';
-import '../../../assets-website/css/toggle.css';
-import '../../../app/globals.css';
+import '../../assets-careers/css/bootstrap.min.css';
+import '../../assets-careers/css/careers.css';
+import '../../assets-website/css/style.css';
+import '../../assets-website/css/fontawesome.css';
+import '../../assets-website/css/toggle.css';
+import '../../app/globals.css';
 import Script from 'next/script';
 
 export default function TermsLayout({ children }) {
