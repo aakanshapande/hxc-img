@@ -28,7 +28,7 @@ const FaqSection = () => {
                   <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      We specializes in Open-Source Solutions covering Cybersecurity, Single Sign-On (SSO), DevSecOps, and CRM. We offer tailored solutions for data protection, seamless access control, and customer engagement.
+                      We specialize in Open-Source Solutions covering Cybersecurity, Single Sign-On (SSO), DevSecOps, and CRM. We offer tailored solutions for data protection, seamless access control, and customer engagement.
                     </div>
                   </div>
                 </div>
@@ -73,13 +73,13 @@ const FaqSection = () => {
                   <h2 className="accordion-header" id="headingFour">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Can I be refunded if I am not satisfied?
+                      Can I get a refund if I am not satisfied?
                     </button>
                   </h2>
                   <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      Absolutely! At hakxcore, we value your satisfaction. If you&apos;re not completely satisfied with our services, we have a transparent refund policy in place. You are eligible for a full refund within a specified period, as outlined in our refund policy. Your satisfaction is our priority, and we strive to ensure you are content with the solutions we provide. Feel free to reach out to our support team for further assistance regarding our refund process.
+                      Absolutely! At hakxcore, we value your satisfaction. If you are not completely satisfied with our services, we have a transparent refund policy in place. You are eligible for a full refund within a specified period, as outlined in our refund policy. Your satisfaction is our priority, and we strive to ensure you are content with the solutions we provide. Feel free to reach out to our support team for further assistance regarding our refund process.
                     </div>
                   </div>
                 </div>
