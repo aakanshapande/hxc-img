@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         </noscript>
       </head>
       <body className="light vsc-intialized">
-        {/* ✅ Wrap everything in I18nProvider */}
+      s
         <I18nProvider>
           <Navbar />
           <IntroSection />

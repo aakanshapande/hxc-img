@@ -35,30 +35,6 @@
     "social_heading": "Connect with us on social media",
     "company_heading": "Information Technology",
     "company_paragraph": "We always seeking new ways to create value for our clients.",
-    "services_heading": "Services",
-    "services_list": [
-      "Single Sign-On",
-      "Blockchain Development",
-      "Red Team/Blue Team",
-      "more..."
-    ],
-    "links_heading": "Useful Links",
-    "links_list": [
-      "Careers",
-      "Instant Help",
-      "Feedback",
-      "Status",
-      "Privacy Policy",
-      "Terms & Conditions"
-    ],
-    "contact_heading": "Contact",
-    "contact_list": [
-      "Send Email",
-      "Whatsapp",
-      "Telegram",
-      "Instagram",
-      "Linkedin"
-    ],
     "copyright": "All rights reserved, Built with ❤️ in India"
   },
   "featured": {
@@ -79,8 +55,37 @@
     "devops_description": "Empower Your Development with DevOps/DevSecOps Expertise! Harness the potential of DevOps and DevSecOps through our expert services. Streamline your development lifecycle, ensuring efficiency, security, and top-notch quality. Partner with us to elevate your development experience.",
     "blockchain_title": "Blockchain Development",
     "blockchain_description": "Innovate and Transform with Custom Blockchain Solutions! Harness the power of blockchain technology to enhance security, transparency, and efficiency. Our expert team delivers tailored blockchain development services to meet your unique needs.",
-    "learn_more": "Learn more"
-  },
+    "learn_more": "Learn more",
+
+  "footer_information_heading": "Information Technology",
+  "footer_information_text": "We always seeking new ways to create value for our clients.",
+
+  "footer_services_heading": "Services",
+  "footer_services_sso": "Single Sign-On",
+  "footer_services_blockchain": "Blockchain Development",
+  "footer_services_redteam": "Red Team/Blue Team",
+  "footer_services_more": "more...",
+
+  "footer_links_heading": "Useful Links",
+  "footer_links_careers": "Careers",
+  "footer_links_help": "Instant Help",
+  "footer_links_feedback": "Feedback",
+  "footer_links_status": "Status",
+  "footer_links_privacy": "Privacy Policy",
+  "footer_links_terms": "Terms & Conditions",
+  "footer_links_account": "Your Account",
+  "footer_links_affiliate": "Become an Affiliate",
+  "footer_links_create_account": "Create an Account",
+
+  "footer_contact_heading": "Contact",
+  "footer_contact_email": "Send Email",
+  "footer_contact_whatsapp": "Whatsapp",
+  "footer_contact_telegram": "Telegram",
+  "footer_contact_instagram": "Instagram",
+  "footer_contact_linkedin": "Linkedin"
+}
+,
+
   "testimonials": {
     "heading": "Testimonials",
     "subheading": "What our clients are saying",

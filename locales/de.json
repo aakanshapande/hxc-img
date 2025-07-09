@@ -35,30 +35,7 @@
     "social_heading": "Folgen Sie uns in den sozialen Medien",
     "company_heading": "Informationstechnologie",
     "company_paragraph": "Wir suchen stets nach neuen Wegen, um Mehrwert für unsere Kunden zu schaffen.",
-    "services_heading": "Dienstleistungen",
-    "services_list": [
-      "Single Sign-On",
-      "Blockchain-Entwicklung",
-      "Red Team/Blue Team",
-      "mehr..."
-    ],
-    "links_heading": "Nützliche Links",
-    "links_list": [
-      "Karriere",
-      "Soforthilfe",
-      "Feedback",
-      "Status",
-      "Datenschutz",
-      "AGB"
-    ],
-    "contact_heading": "Kontakt",
-    "contact_list": [
-      "E-Mail senden",
-      "Whatsapp",
-      "Telegram",
-      "Instagram",
-      "LinkedIn"
-    ],
+   
     "copyright": "Alle Rechte vorbehalten, mit ❤️ in Indien erstellt"
   },
   "featured": {

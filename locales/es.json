@@ -35,30 +35,7 @@
     "social_heading": "Conéctate con nosotros en redes sociales",
     "company_heading": "Tecnología de la información",
     "company_paragraph": "Siempre buscamos nuevas formas de crear valor para nuestros clientes.",
-    "services_heading": "Servicios",
-    "services_list": [
-      "Single Sign-On",
-      "Desarrollo Blockchain",
-      "Red Team/Blue Team",
-      "más..."
-    ],
-    "links_heading": "Enlaces útiles",
-    "links_list": [
-      "Carreras",
-      "Ayuda instantánea",
-      "Comentarios",
-      "Estado",
-      "Política de privacidad",
-      "Términos y condiciones"
-    ],
-    "contact_heading": "Contacto",
-    "contact_list": [
-      "Enviar correo",
-      "Whatsapp",
-      "Telegram",
-      "Instagram",
-      "Linkedin"
-    ],
+   
     "copyright": "Todos los derechos reservados, hecho con ❤️ en India"
   },
   "featured": {
