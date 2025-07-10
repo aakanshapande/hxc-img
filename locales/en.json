@@ -35,28 +35,7 @@
     "social_heading": "Connect with us on social media",
     "company_heading": "Information Technology",
     "company_paragraph": "We always seeking new ways to create value for our clients.",
-    "copyright": "All rights reserved, Built with ❤️ in India"
-  },
-  "featured": {
-    "book_consultation": "Book a Consultation",
-    "train_employees": "Train Your Employees",
-    "hire_agency": "Hire Us as an Agency",
-    "our_clients": "Our Clients"
-  },
-  "services": {
-    "title": "Our Services",
-    "intro_heading": "Our Services Range From Single Sign-On(SSO), Security Assessments(VAPT) To DevOps/DevSecOps and CRM Anywhere Anytime",
-    "intro_paragraph": "Discover HAKXCORE: Your Go-To for Open-Source Cybersecurity, SSO, DevSecOps, and CRM Solutions. Harness the power of open-source tech for robust data protection, seamless access control, and enhanced customer engagement. Your path to a secure and efficient digital future starts here.",
-    "sso_title": "Single Sign-On(SSO)",
-    "sso_description": "Effortless and Secure Access with Custom SSO Solutions! Discover seamless authentication and enhanced security through our tailored Single Sign-On (SSO) integration. Elevate user experience with personalized solutions. Contact us to revolutionize your digital access.",
-    "vapt_title": "Vulnerability Assessment and Penetration Testing (VAPT)",
-    "vapt_description": "Protect Your Digital Assets with Comprehensive Security Testing! Our VAPT services identify vulnerabilities and provide actionable insights to strengthen your security posture. Ensure your systems are secure with our expert testing and analysis.",
-    "devops_title": "DevOps/DevSecOps",
-    "devops_description": "Empower Your Development with DevOps/DevSecOps Expertise! Harness the potential of DevOps and DevSecOps through our expert services. Streamline your development lifecycle, ensuring efficiency, security, and top-notch quality. Partner with us to elevate your development experience.",
-    "blockchain_title": "Blockchain Development",
-    "blockchain_description": "Innovate and Transform with Custom Blockchain Solutions! Harness the power of blockchain technology to enhance security, transparency, and efficiency. Our expert team delivers tailored blockchain development services to meet your unique needs.",
-    "learn_more": "Learn more",
-
+      
   "footer_information_heading": "Information Technology",
   "footer_information_text": "We always seeking new ways to create value for our clients.",
 
@@ -82,9 +61,30 @@
   "footer_contact_whatsapp": "Whatsapp",
   "footer_contact_telegram": "Telegram",
   "footer_contact_instagram": "Instagram",
-  "footer_contact_linkedin": "Linkedin"
-}
-,
+  "footer_contact_linkedin": "Linkedin",
+
+    "copyright": "All rights reserved, Built with ❤️ in India"
+  },
+  "featured": {
+    "book_consultation": "Book a Consultation",
+    "train_employees": "Train Your Employees",
+    "hire_agency": "Hire Us as an Agency",
+    "our_clients": "Our Clients"
+  },
+  "services": {
+    "title": "Our Services",
+    "intro_heading": "Our Services Range From Single Sign-On(SSO), Security Assessments(VAPT) To DevOps/DevSecOps and CRM Anywhere Anytime",
+    "intro_paragraph": "Discover HAKXCORE: Your Go-To for Open-Source Cybersecurity, SSO, DevSecOps, and CRM Solutions. Harness the power of open-source tech for robust data protection, seamless access control, and enhanced customer engagement. Your path to a secure and efficient digital future starts here.",
+    "sso_title": "Single Sign-On(SSO)",
+    "sso_description": "Effortless and Secure Access with Custom SSO Solutions! Discover seamless authentication and enhanced security through our tailored Single Sign-On (SSO) integration. Elevate user experience with personalized solutions. Contact us to revolutionize your digital access.",
+    "vapt_title": "Vulnerability Assessment and Penetration Testing (VAPT)",
+    "vapt_description": "Protect Your Digital Assets with Comprehensive Security Testing! Our VAPT services identify vulnerabilities and provide actionable insights to strengthen your security posture. Ensure your systems are secure with our expert testing and analysis.",
+    "devops_title": "DevOps/DevSecOps",
+    "devops_description": "Empower Your Development with DevOps/DevSecOps Expertise! Harness the potential of DevOps and DevSecOps through our expert services. Streamline your development lifecycle, ensuring efficiency, security, and top-notch quality. Partner with us to elevate your development experience.",
+    "blockchain_title": "Blockchain Development",
+    "blockchain_description": "Innovate and Transform with Custom Blockchain Solutions! Harness the power of blockchain technology to enhance security, transparency, and efficiency. Our expert team delivers tailored blockchain development services to meet your unique needs.",
+    "learn_more": "Learn more"
+  },
 
   "testimonials": {
     "heading": "Testimonials",
