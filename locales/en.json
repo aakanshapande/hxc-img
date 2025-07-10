@@ -35,34 +35,29 @@
     "social_heading": "Connect with us on social media",
     "company_heading": "Information Technology",
     "company_paragraph": "We always seeking new ways to create value for our clients.",
-      
-  "footer_information_heading": "Information Technology",
-  "footer_information_text": "We always seeking new ways to create value for our clients.",
-
-  "footer_services_heading": "Services",
-  "footer_services_sso": "Single Sign-On",
-  "footer_services_blockchain": "Blockchain Development",
-  "footer_services_redteam": "Red Team/Blue Team",
-  "footer_services_more": "more...",
-
-  "footer_links_heading": "Useful Links",
-  "footer_links_careers": "Careers",
-  "footer_links_help": "Instant Help",
-  "footer_links_feedback": "Feedback",
-  "footer_links_status": "Status",
-  "footer_links_privacy": "Privacy Policy",
-  "footer_links_terms": "Terms & Conditions",
-  "footer_links_account": "Your Account",
-  "footer_links_affiliate": "Become an Affiliate",
-  "footer_links_create_account": "Create an Account",
-
-  "footer_contact_heading": "Contact",
-  "footer_contact_email": "Send Email",
-  "footer_contact_whatsapp": "Whatsapp",
-  "footer_contact_telegram": "Telegram",
-  "footer_contact_instagram": "Instagram",
-  "footer_contact_linkedin": "Linkedin",
-
+    "footer_information_heading": "Information Technology",
+    "footer_information_text": "We always seeking new ways to create value for our clients.",
+    "footer_services_heading": "Services",
+    "footer_services_sso": "Single Sign-On",
+    "footer_services_blockchain": "Blockchain Development",
+    "footer_services_redteam": "Red Team/Blue Team",
+    "footer_services_more": "more...",
+    "footer_links_heading": "Useful Links",
+    "footer_links_careers": "Careers",
+    "footer_links_help": "Instant Help",
+    "footer_links_feedback": "Feedback",
+    "footer_links_status": "Status",
+    "footer_links_privacy": "Privacy Policy",
+    "footer_links_terms": "Terms & Conditions",
+    "footer_links_account": "Your Account",
+    "footer_links_affiliate": "Become an Affiliate",
+    "footer_links_create_account": "Create an Account",
+    "footer_contact_heading": "Contact",
+    "footer_contact_email": "Send Email",
+    "footer_contact_whatsapp": "Whatsapp",
+    "footer_contact_telegram": "Telegram",
+    "footer_contact_instagram": "Instagram",
+    "footer_contact_linkedin": "Linkedin",
     "copyright": "All rights reserved, Built with ❤️ in India"
   },
   "featured": {
@@ -98,6 +93,66 @@
     "quote7": "Good knowledge and tries to provide various solutions that can help the project. Works very well with the internal team.",
     "quote8": "We used Hakxcore for advanced cybersecurity through Auth0 and were very pleased with the results. Their service was timely and professional. Thank you, Hakxcore!"
   },
+
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "intro": "Hakxcore Nextcyber Techsolutions Private Limited we are committed to protecting the privacy of our users. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of personal information when you use our website, hakxcore.io, and our services, including cybersecurity solutions, identity access management, single sign-on solutions, and DevSecOps. By using our services, you agree to the terms of this Privacy Policy.",
+
+    "info_we_collect_title": "1. Information We Collect",
+    "info_intro": "We may collect the following types of information from users:",
+    "personal_info": "Personal Information: This includes information you voluntarily provide, such as your name, email address, contact information, and company details, when you register, contact us, or use or acquire our services.",
+    "technical_data": "Technical Data: We collect technical data related to your use of our website, including IP address, browser type, device type, operating system, and information about your visit (such as pages visited and the time spent on each page).",
+    "usage_data": "Usage Data: We gather usage data on how our services are accessed and used. This may include interactions with our services, activity logs, and other diagnostic information.",
+    "cookies_tracking": "Cookies and Tracking Technologies: Our website uses cookies and similar technologies to enhance user experience, analyze website traffic, and customize services. You may adjust your browser settings to refuse cookies, though some features of our website may not function properly.",
+    "sso_data": "SSO Authentication Data: For clients we are providing our Single Sign-On (SSO) services, we may collect information needed to authenticate and testing users securely across multiple infrastructure applications.",
+
+    "how_we_use_title": "2. How We Use Your Information",
+    "how_we_use_intro": "We use the information collected for the following purposes:",
+    "service_provision": "Service Provision: To provide, operate, and maintain our services, including cybersecurity, SSO, IAM, and DevSecOps solutions.",
+    "communication": "Communication: To respond to your inquiries, send you updates, notify you of changes to our services, and deliver customer support.",
+    "improvement": "Improvement of Services: To analyze usage trends and improve our website, tools, and cybersecurity services.",
+    "security": "Security and Fraud Prevention: To monitor, prevent, and respond to fraudulent or unauthorized activity, ensuring the security of our services and client data.",
+    "legal_compliance": "Legal Compliance: To comply with legal obligations, resolve disputes, and enforce agreements.",
+    "refund": "Refund Processing: To process and manage refund requests, including retaining transaction data as needed for verification and record-keeping.",
+
+    "sharing_info_title": "3. Sharing of Information",
+    "sharing_intro": "We may share your personal information in the following instances:",
+    "with_providers": "With Service Providers: We may share information with third-party service providers that perform tasks on our behalf, such as payment processing, analytics, or IT support. These providers are contractually obligated to protect your information.",
+    "legal_reasons": "For Legal Reasons: We may disclose information if required to do so by law or in response to valid legal requests, such as court orders or government investigations.",
+    "business_transfer": "Business Transfers: If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of the transaction, and we will notify you of any such transfer.",
+
+    "security_title": "4. Security of Your Information",
+    "security_body_1": "We take data security seriously and implement various technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+    "security_body_2": "While we strive to protect your data, no online transmission or storage of information is completely secure. Therefore, we cannot guarantee absolute security, and you are advised to take reasonable steps to protect your information.",
+
+    "privacy_rights_title": "5. Your Privacy Rights",
+    "privacy_rights_intro": "Depending on your location and applicable laws, you may have the following rights regarding your personal information:",
+
+    "data_retention_title": "6. Data Retention",
+    "data_retention": "We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. When information is no longer needed, we will delete or anonymize it in a secure manner.",
+
+    "children_privacy_title": "7. Children's Privacy",
+    "children_privacy": "Our services are not intended for use by individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe that a minor has provided us with personal information, please contact us so we can take steps to delete that information.",
+
+    "intl_data_title": "8. International Data Transfers",
+    "intl_data": "Hakxcore operates primarily in India, but your information may be transferred to, stored in, or processed in other countries where our service providers operate. By using our services, you consent to such transfers, which are governed by appropriate safeguards to protect your information.",
+
+    "changes_title": "9. Changes to This Privacy Policy",
+    "changes_body": "We may update this Privacy Policy periodically to reflect changes in our practices, legal requirements, or other factors. We encourage you to review this page regularly for the latest information on our privacy practices. Your continued use of our services after any changes indicates your acceptance of the updated policy.",
+
+    "contact_us_title": "10. Contact Us",
+    "contact_us_body": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+
+    "access": "Access: You may request a copy of your personal data that we hold.",
+    "correction": "Correction: You can request that we correct any inaccurate or incomplete information.",
+    "deletion": "Deletion: You may request that we delete your personal information, subject to legal obligations.",
+    "objection": "Objection: You have the right to object to processing your data in certain situations.",
+    "portability": "Data Portability: You may have the right to receive your personal information in a structured, commonly used, and machine-readable format.",
+    "company": "Hakxcore Nextcyber Techsolutions Private Limited",
+    "email_label": "Email:",
+    "email_value": "help@hakxcore.com"
+  },
+
   "faq": {
     "heading": "Frequently Asked Questions",
     "subheading": "Get knowledge beforehand, read our FAQs",
@@ -131,6 +186,7 @@
       "crm": "CRM",
       "design": "Design"
     },
+
     "projects": {
       "1": {
         "title": "SSO Project One",
@@ -169,5 +225,99 @@
         "description": "Course"
       }
     }
+
+
+
+  },
+  
+  "terms": {
+    "hero_title": "Terms and Conditions",
+    "intro_welcome": "Welcome to Hakxcore Nextcyber Techsolutions Private Limited (\"we,\" \"our,\" or \"us\"). By accessing and using our website, hakxcore.io, and our services, you agree to comply with and be bound by the following Terms and Conditions (\"Terms\"). If you do not agree to these Terms, please do not use our website or services.",
+    "intro_notice": "We reserve the right to modify these Terms of Use at any time, and without proper notice, by posting amended Terms of Use on this Website. Your use of this Website indicates your acceptance of the amended Terms of Use. Therefore, for your own interest, you are advised to go through the Terms of Use periodically.",
+    
+    "section1_title": "1. Acceptance of Terms",
+    "section1_content": "By accessing or using our services, you agree to be bound by these Terms, along with any applicable policies, including our Privacy Policy. These Terms apply to all users, including visitors, clients, and registered users.",
+    
+    "section2_title": "2. Services Overview",
+    "section2_intro": "Hakxcore provides a range of cybersecurity services, including:",
+    "section2_service_1": "Single Sign-On (SSO) Solutions",
+    "section2_service_2": "Identity Access Management (IAM)",
+    "section2_service_3": "Cybersecurity Services",
+    "section2_service_4": "DevSecOps Integrations",
+    "section2_service_5": "Open-Source CRM Solutions",
+    "section2_service_6": "Custom Tools and Utilities",
+    "section2_outro": "These services are intended to enhance security, streamline access management, and provide tailored cybersecurity solutions to businesses around the globe.",
+    
+    "section3_title": "3. User Responsibilities",
+    "section3_intro": "As a user of our services, you agree to:",
+    "section3_point_1": "Use our services in compliance with all applicable laws and regulations.",
+    "section3_point_2": "Provide accurate and complete information when registering or contracting our services.",
+    "section3_point_3": "Do not use our services for any illegal or unauthorized purpose, including activities that violate intellectual property rights or compromise the security of our systems or other users.",
+    
+    "section4_title": "4. Account Registration and Security",
+    "section4_registration": "Some services may require you to register an account. You agree to provide accurate and up-to-date information during registration and to keep your account information secure.",
+    "section4_security": "You are responsible for maintaining the confidentiality of your account credentials and for any activities or actions under your account. Notify us immediately if you suspect any unauthorized use.",
+    
+    "section5_title": "5. Fees and Payment Terms",
+    "section5_fees": "Fees for our services will be specified in the applicable service agreement or invoice.",
+    "section5_payment_terms": "Payment is due as outlined in your contract, and failure to pay on time may result in suspension or termination of services or if the delivery of the goods and services is over and fees are not paid on or before the specified date in the contract, you may incur the additional penalty of 10% after each month.",
+    "section5_refund": "If you are not satisfied with our services, you may be eligible for a refund within the terms outlined in our Refund Policy. Refund eligibility is subject to specific conditions and must be requested within a specified period after service delivery.",
+    
+    "section6_title": "6. Intellectual Property Rights",
+    "section6_content_1": "All intellectual property, including content, logos, trademarks, and tools developed by Hakxcore, is owned by us or our licensors. Users are granted a limited, non-exclusive, non-transferable license to use our services for their intended purposes. You may not reproduce, distribute, or create derivative works from any of our intellectual property without our express written consent.",
+    "section6_content_2": "HAKXCORE makes no warranty that:",
+    "section6_content_3": "This Website or its contents or quality will meet user's/member's requirements",
+    "section6_content_4": "The access to this Website will be uninterrupted, timely, secure or effort-free",
+    "section6_content_5": "The results that may be obtained from the use of this online forum will be accurate or reliable",
+    "section6_content_6": "Any material downloaded or otherwise obtained through the use of this online forum is done at your own discretion and risk that you will be solely responsible for any damage to your computer system or loss of data that results from the download of any such material",
+    "section6_content_7": "Any use in any manner of manual or automated software, devices, techniques or other processes/procedures to \"crawl\" or \"spider\" any web pages contained in this Website is strictly prohibited. You understand and agree not to supervise, monitor or copy or allow other to supervise, monitor or copy web pages or the content of this Website. You understand and agree not to frame or edit or otherwise replicate the appearance or features or functions of this Website. You understand and agree not to take any action or allow any one to do so that hinders or obstructs or interferes with the working of or places an inappropriate load on our infrastructure to host this Website.",
+    
+    "section7_title": "7. Data Protection and Privacy",
+    "section7_part1": "Your privacy is important to us. Our collection, use, and disclosure of personal information is governed by our Privacy Policy. By using our services, you consent to the collection and use of your information in accordance with this policy.",
+    "section7_part2": "HAKXCORE reserves the right to screen, filter and/or monitor information provided by you and to edit, refuse to distribute or remove the same. Since we do not have the ability to, control or actively monitor content we don't guarantee its accuracy, integrity or quality...",
+    "section7_part3": "Any information submitted by you must be personal and relate specifically to you. You hereby warrant that the information, which you submit and/or distribute, will not infringe the intellectual property, privacy or any other rights of any third party...",
+    
+    "section8_title": "8. Third-Party Services",
+    "section8_content": "Our services may contain links to third-party websites or services, such as Okta, Auth0, AWS, Azure, GCP, or any other identity/service providers for SSO integrations. These third-party services are not controlled by us...",
+    
+    "section9_title": "9. Service Modifications and Availability",
+    "section9_modifications": "We reserve the right to modify or discontinue any of our services at any time without prior notice. We are not liable for any modification, suspension, or discontinuation of our services.",
+    "section9_availability": "We strive to ensure that our services are available 24/7 but do not guarantee uninterrupted access. Scheduled maintenance and other factors may occasionally limit availability.",
+    
+    "section10_title": "10. Limitation of Liability",
+    "section10_intro": "To the fullest extent permitted by law, Hakxcore shall not be liable for any indirect, incidental, special, consequential, or punitive damages...",
+    "section10_point_1": "Your use or inability to use our services",
+    "section10_point_2": "Any unauthorized access, use, or alteration of your transmissions or content",
+    "section10_point_3": "Any actions or conduct of third parties on the service",
+    "section10_limit": "Our liability for direct damages shall be limited to the amount you paid for the services, if any, during the six (6) months preceding the event giving rise to the claim.",
+    
+    "section11_title": "11. Indemnification",
+    "section11_point_1": "Your use of the services",
+    "section11_point_2": "Your violation of these Terms or any applicable laws or regulations",
+    "section11_point_3": "Any content or data you submit through our services",
+    "section11_disclaimer": "By accepting these terms of use you also agree to fully indemnify HAKXCORE... not responsible for any objectionable posting as more fully set out in these Terms of Use.",
+    "section11_technical": "HAKXCORE cannot accept responsibility for any error, omission, interruption, deletion, defect, delay in operation or transmission...",
+    
+    "section12_title": "12. Termination",
+    "section12_by_user": "You may terminate your account and cease using our services at any time.",
+    "section12_by_us": "We reserve the right to suspend or terminate your access to our services for any reason...",
+    "section12_effect": "Upon termination, your right to use the services will cease...",
+    "section12_disclaimer": "You understand and agree that HAKXCORE reserves all rights to immediately terminate/remove your membership and access to this Website...",
+    "section12_surveys": "We may conduct surveys, polls, contests on this Website from time to time...",
+    
+    "section13_title": "13. Governing Law and Dispute Resolution",
+    "section13_content": "These Terms are governed by the laws of the Government of, India... Any disputes arising under these Terms shall be resolved through mediation in India...",
+    
+    "section14_title": "14. Changes to Terms and Conditions",
+    "section14_content": "We may update these Terms periodically. When we do, we will revise the \"Effective Date\" at the top of this page...",
+    
+    "section15_title": "15. Contact Us",
+    "section15_intro": "If you have any questions about these Terms, please contact us at:",
+    "section15_contact_name": "Hakxcore Nextcyber Techsolutions Private Limited",
+    "section15_contact_email": "help@hakxcore.io",
+    "section15_jurisdiction": "You accept that any claims arising against HAKXCORE shall be subject to the exclusive jurisdiction of the High Court at New Delhi and the laws of India shall apply therein.",
+    "section15_disclaimer_acceptance": "Your usage of this Website shall be construed and deemed as an acceptance of these Terms of Use and Disclaimer displayed on relevant pages..."
   }
+
+
 }
