@@ -68,11 +68,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item"><Link href="#home" className="nav-link">Home</Link></li>
-              <li className="nav-item"><Link href="#services" className="nav-link">Services</Link></li>
-              <li className="nav-item"><Link href="#testimonials" className="nav-link">Testimonials</Link></li>
-              <li className="nav-item"><Link href="#faq" className="nav-link">FAQ</Link></li>
-              <li className="nav-item"><Link href="#portfolio" className="nav-link">Portfolio</Link></li>
+              <li className="nav-item"><Link href="/#home" className="nav-link">Home</Link></li>
+              <li className="nav-item"><Link href="/#services" className="nav-link">Services</Link></li>
+              <li className="nav-item"><Link href="/#testimonials" className="nav-link">Testimonials</Link></li>
+              <li className="nav-item"><Link href="/#faq" className="nav-link">FAQ</Link></li>
+              <li className="nav-item"><Link href="/#portfolio" className="nav-link">Portfolio</Link></li>
               <li className="nav-item"><Link href="/contact-page" className="nav-link">Contact</Link></li>
             </ul>
             <div className="theme-btn">
