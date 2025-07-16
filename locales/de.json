@@ -1,0 +1,145 @@
+{
+  "common": {
+    "intro_heading": "Sichern Sie Ihre digitale Zukunft",
+    "intro_subheading": "Wir sind ein führendes Cybersicherheitsunternehmen, das den Zugriff vereinfacht und die Sicherheit stärkt – Weltweit führend in SSO und IAM.",
+    "get_in_touch": "Kontaktieren Sie uns",
+    "intro_og_title": "Sichern Sie Ihre digitale Zukunft",
+    "intro_og_description": "Wir sind ein führendes Cybersicherheitsunternehmen, das den Zugriff vereinfacht und die Sicherheit stärkt – Weltweit führend in SSO und IAM.",
+    "contact_us": "Kontaktieren Sie uns",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "working_hours": "Öffnungszeiten",
+    "mon_fri": "Montag – Freitag: 09:00 – 18:00",
+    "weekend": "Wochenende: Geschlossen",
+    "send_message": "Senden Sie uns eine Nachricht",
+    "your_name": "Ihr Name",
+    "enter_name": "Geben Sie Ihren Namen ein",
+    "email_address": "E-Mail-Adresse",
+    "enter_email": "Geben Sie Ihre E-Mail ein",
+    "your_message": "Ihre Nachricht",
+    "how_can_help": "Wie können wir Ihnen helfen?",
+    "send_message_btn": "Nachricht senden",
+    "loading": "Wird geladen...",
+    "username_required": "Benutzername ist erforderlich!",
+    "email_required": "Bitte geben Sie Ihre E-Mail an!",
+    "email_invalid": "Bitte geben Sie eine gültige E-Mail an!",
+    "message_required": "Nachricht ist erforderlich!",
+    "send_success": "Danke {{username}}, Ihre Nachricht wurde erfolgreich versendet!",
+    "send_failure": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+    "phone_title": "+91-6006511429",
+    "phone_subtitle": "Mo-Fr 9–18 Uhr",
+    "email_title": "support[at]hakxcore[dot]io",
+    "email_subtitle": "Online-Support",
+    "location_title": "Balewadi High Street",
+    "location_subtitle": "Pune Maharashtra 411045",
+    "social_heading": "Folgen Sie uns in den sozialen Medien",
+    "company_heading": "Informationstechnologie",
+    "company_paragraph": "Wir suchen stets nach neuen Wegen, um Mehrwert für unsere Kunden zu schaffen.",
+   
+    "copyright": "Alle Rechte vorbehalten, mit ❤️ in Indien erstellt"
+  },
+  "featured": {
+    "book_consultation": "Beratung buchen",
+    "train_employees": "Mitarbeiter schulen",
+    "hire_agency": "Beauftragen Sie uns als Agentur",
+    "our_clients": "Unsere Kunden"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "intro_heading": "Unsere Dienstleistungen reichen von Single Sign-On (SSO), Sicherheitsbewertungen (VAPT) bis hin zu DevOps/DevSecOps und CRM – jederzeit und überall",
+    "intro_paragraph": "Entdecken Sie HAKXCORE: Ihr Ansprechpartner für Open‑Source‑Cybersicherheit, SSO, DevSecOps und CRM‑Lösungen. Nutzen Sie die Vorteile von Open‑Source‑Technologie für robuste Datensicherheit, nahtlose Zugriffskontrolle und verbessertes Kundenerlebnis. Ihr Weg in eine sichere und effiziente digitale Zukunft beginnt hier.",
+    "sso_title": "Single Sign-On (SSO)",
+    "sso_description": "Müheloser und sicherer Zugriff mit individuellen SSO‑Lösungen! Erleben Sie nahtlose Authentifizierung und erhöhte Sicherheit durch unsere maßgeschneiderte Single Sign‑On‑Integration. Verbessern Sie das Nutzererlebnis mit personalisierten Lösungen. Kontaktieren Sie uns, um Ihren digitalen Zugriff zu revolutionieren.",
+    "vapt_title": "Schwachstellenbewertung und Penetrationstests (VAPT)",
+    "vapt_description": "Schützen Sie Ihre digitalen Assets mit umfassenden Sicherheitstests! Unsere VAPT‑Dienstleistungen identifizieren Schwachstellen und liefern umsetzbare Erkenntnisse zur Stärkung Ihrer Sicherheitslage. Stellen Sie mit unseren Expertentests und Analysen sicher, dass Ihre Systeme sicher sind.",
+    "devops_title": "DevOps/DevSecOps",
+    "devops_description": "Stärken Sie Ihre Entwicklung mit DevOps/DevSecOps‑Expertise! Nutzen Sie das Potenzial von DevOps und DevSecOps durch unsere professionellen Services. Optimieren Sie Ihren Entwicklungszyklus mit Effizienz, Sicherheit und herausragender Qualität. Arbeiten Sie mit uns zusammen, um Ihr Entwicklungserlebnis zu verbessern.",
+    "blockchain_title": "Blockchain-Entwicklung",
+    "blockchain_description": "Innovieren und transformieren Sie mit maßgeschneiderten Blockchain‑Lösungen! Nutzen Sie Blockchain‑Technologie für erhöhte Sicherheit, Transparenz und Effizienz. Unser Expertenteam bietet individuelle Blockchain‑Entwicklungsdienste, die auf Ihre Anforderungen abgestimmt sind.",
+    "learn_more": "Mehr erfahren"
+  },
+  "testimonials": {
+    "heading": "Kundenmeinungen",
+    "subheading": "Das sagen unsere Kunden",
+    "quote1": "Hakxcore hat unsere digitalen Abläufe revolutioniert. Ihre Expertise in Cybersicherheit und SSO‑Integration hat perfekt zu unseren Bedürfnissen gepasst. Sehr empfehlenswert!",
+    "quote2": "Tolle Zusammenarbeit mit Hakxcore, weiter so...!",
+    "quote3": "Das Team von Hakxcore ist sehr fleißig und extrem engagiert. Sie haben zusätzliche Anstrengungen unternommen, stets auf mein Feedback gehört und sich kontinuierlich verbessert. Cybersicherheitsexperten – ich werde langfristig mit ihnen arbeiten.",
+    "quote4": "Sehr erfahrene Leute bei Hakxcore. Es hat Spaß gemacht, mit ihnen zu arbeiten.",
+    "quote5": "Das HAKXCORE‑Team ist kompetent. Sie wissen, was sie tun. Mukesh ist bescheiden und angenehm im Umgang. Technisch sind sie auf hohem Niveau.",
+    "quote6": "Sehr professionelle Umsetzung einer Auth0‑Integration zur Ablösung des Standard‑WordPress‑Login‑Systems. Ich empfehle diesen Anbieter aufgrund ihrer Fähigkeiten und ihres Engagements ausdrücklich.",
+    "quote7": "Gute Kenntnisse und der Wunsch, verschiedene Lösungen für das Projekt bereitzustellen. Arbeitet sehr gut mit dem internen Team zusammen.",
+    "quote8": "Wir haben Hakxcore für fortschrittliche Cybersicherheit über Auth0 genutzt und waren mit den Ergebnissen sehr zufrieden. Ihr Service war pünktlich und professionell. Danke, Hakxcore!"
+  },
+  "faq": {
+    "heading": "Häufig gestellte Fragen",
+    "subheading": "Vorab informieren – lesen Sie unsere FAQs",
+    "accordion": [
+      {
+        "question": "Was sind die Hauptmerkmale?",
+        "answer": "Wir sind auf Open‑Source‑Lösungen spezialisiert, die Cybersicherheit, Single Sign‑On (SSO), DevSecOps und CRM abdecken. Wir bieten maßgeschneiderte Lösungen für Datenschutz, nahtlose Zugriffskontrolle und Kundenengagement."
+      },
+      {
+        "question": "Wie verbessert SSO die Benutzererfahrung?",
+        "answer": "Single Sign‑On (SSO) ermöglicht es Benutzern, sich einmal anzumelden und auf mehrere Anwendungen ohne erneute Eingabe der Zugangsdaten zuzugreifen. Es vereinfacht die Authentifizierung, spart Zeit und verbessert die Benutzerfreundlichkeit."
+      },
+      {
+        "question": "Wie kann ich mit den Hakxcore-Diensten anfangen?",
+        "answer": "Bereiten Sie zuerst Ihr Pflichtenheft vor und kontaktieren Sie uns über unsere Kontaktseite, E-Mail oder telefonisch. Unser Team hilft Ihnen zeitnah weiter, versteht Ihre Anforderungen und bietet die besten maßgeschneiderten Lösungen."
+      },
+      {
+        "question": "Kann ich eine Rückerstattung erhalten, wenn ich nicht zufrieden bin?",
+        "answer": "Absolut! Bei Hakxcore ist uns Ihre Zufriedenheit wichtig. Wenn Sie mit unseren Dienstleistungen nicht vollständig zufrieden sind, haben wir eine transparente Rückerstattungsrichtlinie. Sie haben Anspruch auf vollständige Rückerstattung innerhalb eines angegebenen Zeitraums, wie in unserer Richtlinie beschrieben. Wenden Sie sich bei Fragen bitte an unser Support-Team."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Aktuelle Projekte",
+    "subtitle": "Jeden Tag überschreiten wir Grenzen des Möglichen – hier sind unsere neuesten Projekte.",
+    "filters": {
+      "all": "Alle",
+      "sso": "SSO",
+      "courses": "Kurse",
+      "devsecops": "DevSecOps",
+      "crm": "CRM",
+      "design": "Design"
+    },
+    "projects": {
+      "1": {
+        "title": "SSO‑Projekt Eins",
+        "description": "Auth0"
+      },
+      "2": {
+        "title": "Kursprojekt Eins",
+        "description": "Kurs"
+      },
+      "3": {
+        "title": "Kursprojekt Zwei",
+        "description": "OKTA"
+      },
+      "4": {
+        "title": "Kursprojekt Drei",
+        "description": "Commvault"
+      },
+      "5": {
+        "title": "SSO‑Projekt Zwei",
+        "description": "Webseite"
+      },
+      "6": {
+        "title": "Entwicklungsprojekt Zwei",
+        "description": "Open‑Source Digital Library CRM"
+      },
+      "7": {
+        "title": "SSO PHP Laravel Projekt",
+        "description": "PHP Laravel SSO"
+      },
+      "8": {
+        "title": "Keycloak SSO Theme‑Anpassung",
+        "description": "Keycloak"
+      },
+      "9": {
+        "title": "Blue Team Kursentwicklung",
+        "description": "Kurs"
+      }
+    }
+  }
+}

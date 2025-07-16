@@ -2,8 +2,10 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const ServiceSection = () => {
+  const { t } = useTranslation('services');
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
   const progressBarRef = useRef(null);
@@ -50,7 +52,7 @@ const ServiceSection = () => {
     <section id="services" className="services">
       <div className="container mb-5">
         <div className="row text-center">
-          <h2 className="display-3 fw-bold">Our Services</h2>
+          <h2 className="display-3 fw-bold">{t('title')}</h2>
           <div className="heading-line mb-1"></div>
         </div>
 
@@ -58,15 +60,15 @@ const ServiceSection = () => {
           <div className="col-md-6 border-right">
             <div className="service-section-card-light p-4">
               <h3 className="fw-bold text-capitalize text-left">
-                Our Services Range From Single Sign-On(SSO), Security Assessments(VAPT) To DevOps/DevSecOps and CRM Anywhere Anytime
+                {t('intro_heading')}
               </h3>
             </div>
           </div>
           <div className="col-md-6">
             <div className="service-section-card-light p-4 text-start">
               <p className="fw-light lead">
-                Discover HAKXCORE: Your Go-To for Open-Source Cybersecurity, SSO, DevSecOps, and CRM Solutions. Harness the power of open-source tech for robust data protection, seamless access control, and enhanced customer engagement. Your path to a secure and efficient digital future starts here.
-              </p>
+{t('intro_paragraph')}   
+           </p>
             </div>
           </div>
         </div>
@@ -80,14 +82,13 @@ const ServiceSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content order-sm-0">
                   <div className="icon d-block fas fa-shield"></div>
-                  <h3 className="display-3--title mt-1">Single Sign-On(SSO)</h3>
+                  <h3 className="display-3--title mt-1">{t('sso_title')}</h3>
                   <p className="lh-lg">
-                    Effortless and Secure Access with Custom SSO Solutions!
-                    Discover seamless authentication and enhanced security through our tailored Single Sign-On (SSO) integration. Elevate user experience with personalized solutions. Contact us to revolutionize your digital access.
-                  </p>
+                    {t('sso_description')}
+                    </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
-                      Learn more<span><i className="fas fa-arrow-right"></i></span>
+{t('learn_more')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>
@@ -104,14 +105,12 @@ const ServiceSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content order-sm-0">
                   <div className="icon d-block fas fa-shield-alt"></div>
-                  <h3 className="display-3--title mt-1">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                  <h3 className="display-3--title mt-1">{t('vapt_title')}</h3>
                   <p className="lh-lg">
-                    Protect Your Digital Assets with Comprehensive Security Testing!
-                    Our VAPT services identify vulnerabilities and provide actionable insights to strengthen your security posture. Ensure your systems are secure with our expert testing and analysis.
-                  </p>
+{t('vapt_description')}                  </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
-                      Learn more<span><i className="fas fa-arrow-right"></i></span>
+{t('learn_more')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>
@@ -128,14 +127,12 @@ const ServiceSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto">
                 <div className="services__content">
                   <div className="icon d-block fas fa-code"></div>
-                  <h3 className="display-3--title mt-1">DevOps/DevSecOps</h3>
+                  <h3 className="display-3--title mt-1">{t('devops_title')}</h3>
                   <p className="lh-lg">
-                    Empower Your Development with DevOps/DevSecOps Expertise!
-                    Harness the potential of DevOps and DevSecOps through our expert services. Streamline your development lifecycle, ensuring efficiency, security, and top-notch quality. Partner with us to elevate your development experience.
-                  </p>
+{t('devops_description')}                  </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
-                      Learn more<span><i className="fas fa-arrow-right"></i></span>
+{t('learn_more')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>
@@ -152,14 +149,12 @@ const ServiceSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services my-auto order-1 order-md-0">
                 <div className="services__content order-sm-0">
                   <div className="icon d-block fas fa-link"></div>
-                  <h3 className="display-3--title mt-1">Blockchain Development</h3>
+                  <h3 className="display-3--title mt-1">{t('blockchain_title')}</h3>
                   <p className="lh-lg">
-                    Innovate and Transform with Custom Blockchain Solutions!
-                    Harness the power of blockchain technology to enhance security, transparency, and efficiency. Our expert team delivers tailored blockchain development services to meet your unique needs.
-                  </p>
+{t('blockchain_description')}                  </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
-                      Learn more<span><i className="fas fa-arrow-right"></i></span>
+{t('learn_more')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>
@@ -183,7 +178,7 @@ const ServiceSection = () => {
                   </p>
                   <Link href="#contact">
                     <button type="button" className="rounded-pill btn-rounded border-primary">
-                      Learn more<span><i className="fas fa-arrow-right"></i></span>
+{t('learn_more')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>

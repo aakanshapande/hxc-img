@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const TestimonialSection = () => {
+  const { t } = useTranslation('testimonials');
+
   return (
     <section id="testimonials" className="testimonials">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -14,9 +18,9 @@ const TestimonialSection = () => {
       </svg>
       <div className="container pt-5">
         <div className="row text-center text-white mb-5">
-          <h1 className="display-3 fw-bold">Testimonials</h1>
+          <h1 className="display-3 fw-bold">{t('heading')}</h1>
           <hr className="mx-auto" />
-          <p className="lead pt-1">What our clients are saying</p>
+          <p className="lead pt-1">{t('subheading')}</p>
         </div>
 
         {/* START THE CAROUSEL CONTENT */}
@@ -43,7 +47,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="/images/testimonials/Liel-Ran-CEO-DOControl.io.webp"
                         alt="client-1 picture"
                         className="img-fluid rounded-circle"
@@ -68,8 +72,8 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Hakxcore revolutionized our digital operations. Their expertise in cybersecurity and SSO integration aligned perfectly with our needs. Highly recommended!" - Liel Ran
-                    <i className="fas fa-quote-right"></i>
+{t('quote1')}                  
+  <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
               </div>
@@ -88,7 +92,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
@@ -112,7 +116,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Great experience working with hakxcore, keep the same work going...!
+{t('quote2')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -132,7 +136,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Flencio-Falez.webp"
                         alt="client-3 picture"
                         className="img-fluid rounded-circle"
@@ -151,7 +155,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    At hakxcore people are very hard working, and super committed to the job and he also wants to deliver a good quality job. They made extra efforts, always listening to my requirements and feedback, and trying to improve. They are cybersecurity expert, I will work with them for a long time.
+{t('quote3')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -171,7 +175,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Kevin-Blackwood-Lenfestinstitute.org.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
@@ -200,7 +204,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Really good experienced Peoples at hakxcore, Liked working with him..
+{t('quote4')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -220,7 +224,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
@@ -249,7 +253,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    The HAKXCORE team is good. They know what they are doing. Mukesh is humble and easy to work with. Technically they are quite sound.
+{t('quote5')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -269,7 +273,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
@@ -298,7 +302,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Very knowledgeable execution of an Auth0 integration to replace the standard Wordpress login system with a more robust and fully featured interface. I highly recommend this vendor for their skills and commitment.
+{t('quote6')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -317,7 +321,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
@@ -346,7 +350,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    Good knowledge and tries to provide various solutions that can help in project. Works very well with internal team.
+{t('quote7')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -366,7 +370,7 @@ const TestimonialSection = () => {
                     </div>
                     {/* client picture */}
                     <div className="image-container">
-                      <img
+                      <Image
                         src="https://blob.hakxcore.io/images/testimonials/ralphjones.webp"
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
@@ -395,7 +399,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-                    We used Hakxcore to provide advanced cyber security through Auth0 and are very pleased with the end results.  Their service was timely and professional with great customer service.  They were able to provide the services we needed in order to comply with our clients needs.  Thank you, Hakxcore!
+{t('quote8')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>

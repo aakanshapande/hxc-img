@@ -14,12 +14,11 @@ import FooterSection from "@/components-website/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Intercom from '@intercom/messenger-js-sdk';
-
+import useJQuery from "./useJQuery";
+import I18nProvider from "@/components/I18nProvider";
 Intercom({
   app_id: 'asbm4t30',
 });
-
-import useJQuery from "./useJQuery";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -41,14 +40,18 @@ export default function RootLayout({ children }) {
         </noscript>
       </head>
       <body className="light vsc-intialized">
-        <Navbar />
-        <IntroSection />
-        <InternshipProgram />
-        <InternshipButtonSection />
-        <InternshipDomain />
-        <AttackSection />
-        <FooterSection />
-        {children}
+      s
+        <I18nProvider>
+          <Navbar />
+          <IntroSection />
+          <InternshipProgram />
+          <InternshipButtonSection />
+          <InternshipDomain />
+          <AttackSection />
+          <FooterSection />
+          {children}
+        </I18nProvider>
+
         <Analytics />
         <SpeedInsights />
       </body>

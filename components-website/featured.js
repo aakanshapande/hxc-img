@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const FeaturedSection = () => {
+const { t } = useTranslation('featured');
   const companies = [
     { name: 'Do Control Org', logo: 'https://blob.hakxcore.io/images/companies/DOControl.io.svg' },
     { name: 'Tech Bloc Org', logo: 'https://blob.hakxcore.io/images/companies/Satechbloc.com.avif' },
@@ -28,7 +30,7 @@ const FeaturedSection = () => {
               <div className="card shadow-sm">
                 <div className="card-body">
                   <i className="card-title fa-solid fa-business-time"></i>
-                  <h4 className="card-title">Book a Consultation</h4>
+                  <h4 className="card-title">{t('book_consultation')}</h4>
                 </div>
               </div>
             </a>
@@ -43,7 +45,7 @@ const FeaturedSection = () => {
               <div className="card shadow-sm">
                 <div className="card-body">
                   <i className="card-title fa-solid fa-users"></i>
-                  <h4 className="card-title">Train Your Employees</h4>
+                  <h4 className="card-title">{t('train_employees')}</h4>
                 </div>
               </div>
             </a>
@@ -58,7 +60,7 @@ const FeaturedSection = () => {
               <div className="card shadow-sm">
                 <div className="card-body">
                   <i className="card-title fa-solid fa-building"></i>
-                  <h4 className="card-title">Hire Us as an Agency</h4>
+                  <h4 className="card-title">{t('hire_agency')}</h4>
                 </div>
               </div>
             </a>
@@ -67,7 +69,7 @@ const FeaturedSection = () => {
           {/* Companies Section */}
           <div className="col-12">
             <h4 className="fw-bold lead mb-3" style={{ marginTop: '8rem' }}>
-              Our Clients
+              {t('our_clients')}
             </h4>
             <div className="heading-line mb-5"></div>
           </div>

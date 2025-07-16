@@ -88,8 +88,8 @@ const FooterSection = () => {
       </div>
 
       {/* <!-- START THE CONTENT FOR COMPANY INFO --> */}
-
-      <div className="container mt-5 company-info px-3">
+      
+        <div className="container mt-5 company-info px-3">
         <div className="row text-white justify-content-center mt-3 pb-3">
           <div className="col-12 col-sm-6 col-lg-6 mb-4 mb-sm-4 mb-md-0">
             <h5 className="text-capitalize fw-bold">Information Technology</h5>
@@ -136,6 +136,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
+     
 
       {/* <!-- START THE COPYRIGHT INFO --> */}
 

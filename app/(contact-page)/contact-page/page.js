@@ -3,9 +3,11 @@ import Navbar from '../../../components-website/Navbar';
 import Footer from '../../../components-website/footer';
 import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
+import I18nProvider from '@/components/I18nProvider';
 import axios from "axios";
 
-export default function ContactPage() {  
+function ContactPageContent() {  
   const [username, setUsername] = useState("");  
   const [email, setEmail] = useState("");  
   const [message, setMessage] = useState("");  
@@ -14,6 +16,7 @@ export default function ContactPage() {
   const [theme, setTheme] = useState('light');
   const form = useRef();
   const router = useRouter();  
+  const { t, ready } = useTranslation('common'); 
 
   useEffect(() => {
     const currentTheme = localStorage.getItem('theme') || 'light';
@@ -78,6 +81,20 @@ export default function ContactPage() {
       setErrMsg('Something went wrong. Please try again later.');    
     }  
   };  
+
+  // Show loading state while i18n is initializing
+  if (!ready) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p className="mt-2">Loading...</p>
+        </div>
+      </div>
+    );
+  }
   
   return (    
     <div className={`min-h-screen flex flex-col ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'}`}>      
@@ -88,22 +105,24 @@ export default function ContactPage() {
           <div className="max-w-6xl mx-auto">            
             {/* Hero Section*/}            
             <div className={`mb-12 p-8 mt-20 rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-blue-50'} border-l-4 border-blue-500`}>              
-              <h1 className={`text-4xl md:text-5xl font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-500'}`}>Contact Us</h1>            
+              <h1 className={`text-4xl md:text-5xl font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-500'}`}>
+                {t('contact_us')}
+              </h1>            
             </div>                        
             {/* Contact Information Cards */}            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">              
               <div className={`p-6 rounded-lg shadow-md ${theme === 'dark' ? 'bg-gray-800' : ''}`} style={theme !== 'dark' ? { background: 'linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95))', color: '#fff' } : {}}>
                 <div className="flex items-center mb-4">                  
                   <i className="ri-phone-line text-2xl mr-3"></i>                  
-                  <h3 className="text-lg font-semibold">Phone</h3>                
+                  <h3 className="text-lg font-semibold">{t('phone')}</h3>                
                 </div>                
                 <p className="mb-2">+91 93113 22022</p>
-                <p className="text-sm">Mon-Fri, 10am-6pm</p>         
+                <p className="text-sm">{t('mon_fri')}</p>         
               </div>          
               <div className={`p-6 rounded-lg shadow-md ${theme === 'dark' ? 'bg-gray-800' : ''}`} style={theme !== 'dark' ? { background: 'linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95))', color: '#fff' } : {}}>    
                 <div className="flex items-center mb-4">              
                   <i className="ri-mail-line text-2xl mr-3"></i>      
-                  <h3 className="text-lg font-semibold">Email</h3>      
+                  <h3 className="text-lg font-semibold">{t('email')}</h3>      
                 </div>            
                 <p className="mb-2">info@hakxcore.com</p>      
                 <p className="mb-2">career@hakxcore.com</p>       
@@ -111,15 +130,15 @@ export default function ContactPage() {
               <div className={`p-6 rounded-lg shadow-md ${theme === 'dark' ? 'bg-gray-800' : ''}`} style={theme !== 'dark' ? { background: 'linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95))', color: '#fff' } : {}}>          
                 <div className="flex items-center mb-4">     
                   <i className="ri-time-line text-2xl mr-3"></i>   
-                  <h3 className="text-lg font-semibold">Working Hours</h3>    
+                  <h3 className="text-lg font-semibold">{t('working_hours')}</h3>    
                 </div>           
-                <p className="mb-2">Mon-Fri: 10am - 6pm</p>  
-                <p className="mb-2">Sat-Sun: Closed</p>   
+                <p className="mb-2">{t('mon_fri')}</p>  
+                <p className="mb-2">{t('weekend')}</p>   
               </div>         
             </div>      
             {/* Contact Form */}         
             <div className={`p-8 rounded-xl shadow-lg ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>          
-              <h2 className="text-2xl font-bold mb-8">Send Us a Message</h2>   
+              <h2 className="text-2xl font-bold mb-8">{t('send_message')}</h2>   
               {errMsg && (     
                 <div className={`mb-6 p-4 rounded-lg ${theme === 'dark' ? 'bg-red-900 text-red-200' : 'bg-red-100 text-red-800'}`}>          
                   {errMsg}          
@@ -133,7 +152,7 @@ export default function ContactPage() {
               <form ref={form} onSubmit={handleSend} className="space-y-6">        
                 <div>                  
                   <label htmlFor="username" className={`block mb-2 font-medium ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>                    
-                    Your Name                  
+                    {t('your_name')}
                   </label>                  
                   <input                    
                     type="text"                    
@@ -142,13 +161,13 @@ export default function ContactPage() {
                     value={username}                    
                     onChange={(e) => setUsername(e.target.value)}                    
                     className={`w-full px-4 py-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 focus:border-blue-400 focus:ring-blue-500' : 'bg-white border-gray-300 focus:border-blue-500 focus:ring-blue-400'} focus:outline-none focus:ring-2`}                    
-                    placeholder="Enter your name"                    
+                    placeholder={t('enter_name')}
                     required                  
                   />                
                 </div>                
                 <div>                  
                   <label htmlFor="email" className={`block mb-2 font-medium ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>                    
-                    Email Address                  
+                    {t('email_address')}
                   </label>                  
                   <input                    
                     type="email"                    
@@ -157,13 +176,13 @@ export default function ContactPage() {
                     value={email}                    
                     onChange={(e) => setEmail(e.target.value)}                    
                     className={`w-full px-4 py-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 focus:border-blue-400 focus:ring-blue-500' : 'bg-white border-gray-300 focus:border-blue-500 focus:ring-blue-400'} focus:outline-none focus:ring-2`}                    
-                    placeholder="Enter your email"                    
+                    placeholder={t('enter_email')}
                     required                  
                   />                
                 </div>                
                 <div>                  
                   <label htmlFor="message" className={`block mb-2 font-medium ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>                    
-                    Your Message                  
+                    {t('your_message')}
                   </label>                  
                   <textarea                    
                     id="message"                    
@@ -172,7 +191,7 @@ export default function ContactPage() {
                     value={message}                    
                     onChange={(e) => setMessage(e.target.value)}                    
                     className={`w-full px-4 py-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 focus:border-blue-400 focus:ring-blue-500' : 'bg-white border-gray-300 focus:border-blue-500 focus:ring-blue-400'} focus:outline-none focus:ring-2`}                    
-                    placeholder="How can we help you?"                    
+                    placeholder={t('how_can_help')}
                     required                  
                   ></textarea>                
                 </div>                
@@ -181,7 +200,7 @@ export default function ContactPage() {
                   className="w-full py-4 px-6 rounded-xl font-semibold text-white"                  
                   style={{ background: 'linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95))', border: 'none' }}                
                 >                  
-                  Send Message                
+                  {t('send_message_btn')}
                 </button>              
               </form>            
             </div>          
@@ -190,5 +209,13 @@ export default function ContactPage() {
       </main>      
       <Footer />    
     </div>  
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <I18nProvider>
+      <ContactPageContent />
+    </I18nProvider>
   );
 }
