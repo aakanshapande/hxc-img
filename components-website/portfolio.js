@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import styles from '@/assets-website/css/PortfolioSection.module.css'; // Example for CSS Modules
+import { useTranslation } from "react-i18next";
 
 const PortfolioSection = () => {
     const [filter, setFilter] = useState("all");
+    const {t} = useTranslation("portfolio")
 
     const handleFilterChange = (newFilter) => {
         setFilter(newFilter);
@@ -24,10 +26,10 @@ const PortfolioSection = () => {
         <section id="portfolio" className={styles.portfolio}>
             <div className="container">
                 <div className="row text-center mt-5">
-                    <h2 className="display-3 fw-bold text-capitalize">Latest work</h2>
+                    <h2 className="display-3 fw-bold text-capitalize">{t('title')}</h2>
                     <div className="heading-line"></div>
                     <p className="lead">
-                        Everyday pushing the boundaries of what's possible, Here are our recent projects.
+                       {t('subtitle')}
                     </p>
                 </div>
 
@@ -41,7 +43,7 @@ const PortfolioSection = () => {
                                 type="button"
                                 onClick={() => handleFilterChange(category)}
                             >
-                                {category.toUpperCase()}
+                                {t(`filters.${category}`)}
                             </button>
                         ))}
                     </div>
@@ -60,8 +62,8 @@ const PortfolioSection = () => {
                                             <a href={item.imgSrc} className="glightbox2">
                                                 <i className="fas fa-magnifying-glass mb-3"></i>
                                             </a>
-                                            <h4>{item.title}</h4>
-                                            <p>{item.description}</p>
+                                            <h4>{t(`projects.${item.id}.title`)}</h4>
+                                            <p>{t(`projects.${item.id}.description`)}</p>
                                         </div>
                                     </div>
                                 </div>
