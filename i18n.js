@@ -1,9 +1,8 @@
-// i18n.js (or i18n/index.js)
+
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-// Import JSON files (if needed for SSR; otherwise skip and use backend plugin)
 import en from './locales/en.json';
 import hi from './locales/hi.json';
 import it from './locales/it.json';
