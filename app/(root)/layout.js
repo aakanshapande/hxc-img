@@ -106,6 +106,17 @@ export default function RootLayout({ children }) {
         <title>Hakxcore home page</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-41EPGP805X"
+        ></script>
+        <script  id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-41EPGP805X');`}
+        </script>
       </head>
       <body className={inter.className}>
         <I18nProvider>
