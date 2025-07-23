@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
 function getCategoryCounts(jobs) {
+
   const counts = {};
   jobs.forEach(job => {
     if (job.category) {
@@ -44,7 +45,8 @@ async function getJobs() {
 }
 
 export default function CareersPage() {
-  const { t } = useTranslation("common");
+ const { t } = useTranslation('careers');
+
   const [jobs, setJobs] = useState([]);
   const [search, setSearch] = useState("");
   const [showAll, setShowAll] = useState(false);
@@ -98,20 +100,20 @@ export default function CareersPage() {
         >
           <div className="w-full flex justify-center mb-10">
             <span className="inline-block text-center" style={{ background: badgeColor, color: 'white', fontSize: '1.5rem', fontWeight: 700, padding: '1rem 1.5rem', borderRadius: '1rem' }}>
-              {t('careers_internship_programs_title', 'Internship Programs Hakxcore.io')}
+              {t('careers_internship_programs_title')}
             </span>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full mb-8 gap-6 md:gap-0">
             <div className="flex-1 flex flex-col justify-center items-start md:pl-8 w-full">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight text-black text-left">
-                {t('careers_get_your_experience', 'Get Your Experience')} <br /> {t('careers_you_need', 'You Need')}
+                {t('careers_get_your_experience')} <br /> {t('careers_you_need')}
               </h2>
             </div>
             <div className="flex-1 flex justify-center md:justify-end w-full md:pr-8 mt-8 md:mt-0">
               {careerImg2 && typeof careerImg2 === 'string' && (
                 <Image
                   src={careerImg2}
-                  alt={t('careers_internship_search_illustration', 'Internship search illustration')}
+                  alt={t('careers_internship_search_illustration')}
                   width={180}
                   height={120}
                   className="object-contain max-w-[180px] max-h-[120px] sm:max-w-[220px] sm:max-h-[160px] md:max-w-[220px] md:max-h-[160px]"
@@ -122,14 +124,14 @@ export default function CareersPage() {
           </div>
           <div className="mt-2 mb-2 w-full text-center">
             <p className="text-xl sm:text-2xl md:text-3xl font-bold text-black">
-              {t('careers_choose_category', 'Choose Your Category In Your Passionate Cybersecurity Subfield')}
+              {t('careers_choose_category')}
             </p>
           </div>
           <div className="w-full flex justify-center">
             <div className="relative w-full max-w-2xl">
               <input
                 type="text"
-                placeholder={t('search_for_jobs', 'Search for jobs..')}
+                placeholder={t('search_for_jobs')}
                 className="w-full py-3 pl-6 pr-12 rounded-lg bg-blue-100 text-lg focus:outline-none border border-blue-200 placeholder:text-gray-500"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
@@ -146,7 +148,7 @@ export default function CareersPage() {
           <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 text-center mb-8">
             {filteredJobs.length > 0
               ? t('open_positions', { count: filteredJobs.length })
-              : t('no_open_positions', 'No open positions at the moment.')}
+              : t('no_open_positions')}
           </div>
         </div>
         <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 px-2 sm:px-4 md:px-8">
@@ -155,7 +157,7 @@ export default function CareersPage() {
             <div className="bg-white rounded-md shadow-sm p-4 sm:p-6">
               <div className="flex items-center mb-8">
                 <div className="border-l-4 border-blue-700 h-10 mr-4"></div>
-                <h2 className="text-xl sm:text-2xl font-bold">{t('all_positions', 'All positions')} <span className="font-normal">({filteredJobs.length})</span></h2>
+                <h2 className="text-xl sm:text-2xl font-bold">{t('all_positions')} <span className="font-normal">({filteredJobs.length})</span></h2>
               </div>
               <ul className="mb-8 space-y-4">
                 <li
@@ -183,7 +185,7 @@ export default function CareersPage() {
                 className="w-full border border-black rounded-full py-2 px-4 text-black font-medium hover:bg-gray-100 transition flex items-center justify-center text-base sm:text-lg"
                 onClick={() => router.push("/internship")}
               >
-                {t('share_linkedin', 'Share your LinkedIn profile')}
+                {t('share_linkedin')}
               </button>
             </div>
           </aside>
@@ -201,7 +203,7 @@ export default function CareersPage() {
                         {job.mode ? `${job.mode} | ${job.duration}` : job.duration || ""}
                       </span>
                       <span className="text-white rounded-full px-4 py-2 text-xs sm:text-base font-medium text-center" style={{background: badgeColor}}>
-                        {t('stipend', 'Stipend')} {(!job.stipend || job.stipend === "Free") ? t('free', 'Free') : `Rs. ${job.stipend}`}
+                        {t('stipend')} {(!job.stipend || job.stipend === "Free") ? t('free') : `Rs. ${job.stipend}`}
                       </span>
                     </div>
                     <div className="flex flex-row flex-wrap gap-2 sm:gap-3 max-w-full md:max-w-[480px]">
@@ -214,7 +216,7 @@ export default function CareersPage() {
                               {tag}
                             </span>
                           ))
-                        : <span className="text-gray-400 italic">{t('no_tags', 'No tags')}</span>
+                        : <span className="text-gray-400 italic">{t('no_tags')}</span>
                       }
                     </div>
                     <button
@@ -233,7 +235,7 @@ export default function CareersPage() {
             {showShowMore && (
               <div className="flex justify-center mt-8">
                 <button className="border border-black bg-white rounded-full px-5 sm:px-7 py-2 font-medium text-base sm:text-lg hover:bg-gray-100 transition" onClick={() => setShowAll(true)}>
-                  {t('show_more', 'Show more . . .')}
+                  {t('show_more')}
                 </button>
               </div>
             )}

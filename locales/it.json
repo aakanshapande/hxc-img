@@ -141,25 +141,5 @@
         "description": "Corso"
       }
     }
-  },
-  "careers": {
-    "intro_heading": "Il modo migliore per mostrare le tue competenze. Trova la carriera giusta per te!",
-    "careers_internship_programs_title": "Programmi di tirocinio Hakxcore.io",
-    "careers_get_your_experience": "Ottieni la tua esperienza",
-    "careers_you_need": "Hai bisogno di",
-    "careers_internship_search_illustration": "Illustrazione della ricerca di tirocinio",
-    "careers_choose_category": "Scegli la tua categoria nel tuo appassionato sottocampo di cybersecurity",
-    "search_for_jobs": "Cerca lavoro..",
-    "open_positions": "Abbiamo ora {{count}} posizione{{count, plural, one {} other {i}}} aperta!",
-    "no_open_positions": "Nessuna posizione aperta al momento.",
-    "all_positions": "Tutte le posizioni",
-    "no_categories": "Nessuna categoria",
-    "always_seeking_talent": "Siamo sempre alla ricerca di talenti. Se non trovi la posizione desiderata qui, inviaci il tuo profilo LinkedIn e i tuoi dati di contatto. Ti contatteremo.",
-    "share_linkedin": "Condividi il tuo profilo LinkedIn",
-    "stipend": "Stipendio",
-    "free": "Gratuito",
-    "no_tags": "Nessun tag",
-    "apply": "Candidati",
-    "show_more": "Mostra di più . . ."
   }
 }

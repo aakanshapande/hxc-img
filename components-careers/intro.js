@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
 const IntroSection = () => {
-    const { t } = useTranslation('common');
+    const { t } = useTranslation('careers');
     const [introImg, setIntroImg] = useState(null);
     useEffect(() => {
       fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=career-image1&populate=*`)
@@ -83,12 +83,12 @@ const IntroSection = () => {
             <div className="row align-items-center text-white">
               <div className="col-md-6 intros text-start">
                 <h1 className="display-2">
-                  <span className="display-2--intro">{t('careers_intro_heading', 'Best Way To showcase your skills Find your career fit !')}</span>
+                  <span className="display-2--intro">{t('intro_heading')}</span>
                 </h1>
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
                   <Link href="/contact-page">
                     <button type="button" className="rounded-pill btn-rounded">
-                      {t('apply_now', 'Apply Now')}<span><i className="fas fa-arrow-right"></i></span>
+                      {t('apply_now')}<span><i className="fas fa-arrow-right"></i></span>
                     </button>
                   </Link>
                 </div>

@@ -5,7 +5,7 @@ const { i18n } = pkg;
 const nextConfig = {
    images: {
     domains: [
-      'blob.hakxcore.io', // your external image domain
+      'blob.hakxcore.io',
     ],
   },
 
