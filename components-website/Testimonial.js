@@ -119,7 +119,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src={clientImages[clientImageMap["Ileana Gonzalez"]] || "https://blob.hakxcore.io/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"}
+                        src={clientImages[clientImageMap["Ileana Gonzalez"]]}
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -142,7 +142,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote2')}                  
+                    {t('quote2')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote3')}                  
+                    {t('quote3')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -251,7 +251,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src={clientImages[clientImageMap["Pradeep Naangal"]] || "https://blob.hakxcore.io/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"}
+                        src={clientImages[clientImageMap["Pradeep Naangal"]]}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -279,7 +279,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote5')}                  
+                    {t('quote5')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src={clientImages[clientImageMap["Martin G Fisher"]] || "https://blob.hakxcore.io/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"}
+                        src={clientImages[clientImageMap["Martin G Fisher"]]}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -328,7 +328,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote6')}                  
+                    {t('quote6')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -348,7 +348,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src={clientImages[clientImageMap["Jiten-Patoliya"]] || "https://blob.hakxcore.io/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"}
+                        src={clientImages[clientImageMap["Jiten-Patoliya"]]}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -376,7 +376,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote7')}                  
+                    {t('quote7')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>
@@ -425,7 +425,7 @@ const TestimonialSection = () => {
                   </div>
                   <div className="lh-lg right-content">
                     <i className="fas fa-quote-left"></i>
-{t('quote8')}                  
+                    {t('quote8')}                  
                     <i className="fas fa-quote-right"></i>
                   </div>
                 </div>

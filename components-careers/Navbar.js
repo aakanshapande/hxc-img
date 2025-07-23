@@ -81,7 +81,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg menu fixed-top menu-${theme}`}>
       <div className="container">
         <Link href="/" className="navbar-brand">
-          <img src={logoUrl || "https://blob.hakxcore.io/images/logo.webp"} alt="logo" className="navbar-brand-img" />
+          <img src={logoUrl} alt="logo" className="navbar-brand-img" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
