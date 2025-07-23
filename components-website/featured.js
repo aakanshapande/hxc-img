@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+
 const FeaturedSection = () => {
-const { t } = useTranslation('featured');
-  const companies = [
-    { name: 'Do Control Org', logo: 'https://blob.hakxcore.io/images/companies/DOControl.io.svg' },
-    { name: 'Tech Bloc Org', logo: 'https://blob.hakxcore.io/images/companies/Satechbloc.com.avif' },
-    { name: 'The Lenfest Institute', logo: 'https://blob.hakxcore.io/images/companies/Lenfestinstitute.org.svg' },
-    { name: '108Ideaspace Org', logo: 'https://blob.hakxcore.io/images/companies/108Ideaspace.com.avif' },
-    { name: 'Mammoth Interactive', logo: 'https://blob.hakxcore.io/images/companies/MammothInteractive.avif' },
-    { name: 'acte', logo: 'https://blob.hakxcore.io/images/companies/Acte.com.avif' },
-    { name: 'practiss.ai', logo: 'https://blob.hakxcore.io/images/companies/practiss.ai.avif' },
-    { name: 'Tech Courses SL', logo: 'https://blob.hakxcore.io/images/companies/Flencio-Falez-LLC.avif' },
-    { name: 'Results You Can Measure', logo: 'https://blob.hakxcore.io/images/companies/Resultsyoucanmeasure.co.uk.webp' },
-  ];
+  const { t } = useTranslation('featured');
+  const [clientImages, setClientImages] = useState([]);
+
+  useEffect(() => {
+    fetch(`${strapiUrl}/api/images-sites?populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        // Only include specific logo names
+        const includeNames = [
+          'DoControl-logo',
+          'Sika-logo',
+          'Sphera-logo',
+          'ideaspace-logo',
+          'results-logo',
+          'techblog-logo',
+        ];
+        const filtered = (data.data || []).filter(entry =>
+          includeNames.includes(entry.name) && entry.Image && entry.Image.url
+        );
+        setClientImages(filtered.map(entry => ({
+          name: entry.name,
+          url: strapiUrl + entry.Image.url
+        })));
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <section id="featured-in" className="featured-in">
@@ -77,10 +93,24 @@ const { t } = useTranslation('featured');
 
         <div className="slider">
           <div className="slide-track">
-            {companies.map((company, index) => (
+            {clientImages.map((client, index) => (
               <div key={index} className="slide_featured_company">
                 <div className="featured-in__logo-box shadow-sm">
-                  <img src={company.logo} alt={company.name} title={company.name} className="img-fluid company-logo" />
+                  <img
+                    src={client.url}
+                    alt={client.name}
+                    title={client.name}
+                    className="img-fluid company-logo"
+                    style={{
+                      height: '60px',
+                      width: 'auto',
+                      maxWidth: '140px',
+                      objectFit: 'contain',
+                      display: 'block',
+                      margin: '0 auto',
+                      marginTop: ['Sika-logo', 'Sphera-logo'].includes(client.name) ? '-10px' : undefined
+                    }}
+                  />
                 </div>
               </div>
             ))}
@@ -118,6 +148,12 @@ const { t } = useTranslation('featured');
           .card {
             margin-bottom: 20px;
           }
+        }
+        .large-logo {
+          max-height: 70px !important;
+          max-width: 140px !important;
+          width: auto !important;
+          height: auto !important;
         }
       `}</style>
     </section>

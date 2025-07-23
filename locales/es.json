@@ -141,5 +141,12 @@
         "description": "Curso"
       }
     }
+  },
+  "careers": {
+    "careers_internship_programs_title": "Programas de Prácticas Hakxcore.io",
+    "careers_get_your_experience": "Obtén tu experiencia",
+    "careers_you_need": "Lo que necesitas",
+    "careers_internship_search_illustration": "Ilustración de búsqueda de prácticas",
+    "careers_choose_category": "Elige tu categoría en tu subcampo de ciberseguridad apasionado"
   }
 }

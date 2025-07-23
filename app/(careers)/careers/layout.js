@@ -39,19 +39,15 @@ export default function RootLayout({ children }) {
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
         </noscript>
       </head>
-      <body className="light vsc-intialized">
-      s
+      <body className="vsc-intialized" style={{ background: '#fff' }}>
         <I18nProvider>
           <Navbar />
           <IntroSection />
-          <InternshipProgram />
-          <InternshipButtonSection />
-          <InternshipDomain />
-          <AttackSection />
-          <FooterSection />
-          {children}
+          <div className="bg-white">
+            {children}
+            <FooterSection />
+          </div>
         </I18nProvider>
-
         <Analytics />
         <SpeedInsights />
       </body>

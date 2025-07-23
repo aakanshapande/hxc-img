@@ -1,10 +1,12 @@
 {
   "common": {
     "intro_heading": "Securing Your Digital Future",
+    "apply_now": "Apply Now",
     "intro_subheading": "We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM.",
     "get_in_touch": "Get in Touch",
     "intro_og_title": "Securing Your Digital Future",
     "intro_og_description": "We are a leading cybersecurity company Simplifying Access, Strengthening Security – Global Leaders in SSO and IAM.",
+    "intro_img_alt": "Careers Hero Illustration",
     "contact_us": "Contact Us",
     "phone": "Phone",
     "email": "Email",
@@ -58,7 +60,24 @@
     "footer_contact_telegram": "Telegram",
     "footer_contact_instagram": "Instagram",
     "footer_contact_linkedin": "Linkedin",
-    "copyright": "All rights reserved, Built with ❤️ in India"
+    "copyright": "All rights reserved, Built with ❤️ in India",
+    "internship_programs_title": "Internship Programs Hakxcore.io",
+    "get_your_experience": "Get Your Experience",
+    "you_need": "You Need",
+    "internship_search_illustration": "Internship search illustration",
+    "choose_category": "Choose Your Category In Your Passionate Cybersecurity Subfield",
+    "search_for_jobs": "Search for jobs..",
+    "open_positions": "We have {{count}} open position{{count, plural, one {} other {s}}} now!",
+    "no_open_positions": "No open positions at the moment.",
+    "all_positions": "All positions",
+    "no_categories": "No categories",
+    "always_seeking_talent": "We are always seeking talented people. In case you cannot find your desired position here, please send us your LinkedIn profile and give us your contact information. We will be in touch.",
+    "share_linkedin": "Share your LinkedIn profile",
+    "stipend": "Stipend",
+    "free": "Free",
+    "no_tags": "No tags",
+    "apply": "Apply",
+    "show_more": "Show more . . ."
   },
   "featured": {
     "book_consultation": "Book a Consultation",
@@ -317,6 +336,26 @@
     "section15_contact_email": "help@hakxcore.io",
     "section15_jurisdiction": "You accept that any claims arising against HAKXCORE shall be subject to the exclusive jurisdiction of the High Court at New Delhi and the laws of India shall apply therein.",
     "section15_disclaimer_acceptance": "Your usage of this Website shall be construed and deemed as an acceptance of these Terms of Use and Disclaimer displayed on relevant pages..."
+  },
+  "careers": {
+    "intro_heading": "Best Way To showcase your skills Find your career fit !",
+    "careers_internship_programs_title": "Internship Programs Hakxcore.io",
+    "careers_get_your_experience": "Get Your Experience",
+    "careers_you_need": "You Need",
+    "careers_internship_search_illustration": "Internship search illustration",
+    "careers_choose_category": "Choose Your Category In Your Passionate Cybersecurity Subfield",
+    "search_for_jobs": "Search for jobs..",
+    "open_positions": "We have {{count}} open position{{count, plural, one {} other {s}}} now!",
+    "no_open_positions": "No open positions at the moment.",
+    "all_positions": "All positions",
+    "no_categories": "No categories",
+    "always_seeking_talent": "We are always seeking talented people. In case you cannot find your desired position here, please send us your LinkedIn profile and give us your contact information. We will be in touch.",
+    "share_linkedin": "Share your LinkedIn profile",
+    "stipend": "Stipend",
+    "free": "Free",
+    "no_tags": "No tags",
+    "apply": "Apply",
+    "show_more": "Show more . . ."
   }
 
 

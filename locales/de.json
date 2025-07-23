@@ -141,5 +141,25 @@
         "description": "Kurs"
       }
     }
+  },
+  "careers": {
+    "intro_heading": "Der beste Weg, Ihre Fähigkeiten zu präsentieren. Finden Sie Ihre passende Karriere!",
+    "careers_internship_programs_title": "Praktikumsprogramme Hakxcore.io",
+    "careers_get_your_experience": "Sammeln Sie Ihre Erfahrung",
+    "careers_you_need": "Sie brauchen",
+    "careers_internship_search_illustration": "Praktikumssuch-Illustration",
+    "careers_choose_category": "Wählen Sie Ihre Kategorie in Ihrem leidenschaftlichen Cybersecurity-Bereich",
+    "search_for_jobs": "Nach Jobs suchen..",
+    "open_positions": "Wir haben jetzt {{count}} offene Stelle{{count, plural, one {} other {n}}}!",
+    "no_open_positions": "Zurzeit keine offenen Stellen.",
+    "all_positions": "Alle Stellen",
+    "no_categories": "Keine Kategorien",
+    "always_seeking_talent": "Wir sind immer auf der Suche nach Talenten. Falls Sie hier keine passende Stelle finden, senden Sie uns bitte Ihr LinkedIn-Profil und Ihre Kontaktdaten. Wir melden uns bei Ihnen.",
+    "share_linkedin": "LinkedIn-Profil teilen",
+    "stipend": "Vergütung",
+    "free": "Kostenlos",
+    "no_tags": "Keine Tags",
+    "apply": "Bewerben",
+    "show_more": "Mehr anzeigen . . ."
   }
 }

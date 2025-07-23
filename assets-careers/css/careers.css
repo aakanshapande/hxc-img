@@ -136,15 +136,47 @@ body{
 /* navbar(menu) styles ends here */
 
 /* intro-section start here */
-.intro-section{
-    /* Rectangle 5 */
-    background: #FFFFFF4D;
-    border: 10px solid var(--border-intro-section);
-    box-shadow: 8px 7px 4px var(--box-shadow);
-    border-radius: 47px;
-
-    padding: 5rem 4rem 4rem 7rem;
-    position: relative;
+.intro-section {
+  background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
+  padding: 8rem 0 0 0;
+  width: 100%;
+  height: auto;
+  /* Remove border, box-shadow, border-radius for original look */
+}
+@media (min-width: 768px) {
+  .intro-section {
+    padding: 6rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .intro-section {
+    padding: 8rem 0 0 0;
+  }
+}
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 575.98px) {
+  .display-2--intro {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .display-2--intro {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .display-2--intro {
+    font-size: 3.5rem;
+  }
 }
 
 .intro-background img{
@@ -720,5 +752,45 @@ body{
   .navbar-collapse.show {
     display: block !important;
   }
+}
+ 
+.btn-rounded {
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .btn-rounded {
+    display: none;
+  }
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #4864ba;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95));
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro-section .btn-rounded {
+  color: #000 !important;
 }
  

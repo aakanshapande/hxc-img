@@ -2,9 +2,35 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+
+const clientImageMap = {
+  "Liel Ran": "LielRan",
+  "Ileana Gonzalez": "IleansGonzales",
+  "Pradeep Naangal": "PradeepNagal",
+  "Martin G Fisher": "MartinFisher",
+  "Jiten-Patoliya": "JitenPatoliya",
+};
+
+const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
 const TestimonialSection = () => {
   const { t } = useTranslation('testimonials');
+  const [clientImages, setClientImages] = useState({});
+  useEffect(() => {
+    fetch(`${strapiUrl}/api/images-sites?populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        const images = {};
+        data.data.forEach(entry => {
+          if (entry && entry.name && entry.Image && entry.Image.url) {
+            images[entry.name] = strapiUrl + entry.Image.url;
+          }
+        });
+        setClientImages(images);
+      })
+      .catch(console.error);
+  }, [strapiUrl]);
 
   return (
     <section id="testimonials" className="testimonials">
@@ -48,7 +74,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src="/images/testimonials/Liel-Ran-CEO-DOControl.io.webp"
+                        src={clientImages[clientImageMap["Liel Ran"]] || "/images/testimonials/Liel-Ran-CEO-DOControl.io.webp"}
                         alt="client-1 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -93,7 +119,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src="https://blob.hakxcore.io/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"
+                        src={clientImages[clientImageMap["Ileana Gonzalez"]] || "https://blob.hakxcore.io/images/testimonials/Illeana-Gonzalez-CEO-Satechbloc.com.webp"}
                         alt="client-2 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -225,7 +251,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src="https://blob.hakxcore.io/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"
+                        src={clientImages[clientImageMap["Pradeep Naangal"]] || "https://blob.hakxcore.io/images/testimonials/Pradeep-Naangal-CEO-Kayzworks.com.webp"}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -274,7 +300,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src="https://blob.hakxcore.io/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"
+                        src={clientImages[clientImageMap["Martin G Fisher"]] || "https://blob.hakxcore.io/images/testimonials/Martin-Fisher-CEO-Resultsyoucanmeasure.co.uk.webp"}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}
@@ -322,7 +348,7 @@ const TestimonialSection = () => {
                     {/* client picture */}
                     <div className="image-container">
                       <Image
-                        src="https://blob.hakxcore.io/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"
+                        src={clientImages[clientImageMap["Jiten-Patoliya"]] || "https://blob.hakxcore.io/images/testimonials/Jiten-Patoliya-108Ideaspace.webp"}
                         alt="client-4 picture"
                         className="img-fluid rounded-circle"
                         height={400}

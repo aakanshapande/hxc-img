@@ -8,8 +8,10 @@ const Navbar = () => {
   const [theme, setTheme] = useState("light");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [logoUrl, setLogoUrl] = useState(null);
   const router = useRouter();
   const { i18n, t, ready } = useTranslation('common');
+  const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
   // Force light theme on initial mount
   useEffect(() => {
@@ -62,6 +64,19 @@ const Navbar = () => {
     }
   }, [ready, i18n]);
 
+  // Fetch Logo1 from Strapi
+  useEffect(() => {
+    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=Logo1&populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        const entry = data.data && data.data[0];
+        if (entry && entry.Image && entry.Image.url) {
+          setLogoUrl(strapiUrl + entry.Image.url);
+        }
+      })
+      .catch(console.error);
+  }, [strapiUrl]);
+
   const changeLanguage = (lng) => {
     if (i18n && i18n.changeLanguage && ready) {
       i18n.changeLanguage(lng).then(() => {
@@ -110,7 +125,7 @@ const Navbar = () => {
       <nav className={`navbar navbar-expand-lg menu fixed-top menu-light`}>
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <img src="https://blob.hakxcore.io/images/logo.webp" alt="logo" className="navbar-brand-img" />
+            <img src={logoUrl || "https://blob.hakxcore.io/images/logo.webp"} alt="logo" className="navbar-brand-img" />
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>

@@ -144,5 +144,25 @@
         "description": "دورة"
       }
     }
+  },
+  "careers": {
+    "intro_heading": "أفضل طريقة لعرض مهاراتك، اعثر على المسار المهني المناسب لك!",
+    "careers_internship_programs_title": "برامج التدريب في Hakxcore.io",
+    "careers_get_your_experience": "احصل على خبرتك",
+    "careers_you_need": "أنت بحاجة إلى",
+    "careers_internship_search_illustration": "رسم توضيحي للبحث عن تدريب",
+    "careers_choose_category": "اختر تخصصك في مجال الأمن السيبراني الذي تهواه",
+    "search_for_jobs": "ابحث عن وظائف..",
+    "open_positions": "لدينا {{count}} وظيفة شاغرة الآن!",
+    "no_open_positions": "لا توجد وظائف شاغرة في الوقت الحالي.",
+    "all_positions": "جميع الوظائف",
+    "no_categories": "لا توجد فئات",
+    "always_seeking_talent": "نحن دائمًا نبحث عن المواهب. إذا لم تجد الوظيفة التي ترغب بها هنا، يرجى إرسال ملفك الشخصي على LinkedIn وسنكون على تواصل.",
+    "share_linkedin": "شارك ملفك الشخصي على LinkedIn",
+    "stipend": "مكافأة",
+    "free": "مجاني",
+    "no_tags": "لا توجد علامات",
+    "apply": "قدّم الآن",
+    "show_more": "عرض المزيد . . ."
   }
 }

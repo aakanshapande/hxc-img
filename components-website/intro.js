@@ -2,9 +2,24 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+
+const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
 const IntroSection = () => {
   const { t } = useTranslation('common');
+  const [introImg, setIntroImg] = useState(null);
+  useEffect(() => {
+    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=career-image1&populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        const entry = data.data && data.data[0];
+        if (entry && entry.Image && entry.Image.url) {
+          setIntroImg(strapiUrl + entry.Image.url);
+        }
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <>
@@ -66,8 +81,8 @@ const IntroSection = () => {
         <link rel="noopener noreferrer" href="https://www.cisa.gov/" />
       </Head>
 
-      <section id="home" className="intro-section intro-section-light">
-        <header className="header">
+      <section id="home" className="intro-section intro-section-light overflow-hidden">
+        <header className="header overflow-hidden">
           <div className="container">
             <div className="row align-items-center text-white">
               <div className="col-md-6 intros text-start">
@@ -86,11 +101,14 @@ const IntroSection = () => {
 
               <div className="col-md-6 intros text-end">
                 <div className="video-box">
-                  <img
-                    src="https://blob.hakxcore.io/images/art/intro-section-illustration.webp"
-                    alt="video illustration"
-                    className="img-fluid"
-                  />
+                  {introImg && typeof introImg === 'string' && (
+                    <img
+                      src={introImg}
+                      alt="video illustration"
+                      className="img-fluid"
+                      style={{ maxHeight: '500px', maxWidth: '540px', width: 'auto', height: 'auto' }}
+                    />
+                  )}
                 </div>
               </div>
             </div>
