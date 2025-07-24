@@ -13,19 +13,16 @@ const Navbar = () => {
   const { i18n, t, ready } = useTranslation('common');
   const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
-  // Initialize theme from localStorage or system preference
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     
-    // Only use system preference if no saved theme exists
-    const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
+    const initialTheme = savedTheme || "light";
     
     setTheme(initialTheme);
     document.documentElement.setAttribute("data-theme", initialTheme);
+    localStorage.setItem("theme", initialTheme);
     setMounted(true);
 
-    // Listen for theme changes from other components
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.attributeName === 'data-theme') {
@@ -48,6 +45,8 @@ const Navbar = () => {
   // Handle theme changes
   useEffect(() => {
     if (mounted) {
+      localStorage.setItem("theme", theme);
+      document.documentElement.setAttribute("data-theme", theme);
       document.documentElement.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }

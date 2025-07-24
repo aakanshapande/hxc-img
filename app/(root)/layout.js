@@ -39,6 +39,11 @@ export default function RootLayout({ children }) {
       const getStartedSections = document.querySelectorAll('.get-started');
       const themeChangeIcon = document.getElementById('theme_change');
 
+      // Set initial theme if not set
+      if (!document.documentElement.hasAttribute('data-theme')) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+
       if (theme === 'dark') {
         body.classList.add('body-dark');
         body.classList.remove('body-light');
