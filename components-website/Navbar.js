@@ -13,37 +13,45 @@ const Navbar = () => {
   const { i18n, t, ready } = useTranslation('common');
   const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
-  // Force light theme on initial mount
+  // Initialize theme from localStorage or system preference
   useEffect(() => {
-    localStorage.removeItem("theme");
-    setTheme("light");
-    document.documentElement.setAttribute("data-theme", "light");
+    const savedTheme = localStorage.getItem("theme");
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    
+    // Only use system preference if no saved theme exists
+    const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
+    
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
     setMounted(true);
+
+    // Listen for theme changes from other components
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          const newTheme = document.documentElement.getAttribute('data-theme');
+          if (newTheme && newTheme !== theme) {
+            setTheme(newTheme);
+          }
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    return () => observer.disconnect();
   }, []);
 
-  // Handle theme changes after initial mount
+  // Handle theme changes
   useEffect(() => {
     if (mounted) {
       document.documentElement.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }
   }, [theme, mounted]);
-
-  // Handle system theme changes
-  useEffect(() => {
-    if (mounted) {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      const handleChange = () => {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
-          setTheme(mediaQuery.matches ? "dark" : "light");
-        }
-      };
-
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
-    }
-  }, [mounted]);
 
   // --- NEW: Auto-detect language on mount ---
   useEffect(() => {
@@ -108,20 +116,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Script id="theme-script" strategy="beforeInteractive">
-        {`
-          (function() {
-            try {
-              localStorage.removeItem("theme");
-              document.documentElement.setAttribute("data-theme", "light");
-              document.documentElement.classList.add("light-theme");
-              document.documentElement.classList.remove("dark-theme");
-            } catch (e) {
-              console.error("Error setting initial theme:", e);
-            }
-          })();
-        `}
-      </Script>
+
       <nav className={`navbar navbar-expand-lg menu fixed-top menu-light`}>
         <div className="container">
           <Link href="/" className="navbar-brand">
@@ -139,16 +134,13 @@ const Navbar = () => {
                 <Link href="#services" className="nav-link">{t('services')}</Link>
               </li>
               <li className="nav-item">
-                <Link href="#testimonials" className="nav-link">{t('testimonials')}</Link>
-              </li>
-              <li className="nav-item">
-                <Link href="#faq" className="nav-link">{t('faq')}</Link>
-              </li>
-              <li className="nav-item">
-                <Link href="#portfolio" className="nav-link">{t('portfolio')}</Link>
+                <Link href="/careers" className="nav-link">{t('careers')}</Link>
               </li>
               <li className="nav-item">
                 <Link href="/contact-page" className="nav-link">{t('contact')}</Link>
+              </li>
+              <li className="nav-item">
+                <Link href="https://blog.hakxcore.io" className="nav-link">{t('blogs')}</Link>
               </li>
             </ul>
             <div className="theme-btn">
