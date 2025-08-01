@@ -62,8 +62,8 @@ export default function Home({searchParams}) {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center p-4">
-      <div className="bg-white shadow-2xl rounded-3xl p-8 max-w-lg w-full">
+    <div className="min-h-screen flex items-center justify-center p-4" style={{ background: 'rgba(101, 142, 204, 0.95)' }}>
+      <div className="bg-white shadow-2xl rounded-3xl p-8 max-w-4xl w-full">
         <h2 className="text-4xl font-extrabold mb-8 text-center text-gray-800">Internship Application Form</h2>
         <form className="space-y-6" onSubmit={handleSubmit} autoComplete="on">
           <div>
@@ -86,7 +86,7 @@ export default function Home({searchParams}) {
               Email Address
             </label>
             <input
-              className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
+              className="appearance-none border border-gray-300 rounded-lg w-full py-3 px-10 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 text-center"
               id="email"
               type="email"
               placeholder="Enter your email address"
@@ -185,7 +185,8 @@ export default function Home({searchParams}) {
           {successMsg && <p className="mb-6 text-green-500 text-center">{successMsg}</p>}
           <div className="flex items-center justify-center">
             <button
-              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-700 hover:to-green-700 text-white font-bold py-3 px-8 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 transform hover:scale-105"
+              style={{ background: 'linear-gradient(to right, rgba(72, 100, 186, 0.95), rgba(143, 184, 222, 0.95))' }}
+              className="text-white font-bold py-3 px-8 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 transform hover:scale-105 border-0"
               type="submit"
             >
               Submit Application

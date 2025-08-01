@@ -8,11 +8,9 @@ module.exports = {
   debug: false,
   reloadOnPrerender: process.env.NODE_ENV === 'development',
   
-  // Namespace configuration
   ns: ['common'],
   defaultNS: 'common',
 
-  // Resource loading
   interpolation: {
     escapeValue: false,
   },

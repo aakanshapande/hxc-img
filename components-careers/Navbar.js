@@ -9,6 +9,9 @@ const Navbar = () => {
     return "light";
   });
 
+  const [logoUrl, setLogoUrl] = useState(null);
+  const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
@@ -62,13 +65,23 @@ const Navbar = () => {
       });
       document.querySelector('.alert-container')?.classList.add('alert-container-light');
     }
-  }, []);
+    // Fetch Logo1 from Strapi
+    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=Logo1&populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        const entry = data.data && data.data[0];
+        if (entry && entry.Image && entry.Image.url) {
+          setLogoUrl(strapiUrl + entry.Image.url);
+        }
+      })
+      .catch(console.error);
+  }, [theme, strapiUrl]);
 
   return (
     <nav className={`navbar navbar-expand-lg menu fixed-top menu-${theme}`}>
       <div className="container">
         <Link href="/" className="navbar-brand">
-          <img src="https://blob.hakxcore.io/images/logo.webp" alt="logo" className="navbar-brand-img" />
+          <img src={logoUrl} alt="logo" className="navbar-brand-img" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
@@ -77,10 +90,9 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item"><Link href="/#home" className="nav-link">Home</Link></li>
             <li className="nav-item"><Link href="/#services" className="nav-link">Services</Link></li>
-            <li className="nav-item"><Link href="/#testimonials" className="nav-link">Testimonials</Link></li>
-            <li className="nav-item"><Link href="/#faq" className="nav-link">FAQ</Link></li>
-            <li className="nav-item"><Link href="/#portfolio" className="nav-link">Portfolio</Link></li>
+            <li className="nav-item"><Link href="/careers" className="nav-link">Careers</Link></li>
             <li className="nav-item"><Link href="/contact-page" className="nav-link">Contact</Link></li>
+            <li className="nav-item"><Link href="https://blog.hakxcore.io" className="nav-link">Blogs</Link></li>
           </ul>
           <div className="theme-btn">
             <input

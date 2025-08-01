@@ -29,31 +29,109 @@ Intercom({
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  // Apply theme classes when theme changes
   useEffect(() => {
-    // Dynamically import jQuery and Bootstrap JS
+    const applyThemeClasses = () => {
+      const theme = document.documentElement.getAttribute('data-theme') || 'light';
+      const body = document.body;
+      const menu = document.querySelector('.menu');
+      const svgPaths = document.querySelectorAll('.svg-path-color');
+      const getStartedSections = document.querySelectorAll('.get-started');
+      const themeChangeIcon = document.getElementById('theme_change');
+
+      // Set initial theme if not set
+      if (!document.documentElement.hasAttribute('data-theme')) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+
+      if (theme === 'dark') {
+        body.classList.add('body-dark');
+        body.classList.remove('body-light');
+        menu?.classList.add('menu-dark');
+        menu?.classList.remove('menu-light');
+        svgPaths.forEach(el => {
+          el.classList.add('svg-path-color-dark');
+          el.classList.remove('svg-path-color-light');
+        });
+        getStartedSections.forEach(el => {
+          el.classList.add('get-started-dark');
+          el.classList.remove('get-started-light');
+        });
+        if (themeChangeIcon) {
+          themeChangeIcon.className = 'ri-sun-line';
+        }
+      } else {
+        body.classList.add('body-light');
+        body.classList.remove('body-dark');
+        menu?.classList.add('menu-light');
+        menu?.classList.remove('menu-dark');
+        svgPaths.forEach(el => {
+          el.classList.add('svg-path-color-light');
+          el.classList.remove('svg-path-color-dark');
+        });
+        getStartedSections.forEach(el => {
+          el.classList.add('get-started-light');
+          el.classList.remove('get-started-dark');
+        });
+        if (themeChangeIcon) {
+          themeChangeIcon.className = 'ri-moon-line';
+        }
+      }
+    };
+
+    // Initial theme application
+    applyThemeClasses();
+
+    // Set up mutation observer to watch for theme changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          applyThemeClasses();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    // Clean up
+    return () => observer.disconnect();
+  }, []);
+
+  // Load jQuery and Bootstrap JS for carousel functionality only
+  useEffect(() => {
     const loadScripts = async () => {
-      const jQuery = (await import('jquery')).default;
-      window.$ = window.jQuery = jQuery;
+      try {
+        // Only load jQuery if not already loaded
+        if (!window.jQuery) {
+          const jQuery = (await import('jquery')).default;
+          window.$ = window.jQuery = jQuery;
+        }
 
-      // Import Bootstrap JS and attach it to window
-      const { Carousel } = await import('bootstrap');
-      window.bootstrap = { Carousel };
+        // Import Bootstrap JS and attach it to window
+        const { Carousel } = await import('bootstrap');
+        window.bootstrap = window.bootstrap || { Carousel };
 
-      // Initialize Bootstrap Carousel
-      const carouselElement = document.getElementById('carouselExampleCaptions');
-      if (carouselElement) {
-        const carousel = new window.bootstrap.Carousel(carouselElement, {
-          interval: 3000,
-          wrap: true,
-        });
+        // Initialize Bootstrap Carousel if element exists
+        const carouselElement = document.getElementById('carouselExampleCaptions');
+        if (carouselElement && window.bootstrap.Carousel) {
+          const carousel = new window.bootstrap.Carousel(carouselElement, {
+            interval: 3000,
+            wrap: true,
+          });
 
-        carouselElement.addEventListener('mouseenter', () => {
-          carousel.pause();
-        });
+          carouselElement.addEventListener('mouseenter', () => {
+            carousel.pause();
+          });
 
-        carouselElement.addEventListener('mouseleave', () => {
-          carousel.cycle();
-        });
+          carouselElement.addEventListener('mouseleave', () => {
+            carousel.cycle();
+          });
+        }
+      } catch (error) {
+        console.error('Error loading scripts:', error);
       }
     };
 
@@ -66,34 +144,15 @@ export default function RootLayout({ children }) {
 
       if (isDarkMode) {
         $('#theme-checkbox').prop('checked', true);
-        applyDarkMode();
       }
 
       $('#theme-checkbox').change(function () {
         if ($(this).is(':checked')) {
-          applyDarkMode();
           localStorage.setItem('darkMode', 'true');
         } else {
-          applyLightMode();
           localStorage.setItem('darkMode', 'false');
         }
       });
-
-      function applyDarkMode() {
-        $('#theme_change').addClass('ri-sun-line').removeClass('ri-moon-line');
-        $('body').addClass('body-dark').removeClass('body-light');
-        $('.menu').addClass('menu-dark').removeClass('menu-light');
-        $('.svg-path-color').addClass('svg-path-color-dark').removeClass('svg-path-color-light');
-        $('.get-started').addClass('get-started-dark').removeClass('get-started-light');
-      }
-
-      function applyLightMode() {
-        $('#theme_change').addClass('ri-moon-line').removeClass('ri-sun-line');
-        $('body').addClass('body-light').removeClass('body-dark');
-        $('.menu').addClass('menu-light').removeClass('menu-dark');
-        $('.svg-path-color').addClass('svg-path-color-light').removeClass('svg-path-color-dark');
-        $('.get-started').addClass('get-started-light').removeClass('get-started-dark');
-      }
     });
   });
 

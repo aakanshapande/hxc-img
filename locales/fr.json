@@ -141,5 +141,25 @@
         "description": "Cours"
       }
     }
+  },
+  "careers": {
+    "intro_heading": "La meilleure façon de mettre en valeur vos compétences, trouvez votre voie professionnelle !",
+    "careers_internship_programs_title": "Programmes de stage Hakxcore.io",
+    "careers_get_your_experience": "Acquérez de l'expérience",
+    "careers_you_need": "Vous avez besoin",
+    "careers_internship_search_illustration": "Illustration de la recherche de stage",
+    "careers_choose_category": "Choisissez votre catégorie dans votre sous-domaine de cybersécurité passionné",
+    "search_for_jobs": "Rechercher des emplois..",
+    "open_positions": "Nous avons maintenant {{count}} poste{{count, plural, one {} other {s}}} ouvert !",
+    "no_open_positions": "Aucun poste ouvert pour le moment.",
+    "all_positions": "Tous les postes",
+    "no_categories": "Aucune catégorie",
+    "always_seeking_talent": "Nous sommes toujours à la recherche de talents. Si vous ne trouvez pas le poste souhaité ici, veuillez nous envoyer votre profil LinkedIn et vos coordonnées. Nous vous contacterons.",
+    "share_linkedin": "Partager votre profil LinkedIn",
+    "stipend": "Indemnité",
+    "free": "Gratuit",
+    "no_tags": "Aucune étiquette",
+    "apply": "Postuler",
+    "show_more": "Voir plus . . ."
   }
 }

@@ -8,40 +8,49 @@ const Navbar = () => {
   const [theme, setTheme] = useState("light");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [logoUrl, setLogoUrl] = useState(null);
   const router = useRouter();
   const { i18n, t, ready } = useTranslation('common');
+  const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
-  // Force light theme on initial mount
   useEffect(() => {
-    localStorage.removeItem("theme");
-    setTheme("light");
-    document.documentElement.setAttribute("data-theme", "light");
+    const savedTheme = localStorage.getItem("theme");
+    
+    const initialTheme = savedTheme || "light";
+    
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+    localStorage.setItem("theme", initialTheme);
     setMounted(true);
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          const newTheme = document.documentElement.getAttribute('data-theme');
+          if (newTheme && newTheme !== theme) {
+            setTheme(newTheme);
+          }
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    return () => observer.disconnect();
   }, []);
 
-  // Handle theme changes after initial mount
+  // Handle theme changes
   useEffect(() => {
     if (mounted) {
+      localStorage.setItem("theme", theme);
+      document.documentElement.setAttribute("data-theme", theme);
       document.documentElement.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }
   }, [theme, mounted]);
-
-  // Handle system theme changes
-  useEffect(() => {
-    if (mounted) {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      const handleChange = () => {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
-          setTheme(mediaQuery.matches ? "dark" : "light");
-        }
-      };
-
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
-    }
-  }, [mounted]);
 
   // --- NEW: Auto-detect language on mount ---
   useEffect(() => {
@@ -62,6 +71,19 @@ const Navbar = () => {
     }
   }, [ready, i18n]);
 
+  // Fetch Logo1 from Strapi
+  useEffect(() => {
+    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=Logo1&populate=*`)
+      .then(res => res.json())
+      .then(data => {
+        const entry = data.data && data.data[0];
+        if (entry && entry.Image && entry.Image.url) {
+          setLogoUrl(strapiUrl + entry.Image.url);
+        }
+      })
+      .catch(console.error);
+  }, [strapiUrl]);
+
   const changeLanguage = (lng) => {
     if (i18n && i18n.changeLanguage && ready) {
       i18n.changeLanguage(lng).then(() => {
@@ -81,7 +103,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg menu fixed-top menu-light">
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <img src="https://blob.hakxcore.io/images/logo.webp" alt="logo" className="navbar-brand-img" />
+            <img src={logoUrl} alt="logo" className="navbar-brand-img" />
           </Link>
           <div className="navbar-nav ms-auto">
             <div className="nav-item">Loading...</div>
@@ -93,24 +115,11 @@ const Navbar = () => {
 
   return (
     <>
-      <Script id="theme-script" strategy="beforeInteractive">
-        {`
-          (function() {
-            try {
-              localStorage.removeItem("theme");
-              document.documentElement.setAttribute("data-theme", "light");
-              document.documentElement.classList.add("light-theme");
-              document.documentElement.classList.remove("dark-theme");
-            } catch (e) {
-              console.error("Error setting initial theme:", e);
-            }
-          })();
-        `}
-      </Script>
+
       <nav className={`navbar navbar-expand-lg menu fixed-top menu-light`}>
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <img src="https://blob.hakxcore.io/images/logo.webp" alt="logo" className="navbar-brand-img" />
+            <img src={logoUrl} alt="logo" className="navbar-brand-img" />
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
@@ -124,16 +133,13 @@ const Navbar = () => {
                 <Link href="#services" className="nav-link">{t('services')}</Link>
               </li>
               <li className="nav-item">
-                <Link href="#testimonials" className="nav-link">{t('testimonials')}</Link>
-              </li>
-              <li className="nav-item">
-                <Link href="#faq" className="nav-link">{t('faq')}</Link>
-              </li>
-              <li className="nav-item">
-                <Link href="#portfolio" className="nav-link">{t('portfolio')}</Link>
+                <Link href="/careers" className="nav-link">{t('careers')}</Link>
               </li>
               <li className="nav-item">
                 <Link href="/contact-page" className="nav-link">{t('contact')}</Link>
+              </li>
+              <li className="nav-item">
+                <Link href="https://blog.hakxcore.io" className="nav-link">{t('blogs')}</Link>
               </li>
             </ul>
             <div className="theme-btn">
