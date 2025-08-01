@@ -10,7 +10,7 @@ const IntroSection = () => {
   const { t } = useTranslation('common');
   const [introImg, setIntroImg] = useState(null);
   useEffect(() => {
-    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=career-image1&populate=*`)
+    fetch(`${strapiUrl}/api/images-sites?filters[name][$eq]=hero-image&populate=*`)
       .then(res => res.json())
       .then(data => {
         const entry = data.data && data.data[0];
@@ -106,7 +106,7 @@ const IntroSection = () => {
                       src={introImg}
                       alt="video illustration"
                       className="img-fluid"
-                      style={{ maxHeight: '500px', maxWidth: '540px', width: 'auto', height: 'auto' }}
+                      style={{ maxHeight: '450px', maxWidth: '540px', width: 'auto', height: 'auto' }}
                     />
                   )}
                 </div>
